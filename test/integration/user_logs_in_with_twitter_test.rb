@@ -11,4 +11,12 @@ class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
     assert page.has_link?("logout")
   end
 
+  test "logging out" do
+    visit "/"
+    click_link "login"
+    assert User.find_by_name("ColeMersich")
+    click_link "logout"
+    refute page.has_content?("ColeMersich")
+  end
+
 end
