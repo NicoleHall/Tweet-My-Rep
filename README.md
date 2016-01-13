@@ -1,6 +1,6 @@
 Tweet My Rep is a self-guided project. This app will allow
 users to search their United States Congressional and Senate
-Representatives by zipcode. Once the congress members have been
+Representatives by zip code. Once the congress members have been
 identified, app users will be able to send tweets to the legislators.
 
 Tweet My Rep will rely on the Twitter gem, the Devise Gem, Twitter's
