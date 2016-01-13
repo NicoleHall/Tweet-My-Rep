@@ -1,7 +1,13 @@
-<h1>hello world</h1>
+<div class="container">
 
-<% if current_user %>
-  <p>hello, <%= current_user.name %></p>
-<% else %>
-  <%= link_to "login", login_path %>
-<% end %>
+  <h1>Tweet My Rep</h1>
+  <h1>Tell the powers that be what you <em>really</em> think</h1>
+
+  <% if current_user %>
+    <p>hello, <%= current_user.name %></p>
+    <button><%= link_to "logout", logout_path %></button>
+  <% else %>
+    <button><%= link_to "login", login_path %></button>
+  <% end %>
+
+</div>
