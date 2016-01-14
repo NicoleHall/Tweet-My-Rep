@@ -10,4 +10,14 @@
     <button><%= link_to "Login", login_path %></button>
   <% end %>
 
+
+  <%= form_tag("/search", method: "get") do %>
+    <%= label_tag(:zipcode, "Search your zipcode") %>
+    <%= text_field_tag(:zipcode) %>
+    <%= submit_tag("Search") %>
+  <% end %>
+
+
+
+
 </div>

@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   get '/auth/twitter', as: :login
   get '/auth/twitter/callback' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
-
+  get '/search' => 'legislators#search'
+  get '/results' => 'legislators#results'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
