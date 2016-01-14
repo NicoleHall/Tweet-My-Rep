@@ -18,5 +18,4 @@ class LegislatorsService
   def fetched_legislators
     @legislators = LegislatorService.fetch(zip: params['zipcode'])
   end
-
 end
