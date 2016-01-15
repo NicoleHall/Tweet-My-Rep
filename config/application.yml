@@ -15,21 +15,23 @@ production:
   consumer_key:	SdkfdG62LzGPiyxEqcLZ61uY6
   consumer_secret: cchuyEImEKQtopPxjiJKdiOAG8dBromi1w152GVtKatfxJbB63
   secret_key_base: c21a4ac4171bc1e890ca072f723809fc6a99eca076d0f7eb4ea1b4d597f0244b0f3354f98704f42910618ceebeae1d8acebc179e36d9ca98291d4234c27fd4c2
-  # access_token:
-  # access_token_secret:
+  access_token: 250190173-ldL1USW7XETgWP58wcqqtQJPjXy2sbSOPpow9aAF
+  access_token_secret: mEPfDqtOSbRUoejXdDCWEvF3hrzQ8gyf44xSxLf42u4mf
+
 
 
 development:
   sunlight_api_key: 9f19d387e7904184af2eb15c6c1d7bc5
   consumer_key: ojhC635qkbrtyOBeHR8EwpYae
   consumer_secret: l9j0w1B5DKcaP72mKbIlkEyzHXLsN8LPRwEJEFu43AL19LsSRg
-  # access_token:
-  # access_token_secret:
+  access_token: 250190173-MN8iVf1K9beGsMiPUxnUfUIP35S2Y4BiksA5Xg9A
+  access_token_secret: eeVUy71bObUkbqJUuepZEuTFHfXAPTjMpPfg1IPXj7IIo
+
 
 test:
   sunlight_api_key: 9f19d387e7904184af2eb15c6c1d7bc5
   uid: 250190173
   consumer_key: ojhC635qkbrtyOBeHR8EwpYaec
   consumer_secret: l9j0w1B5DKcaP72mKbIlkEyzHXLsN8LPRwEJEFu43AL19LsSRg
-  # oauth_token:
-  # oauth_token_secret:
+  oauth_token: 250190173-MN8iVf1K9beGsMiPUxnUfUIP35S2Y4BiksA5Xg9A
+  oauth_token_secret: eeVUy71bObUkbqJUuepZEuTFHfXAPTjMpPfg1IPXj7IIo
