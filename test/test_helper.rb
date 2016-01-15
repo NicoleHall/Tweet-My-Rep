@@ -9,16 +9,23 @@ require 'capybara/rails'
 require 'webmock'
 require 'vcr'
 
-
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
+    VCR.configure do |config|
+    config.cassette_library_dir = "test/cassettes"
+    config.hook_into(:webmock)
+  end
 
   # Add more helper methods to be used by all tests here...
 end
 
 class ActionDispatch::IntegrationTest
   include Capybara::DSL
+  def setup
+    Capybara.app = TweetMyRep::Application
+    stub_omniauth
+  end
 
   def stub_omniauth
     OmniAuth.config.test_mode = true
@@ -32,14 +39,9 @@ class ActionDispatch::IntegrationTest
         }
       },
       credentials: {
-        token: "pizza",
-        secret: "secretpizza"
+        access_token: ENV["access_token"],
+        access_token_secret: ENV["access_token_secret"]
       }
     })
-  end
-
-  def setup
-    Capybara.app = TweetMyRep::Application
-    stub_omniauth
   end
 end
