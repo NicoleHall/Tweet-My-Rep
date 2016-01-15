@@ -1,6 +1,7 @@
 <div class="container">
+<h1>The legislators who represent you are: <%= formatted_legislators_in_list %></h1>
+
   <% @legislators.each do |legislator|%>
-  <%= "@#{legislator["twitter_id"]}" %><br>
   <p>
     <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
       <%= f.label "Type Tweet Here" %>
