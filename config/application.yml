@@ -11,6 +11,7 @@
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
 production:
+  nyt_api_key: 174a1ee32de36322b246700bfa57630c:0:74036157
   sunlight_api_key: 9f19d387e7904184af2eb15c6c1d7bc5
   consumer_key:	SdkfdG62LzGPiyxEqcLZ61uY6
   consumer_secret: cchuyEImEKQtopPxjiJKdiOAG8dBromi1w152GVtKatfxJbB63
@@ -21,6 +22,7 @@ production:
 
 
 development:
+  nyt_api_key: 174a1ee32de36322b246700bfa57630c:0:74036157
   sunlight_api_key: 9f19d387e7904184af2eb15c6c1d7bc5
   consumer_key: ojhC635qkbrtyOBeHR8EwpYae
   consumer_secret: l9j0w1B5DKcaP72mKbIlkEyzHXLsN8LPRwEJEFu43AL19LsSRg
@@ -29,6 +31,7 @@ development:
 
 
 test:
+  nyt_api_key: 174a1ee32de36322b246700bfa57630c:0:74036157
   sunlight_api_key: 9f19d387e7904184af2eb15c6c1d7bc5
   uid: 250190173
   consumer_key: ojhC635qkbrtyOBeHR8EwpYaec
