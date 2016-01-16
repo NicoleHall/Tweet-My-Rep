@@ -3,14 +3,14 @@
   <%= link_to "You've entered an invalid zip, try again", root_path %>
  <% else %>
 
-  <h1>The legislators who represent you are: <%= formatted_legislators_in_list %></h1>
+  <h1>The legislators who represent you are: <%= @legislators.map(&:full_name).to_sentence %></h1>
   <% end %>
 
   <% @legislators.each do |legislator|%>
   <p>
     <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
     <%= f.label "Type Tweet Here" %>
-    <div class="count"><%= f.text_field(:message, :value => "@#{legislator["twitter_id"]}", :maxlength => 140) %>
+    <div class="count"><%= f.text_field(:message, :value => legislator.twitter_handle, :maxlength => 140) %>
     <h6 class="char_count">remaining characters in tweet</h6>
     <%= f.submit "Send Tweet" %>
     <% end %>

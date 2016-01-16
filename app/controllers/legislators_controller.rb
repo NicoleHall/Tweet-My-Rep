@@ -6,7 +6,8 @@ class LegislatorsController < ApplicationController
 
 
   def search
-    @legislators = SunlightService.new.fetch_legislators(params["zipcode"])
+    @legislators = SunlightService.new(ENV["sunlight_api_key"])
+      .legislators_for_zip(params["zipcode"])
   end
 
 end

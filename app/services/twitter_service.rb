@@ -1,8 +1,5 @@
 class TwitterService
-  attr_reader :client, :user #, :connection
-
   def initialize(user)
-    @user ||= user
     @client ||= Twitter::REST::Client.new do |config|
       config.consumer_key        = ENV["consumer_key"]
       config.consumer_secret     = ENV["consumer_secret"]
@@ -14,4 +11,8 @@ class TwitterService
   def compose_tweet(text)
     @client.update(text)
   end
+
+  private
+
+  attr_reader :client
 end

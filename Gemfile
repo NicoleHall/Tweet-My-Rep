@@ -44,6 +44,5 @@ end
 
 group :test do
   gem 'webmock'
-  gem 'vcr'
   gem 'simplecov', :require => false
 end
