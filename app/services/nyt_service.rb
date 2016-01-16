@@ -6,3 +6,4 @@ class NytService
   def initialize
     @options = { apikey: ENV["nyt_api_key"]}
   end
+end
