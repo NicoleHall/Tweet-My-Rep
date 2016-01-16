@@ -81,5 +81,3 @@ test:
 production:
   <<: *default
   database: tweet_my_rep_production
-  username: tweet_my_rep
-  password: <%= ENV['TWEET_MY_REP_DATABASE_PASSWORD'] %>
