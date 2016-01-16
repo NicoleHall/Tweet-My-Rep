@@ -4,7 +4,7 @@ class TweetsController < ApplicationController
   end
 
   def create
-    @new_tweet = service.compose_tweet(twitter_params[:message])
+    service.compose_tweet(twitter_params[:message])
   end
 
   private

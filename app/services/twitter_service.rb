@@ -13,6 +13,5 @@ class TwitterService
   end
 
   private
-
   attr_reader :client
 end
