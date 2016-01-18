@@ -1,20 +1,23 @@
 require './test/test_helper'
 
 class SunlightServiceTest < ActiveSupport::TestCase
+  include Capybara::DSL
   test "it finds the legislators for a given location" do
-    sunlight_service = SunlightService.new("apikey")
+
     corey = Legislator.new(first_name: "Corey", last_name: "Gardner", twitter_id: "corey_gardner")
-    sean = Legislator.new(first_name: "Sean", last_name: "Griffin", twitter_id: "sgrif")
-    tim = Legislator.new(first_name: "Tim", last_name: "Cook", twitter_id: "timcook")
+    tom = Legislator.new(first_name: "Tom", last_name: "Udall", twitter_id: "SenatorTomUdall")
+    martin = Legislator.new(first_name: "Martin", last_name: "Heinrich", twitter_id: "MartinHeinrich")
+    #
+    # visit "congress.api.sunlightfoundation.com/legislators/locate?zip=80205&apikey=9f19d387e7904184af2eb15c6c1d7bc5"
 
-    stub_sunlight_api(zip: 80031, legislators: [corey, sean])
-    stub_sunlight_api(zip: 87106, legislators: [tim])
+    stub_sunlight_api(zip: 80031, legislators: [corey, tom])
+    stub_sunlight_api(zip: 87106, legislators: [martin])
 
-    legislators_for_colorado = sunlight_service.legislators_for_zip(80031)
-    legislators_for_new_mexico = sunlight_service.legislators_for_zip(87106)
+    legislators_for_colorado = SunlightService.new.legislators_for_zip(80031)
+    legislators_for_new_mexico = SunlightService.new.legislators_for_zip(87106)
 
-    assert_equal [corey, sean], legislators_for_colorado
-    assert_equal [tim], legislators_for_new_mexico
+    assert_equal [corey, tom], legislators_for_colorado
+    assert_equal [martin], legislators_for_new_mexico
   end
 
   private

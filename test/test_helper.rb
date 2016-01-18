@@ -37,4 +37,5 @@ class ActionDispatch::IntegrationTest
       }
     })
   end
+
 end

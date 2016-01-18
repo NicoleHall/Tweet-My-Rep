@@ -19,4 +19,5 @@ class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
     refute page.has_content?("ColeMersich")
   end
 
+
 end

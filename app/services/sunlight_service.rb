@@ -3,13 +3,14 @@ class SunlightService
   include HTTParty
   base_uri 'https://congress.api.sunlightfoundation.com'
 
-  def initialize(api_key)
-    @options = { apikey: api_key }
+  def initialize
+    @options = { apikey: ENV["sunlight_api_key"]}
   end
 
   def legislators_for_zip(zip)
     response = self.class.get("/legislators/locate",
                 query: @options.merge(zip: zip))
+                #require 'pry'; binding.pry
     parse_legislators(response)
   end
 
