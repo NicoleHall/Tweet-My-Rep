@@ -10,7 +10,6 @@ class SunlightService
   def legislators_for_zip(zip)
     response = self.class.get("/legislators/locate",
                 query: @options.merge(zip: zip))
-                #require 'pry'; binding.pry
     parse_legislators(response)
   end
 
