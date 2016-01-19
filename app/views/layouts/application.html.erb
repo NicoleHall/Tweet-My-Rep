@@ -15,6 +15,12 @@
   <div class="container">
 
 
+  <% if current_user %>
+    <p>Hello, <%= current_user.name %></p>
+    <%= image_tag current_user.avatar %>
+    <button><%= link_to "Logout", logout_path %></button>
+  <% end %>
+
 
 <%= yield %>
 </div>
