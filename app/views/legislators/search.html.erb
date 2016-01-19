@@ -7,25 +7,27 @@
 <h1>The legislators who represent you are: <br><%= @legislators.map(&:full_name).to_sentence %></h1>
 <% end %>
 
-<% if current_user %>
+  <% if current_user %>
   <% @legislators.each do |legislator|%>
+
+
   <p>
     <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
-    <div class="well">
-
-
-      <%= f.label "Type Tweet Here" %>
-      <div class="count"><%= f.text_field(:message, :value => "@#{legislator.twitter_id}", :maxlength => 140) %>
-        <h6 class="char_count">remaining characters in tweet</h6>
-
-
-        <%= f.submit "Send Tweet" %><br><br>
-
-        <% end %>
-      </div>
+    <%= f.label "Type Tweet Here" %>
+    <div class="count"><%= f.text_field(:message, :value => "@#{legislator.twitter_id}", :maxlength => 140) %>
+      <h6 class="char_count">remaining characters in tweet</h6>
+      <%= f.submit "Send Tweet" %><br><br>
+      <% end %>
     </div>
   </p>
+
+  <%legislator.articles.each do |article| %>
+  <% url = article["web_url"] %>
+  <% headline = article["snippet"] %>
+  <ul><a target="_blank" href=<%= url %>> <%= headline %></a></ul>
   <% end %>
+
+<% end %>
 <% else %>
-  <button><%= link_to "Login", login_path(zipcode: params["zipcode"]) %></button>
+<button><%= link_to "Login", login_path(zipcode: params["zipcode"]) %></button>
 <% end %>

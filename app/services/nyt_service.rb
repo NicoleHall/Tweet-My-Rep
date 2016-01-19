@@ -4,7 +4,6 @@ class NytService
 
   ARTICLE_LIMIT = 3
 
-
   def initialize
     @options = { "api-key": ENV["article_search_api_key"] }
   end
