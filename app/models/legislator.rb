@@ -1,6 +1,7 @@
 class Legislator < ActiveRecord::Base
 
  after_save :add_at_symbol
+ validates_uniqueness_of :last_name, scope: :first_name
 
   # def initialize(twitter_id: nil, first_name: nil, last_name: nil)
   #   @twitter_handle = "@#{twitter_id}"
