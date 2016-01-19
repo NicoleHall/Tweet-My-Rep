@@ -9,5 +9,29 @@ body {
 }
 
 .invalid_zip_img {
-    background-image: url('app/assets/images/capital_for_wrong_zip.jpg');
+  position:fixed;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100%;
+
+  width: 1024px;
+  height: 767px;
+
+  margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+
+  background-image: url('capital_for_wrong_zip.jpg');
+}
+
+.pad_button {
+
+  padding-top: 2.5cm;
 }
