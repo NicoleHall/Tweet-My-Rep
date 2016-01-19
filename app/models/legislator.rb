@@ -1,11 +1,12 @@
-class Legislator
-  attr_reader :twitter_handle, :first_name, :last_name
+class Legislator < ActiveRecord::Base
 
-  def initialize(twitter_id: nil, first_name: nil, last_name: nil)
-    @twitter_handle = "@#{twitter_id}"
-    @first_name = first_name
-    @last_name = last_name
-  end
+ after_save :add_at_symbol
+
+  # def initialize(twitter_id: nil, first_name: nil, last_name: nil)
+  #   @twitter_handle = "@#{twitter_id}"
+  #   @first_name = first_name
+  #   @last_name = last_name
+  # end
 
   def full_name
     "#{first_name} #{last_name}"
@@ -16,5 +17,12 @@ class Legislator
       first_name == other.first_name &&
       last_name == other.last_name &&
       twitter_handle == other.twitter_handle
+  end
+
+  def add_at_symbol
+    unless twitter_id.starts_with?("@")
+      new_twitter_id = "@#{twitter_id}"
+      update_attribute(:twitter_id, new_twitter_id)
+    end
   end
 end

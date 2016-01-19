@@ -4,5 +4,10 @@
 /* universal */
 
 body {
+  font-family: 'Lora', serif;
   padding-top: 60px;
+}
+
+.invalid_zip_img {
+    background-image: url('app/assets/images/capital_for_wrong_zip.jpg');
 }

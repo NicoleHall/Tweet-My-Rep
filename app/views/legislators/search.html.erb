@@ -1,21 +1,32 @@
-<div class="container">
-  <% if @legislators == [] %>
-  <%= link_to "You've entered an invalid zip, try again", root_path %>
- <% else %>
 
-  <h1>The legislators who represent you are: <%= @legislators.map(&:full_name).to_sentence %></h1>
-  <% end %>
+<% if @legislators == [] %>
+<%= render partial: "layouts/invalid_zip" %>
 
-  <% @legislators.each do |legislator|%>
-  <p>
-    <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
+<% else %>
+
+<h1>The legislators who represent you are: <br><%= @legislators.map(&:full_name).to_sentence %></h1>
+<% end %>
+
+<% @legislators.each do |legislator|%>
+
+
+
+<p>
+  <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
+  <div class="well">
+
+
     <%= f.label "Type Tweet Here" %>
     <div class="count"><%= f.text_field(:message, :value => legislator.twitter_handle, :maxlength => 140) %>
-    <h6 class="char_count">remaining characters in tweet</h6>
-    <%= f.submit "Send Tweet" %>
-    <% end %>
-    </div>
-  </p>
-  <% end %>
+      <h6 class="char_count">remaining characters in tweet</h6>
 
-</div>
+
+
+      <%= f.submit "Send Tweet" %><br><br>
+
+      <% end %>
+    </div>
+  </div>
+</p>
+
+<% end %>
