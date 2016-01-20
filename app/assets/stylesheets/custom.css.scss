@@ -41,3 +41,22 @@ body {
     border-radius: 25px;
     background: #F0FFFF;
 }
+
+.btn-twitter{
+  background: #FFF0F5;
+
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #FF8C00; /* old IE */
+    background-color: #FF8C00; /* Modern Browsers */
+}
+
+.boxed {
+  border: 1px solid green ;
+  max-width: 1100px;
+  float: left;
+}
