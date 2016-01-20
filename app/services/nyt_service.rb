@@ -16,7 +16,6 @@ class NytService
 
   private
   def parse_articles(response)
-    require 'pry'; binding.pry
 
     response.parsed_response["response"]["docs"].take(ARTICLE_LIMIT).map do |article_hash|
       article_hash.slice("web_url", "snippet")

@@ -3,6 +3,7 @@ require 'test_helper'
 class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
 
   test "user can see list of reps and is then asked to log in" do
+    skip
     visit "/"
     assert_equal 200, page.status_code
     fill_in("Search your zipcode", :with => '80205')
