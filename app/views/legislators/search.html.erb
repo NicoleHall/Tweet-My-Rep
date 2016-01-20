@@ -1,10 +1,10 @@
-
+<div class="container">
 <% if @legislators == [] %>
-<%= render partial: "layouts/invalid_zip" %>
+  <%= render partial: "layouts/invalid_zip" %>
 
 <% else %>
 
-<h1>The legislators who represent you are: <br><%= @legislators.map(&:full_name).to_sentence %></h1>
+  <h1>The legislators who represent you are: <br><%= @legislators.map(&:full_name).to_sentence %></h1>
 <% end %>
 
   <% if current_user %>
@@ -20,14 +20,18 @@
       <% end %>
     </div>
   </p>
+<h4><%= legislator.full_name %> in the News</h4>
 
   <%legislator.articles.each do |article| %>
-  <% url = article["web_url"] %>
-  <% headline = article["snippet"] %>
-  <ul><a target="_blank" href=<%= url %>> <%= headline %></a></ul>
+
+    <a target="_blank" href=<%= article["web_url"] %>> <%= article["snippet"] %></a><br><br>
   <% end %>
 
 <% end %>
 <% else %>
-<button><%= link_to "Login", login_path(zipcode: params["zipcode"]) %></button>
+<button class="btn btn-twitter btn-lg"><%= link_to "Sign in with Twitter", login_path(zipcode: params["zipcode"]) %></button>
 <% end %>
+
+
+
+</div>
