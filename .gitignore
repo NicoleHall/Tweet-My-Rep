@@ -13,5 +13,3 @@
 /tmp
 
 # Ignore application configuration
-coverage
-config/application.yml
