@@ -30,7 +30,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
@@ -78,6 +78,6 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
- 
+
   ENV["DATABASE_URL"] = "postgres://pzvmzprsphvsbs:LgCsmMqFpW_2F1xQUDNKRkCGz7@ec2-107-21-120-109.compute-1.amazonaws.com:5432/d3l4mi4lfrf5b1"
 end
