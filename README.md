@@ -1,4 +1,4 @@
-Tweet My Rep is a self-guided project. This app will allow
+Tweet My Rep is a self-guided project. This app allows
 users to search their United States Congressional and Senate
 Representatives by zip code. Once the congress members have been
 identified, app users will be able to send tweets to the legislators.
