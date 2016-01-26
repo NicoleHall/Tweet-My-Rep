@@ -3,9 +3,5 @@ users to search their United States Congressional and Senate
 Representatives by zip code. Once the congress members have been
 identified, app users will be able to send tweets to the legislators.
 
-Tweet My Rep will rely on the Twitter gem, the Devise Gem, Twitter's
-API and Sunlight Lab's Congress API V3.
-
-As an extension, the app will be able to use IP geocoding to
-obtain the location for an IP and then find corresponding legislators.
-To accomplish this, I will use the Geo-Kit Rails gem.
+The three most recent New York Times articles about each legislator will
+be available on the same page where tweets are composed.
