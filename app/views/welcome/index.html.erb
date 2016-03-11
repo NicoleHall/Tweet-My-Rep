@@ -1,19 +1,21 @@
-<div class="container">
+<div class="container col-md-1">
 
-
-<div class="invalid_zip_img container">
 
   <h1 class="whitetext container">Tweet My Rep</h1>
   <h1 class="whitetext container">Tell the powers that be what you <em>really</em> think</h1>
  <div class="container">
 
+<div class="zipsearch">
+
 
   <%= form_tag("/search", method: "get") do %>
-    <div class="zipsearch"<%= label_tag(:zipcode, "Search your zipcode") %></div>
+    <%= label_tag(:zipcode, "Search your zipcode") %>
     <%= text_field_tag(:zipcode) %>
     <%= submit_tag("Search") %>
   <% end %>
 
-</div>
+
+
+  </div>
  </div>
 </div>

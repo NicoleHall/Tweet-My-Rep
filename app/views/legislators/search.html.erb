@@ -1,12 +1,12 @@
-<div class="container">
-<% if @legislators == [] %>
+<div class="container graybox">
+  <% if @legislators == [] %>
   <%= render partial: "layouts/invalid_zip" %>
 
-<% else %>
+  <% else %>
 
   <h1>The legislators who represent you are: <br><%= @legislators.map(&:full_name).to_sentence %></h1>
-<% end %>
-<hr>
+  <% end %>
+  <hr>
 
   <% if current_user %>
   <% @legislators.each do |legislator|%>
@@ -21,20 +21,20 @@
       <% end %>
     </div>
   </p>
-  <div class="boxed container">
-<h4><%= legislator.full_name %> in the News</h4>
+  <div class="boxed container whitebox">
+    <h4><%= legislator.full_name %> in the News</h4>
 
-  <%legislator.articles.each do |article| %>
+    <%legislator.articles.each do |article| %>
 
     <a target="_blank" href=<%= article["web_url"] %>> <%= article["snippet"] %></a><br><br>
 
-  <% end %>
-    </div>
+    <% end %>
+  </div>
 
-<% end %>
-<% else %>
-<button class="btn btn-block btn-social btn-twitter"><%= link_to "Sign in with Twitter", login_path(zipcode: params["zipcode"]) %></button>
-<% end %>
+  <% end %>
+  <% else %>
+  <%= button_to "Sign in with Twitter", login_path(zipcode: params["zipcode"], form_class: "btn btn-block btn-social btn-twitter") %>
+  <% end %>
 
 
 

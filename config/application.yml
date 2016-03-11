@@ -13,3 +13,11 @@ production:
   consumer_secret: uFdf27KQ9UwRQheZkDG9t3ByRu5zx24WikM0Vw6YEYhnv9hprN
   access_token: 250190173-ldL1USW7XETgWP58wcqqtQJPjXy2sbSOPpow9aAF
   access_token_secret: mEPfDqtOSbRUoejXdDCWEvF3hrzQ8gyf44xSxLf42u4mf
+
+test:
+  article_search_api_key: 174a1ee32de36322b246700bfa57630c:0:74036157
+  sunlight_api_key: 9f19d387e7904184af2eb15c6c1d7bc5
+  consumer_key: 4yEn9XyRzzzyXKqNJHSmWqSsy
+  consumer_secret: hVKFOXldyWWwpsBP6w9y0iVptdUMQvs23NweU2D9u6b0R7pINm
+  access_token: 	250190173-MN8iVf1K9beGsMiPUxnUfUIP35S2Y4BiksA5Xg9A
+  access_token_secret: eeVUy71bObUkbqJUuepZEuTFHfXAPTjMpPfg1IPXj7IIo
