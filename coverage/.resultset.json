@@ -17,7 +17,7 @@
         1,
         null,
         1,
-        24,
+        25,
         null,
         1,
         null
@@ -156,7 +156,7 @@
         null
       ]
     },
-    "timestamp": 1457722606
+    "timestamp": 1457722824
   },
   "Integration Tests": {
     "coverage": {
