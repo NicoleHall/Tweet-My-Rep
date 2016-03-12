@@ -17,7 +17,7 @@
         1,
         null,
         1,
-        25,
+        28,
         null,
         1,
         null
@@ -30,7 +30,8 @@
         1,
         null,
         1,
-        7,
+        8,
+        null,
         null,
         null,
         null
@@ -42,19 +43,19 @@
         1,
         null,
         1,
-        7,
+        8,
         null,
         null,
         1,
-        7,
+        8,
         null,
-        7,
+        8,
         null,
-        null,
-        1,
         null,
         1,
-        7,
+        null,
+        1,
+        8,
         18,
         null,
         null,
@@ -156,7 +157,7 @@
         null
       ]
     },
-    "timestamp": 1457722824
+    "timestamp": 1457813537
   },
   "Integration Tests": {
     "coverage": {
@@ -228,12 +229,19 @@
   },
   "Unit Tests": {
     "coverage": {
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/welcome_controller.rb": [
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/sessions_controller.rb": [
         1,
         null,
         1,
+        1,
+        0,
+        null,
+        0,
         null,
         null,
+        1,
+        0,
+        0,
         null,
         null
       ],
@@ -244,7 +252,7 @@
         1,
         null,
         1,
-        3,
+        0,
         null,
         1,
         null
@@ -253,60 +261,21 @@
         1,
         null
       ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/legislators_controller.rb": [
-        1,
-        null,
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/user.rb": [
         1,
         1,
-        null,
-        null,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/services/sunlight_service.rb": [
         1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        3,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/legislator.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        3,
-        null,
-        null,
-        1,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1457722079
+    "timestamp": 1457813431
   }
 }
