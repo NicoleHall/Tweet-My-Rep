@@ -14,6 +14,10 @@ body {
   text-align: center;
 }
 
+.allignittotheright {
+ text-align: right;
+}
+
 .longboxed {
   background-color: white;
   width: 400px;
@@ -27,6 +31,33 @@ body {
   background-color: lavenderblush;
   border: 2px solid grey;
   border-radius: 25px;
+}
+
+
+.widerlongboxed {
+  background-color: white;
+  width: 900px;
+  min-height: 100px;
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid gray ;
+  display: block;
+     margin: auto;
+  margin-top: 50px;
+  background-color: lavenderblush;
+  border: 2px solid grey;
+  border-radius: 25px;
+}
+
+.betterwell {
+  width: 1000px;
+   padding: 25px;
+   min-height: 100px;
+   overflow: hidden;
+   background-color: lavenderblush;
+   border: 2px solid grey;
+   margin: auto;
+   border-radius: 25px;
 }
 
 

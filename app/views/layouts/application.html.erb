@@ -14,13 +14,6 @@
   <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 
 
-<div class="container">
-  <% if current_user %>
-    <p>Hello, <%= current_user.name %></p>
-    <%= image_tag current_user.avatar %>
-    <%= link_to "Logout", logout_path %>
-  <% end %>
-</div>
 
 <%= yield %>
 

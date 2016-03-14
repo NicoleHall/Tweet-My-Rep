@@ -1,15 +1,18 @@
+<%= render :partial => "layouts/navbar" %>
 
   <% if @legislators == [] %>
   <%= render partial: "layouts/invalid_zip" %>
 
   <% else %>
+<div class="betterwell">
 
-  <h1>The legislators who represent you are: <br>
-    <%= @legislators.map(&:full_name).to_sentence %></h1>
+
+    <div class="center"><h1>The legislators who represent you are: <br>
+    <%= @legislators.map(&:full_name).to_sentence %></h1></div>
   <% end %>
   <hr>
 
-  <% if current_user %>
+  <%#= if current_user %>
   <% @legislators.each do |legislator|%>
 
     <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
@@ -29,9 +32,12 @@
     <% end %>
 
   <% end %>
-  <% else %>
-  <%= button_to "Sign in with Twitter", login_path(zipcode: params["zipcode"], form_class: "") %>
-  <% end %>
+  <%#= else %>
+
+  <%#= end %>
 
 
-  <%= link_to "Find Legislators at Random" , random_zipcodes_path %>
+
+    <div class="center"><%= link_to "Find Legislators at Random" , random_zipcodes_path, class: "btn btn-success"%></div>
+
+</div>

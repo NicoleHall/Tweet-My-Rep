@@ -1,10 +1,11 @@
-<div class="container">
-
+<%= render :partial => "layouts/navbar" %>
+<div class="container longboxed center">
 
   <h1>Sound off to the representitives of <%= @random_zip.place_name %>, <%= @random_zip.state %> </h1>
 
   <%= form_tag("/search", method: "get") do %>
     <%= text_field_tag(:zipcode, "#{@random_zip.postal_code}") %>
-    <%= submit_tag("Go") %>
-  <% end %>
+    <%= submit_tag("See Results") %>
+  <% end %><br>
+  <%= link_to "Try Again", random_zipcodes_path, class: "btn btn-success" %>
 </div>

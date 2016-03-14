@@ -1,0 +1,20 @@
+<nav class="col-md-12 navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Tweet Your Rep</a>
+    <ul class="nav navbar-nav">
+      <li><%= link_to "Search By Zip", root_path %></li>
+      <li><%= link_to "Search Random Zip", random_zipcodes_path %></li>
+      <li><%#= link_to "Your Profile", user_profile_path %></li>
+<% if current_user %>
+
+      <li><%= link_to "Logout", logout_path%></li>
+
+      <li class="allignittotheright"><img class="img-circle" src="<%= current_user.avatar %>"></li>
+      <% else %>
+      <li><%= link_to "Login", login_path%></li>
+      <% end %>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
