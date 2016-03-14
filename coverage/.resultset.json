@@ -1,10 +1,26 @@
 {
   "MiniTest": {
     "coverage": {
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/welcome_controller.rb": [
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/legislator.rb": [
         1,
         null,
         1,
+        null,
+        1,
+        32,
+        null,
+        null,
+        1,
+        6,
+        null,
+        null,
+        null
+      ],
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/legislators_controller.rb": [
+        1,
+        null,
+        1,
+        8,
         null,
         null,
         null,
@@ -26,14 +42,8 @@
         1,
         null
       ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/legislators_controller.rb": [
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/helpers/random_zipcodes_helper.rb": [
         1,
-        null,
-        1,
-        8,
-        null,
-        null,
-        null,
         null
       ],
       "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/services/sunlight_service.rb": [
@@ -65,17 +75,45 @@
         null,
         null
       ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/legislator.rb": [
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/services/twitter_service.rb": [
+        1,
+        1,
+        4,
+        null,
+        4,
+        4,
+        4,
+        4,
+        4,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/user.rb": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/welcome_controller.rb": [
         1,
         null,
         1,
         null,
-        1,
-        32,
-        null,
-        null,
-        1,
-        6,
         null,
         null,
         null
@@ -93,20 +131,6 @@
         1,
         1,
         1,
-        null,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/user.rb": [
-        1,
-        1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        null,
         null,
         null
       ],
@@ -135,29 +159,9 @@
         null,
         null,
         null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/services/twitter_service.rb": [
-        1,
-        1,
-        4,
-        null,
-        4,
-        4,
-        4,
-        4,
-        4,
-        null,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1457979296
+    "timestamp": 1457984314
   },
   "Integration Tests": {
     "coverage": {
@@ -229,53 +233,15 @@
   },
   "Unit Tests": {
     "coverage": {
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/sessions_controller.rb": [
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/zipcode.rb": [
         1,
         null,
         1,
-        1,
-        0,
-        null,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        1,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/user.rb": [
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
+        3,
         null,
         null
       ]
     },
-    "timestamp": 1457813431
+    "timestamp": 1457985260
   }
 }

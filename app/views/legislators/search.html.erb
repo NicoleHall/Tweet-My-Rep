@@ -32,3 +32,6 @@
   <% else %>
   <%= button_to "Sign in with Twitter", login_path(zipcode: params["zipcode"], form_class: "") %>
   <% end %>
+
+
+  <%= link_to "Find Legislators at Random" , random_zipcodes_path %>
