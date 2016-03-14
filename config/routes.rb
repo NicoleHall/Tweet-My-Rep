@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :tweets, only: [:new, :create]
 
+  resources :random_zipcodes, only: [:index]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -1,0 +1,2 @@
+module RandomZipcodesHelper
+end

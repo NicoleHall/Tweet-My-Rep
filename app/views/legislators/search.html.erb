@@ -1,18 +1,17 @@
-<div class="container graybox">
+
   <% if @legislators == [] %>
   <%= render partial: "layouts/invalid_zip" %>
 
   <% else %>
 
-  <h1>The legislators who represent you are: <br><%= @legislators.map(&:full_name).to_sentence %></h1>
+  <h1>The legislators who represent you are: <br>
+    <%= @legislators.map(&:full_name).to_sentence %></h1>
   <% end %>
   <hr>
 
   <% if current_user %>
   <% @legislators.each do |legislator|%>
 
-
-  <p>
     <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
     <%= f.label "Type Tweet Here" %>
     <div class="count"><%= f.text_field(:message, :value => "@#{legislator.twitter_id}", :maxlength => 140) %>
@@ -20,22 +19,16 @@
       <%= f.submit "Send Tweet" %><br><br>
       <% end %>
     </div>
-  </p>
-  <div class="boxed container whitebox">
-    <h4><%= legislator.full_name %> in the News</h4>
 
-    <%legislator.articles.each do |article| %>
+<h4><%= legislator.full_name %> in the News</h4>
+
+<%legislator.articles.each do |article| %>
 
     <a target="_blank" href=<%= article["web_url"] %>> <%= article["snippet"] %></a><br><br>
 
     <% end %>
-  </div>
 
   <% end %>
   <% else %>
-  <%= button_to "Sign in with Twitter", login_path(zipcode: params["zipcode"], form_class: "btn btn-block btn-social btn-twitter") %>
+  <%= button_to "Sign in with Twitter", login_path(zipcode: params["zipcode"], form_class: "") %>
   <% end %>
-
-
-
-</div>

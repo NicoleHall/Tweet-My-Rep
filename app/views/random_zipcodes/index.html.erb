@@ -1,0 +1,9 @@
+
+
+<h1>Sound off to the representitives of <%= @random_zip.place_name %>, <%= @random_zip.state %> </h1>
+
+<%= form_tag("/search", method: "get") do %>
+  <%#= label_tag(:zipcode, "Search your zipcode") %>
+  <%= text_field_tag(:zipcode, "#{@random_zip.postal_code}") %>
+  <%= submit_tag("Go") %>
+<% end %>
