@@ -1,10 +1,15 @@
+<div class="container longboxed center">
+
+
 <h1>Tweet My Rep</h1>
-<h1>Tell the powers that be what you <em>really</em> think</h1>
+<h2>Tell the powers that be what you <em>really</em> think</h2>
 
 <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:zipcode, "Search your zipcode") %>
   <%= text_field_tag(:zipcode) %>
   <%= submit_tag("Search") %>
 <% end %>
-
-<%= link_to "Search A Random Zipcode", random_zipcodes_path %>
+<br>
+<%= link_to "Search A Random Zipcode", random_zipcodes_path, class: "btn btn-primary" %>
+</div>
+<button type="button" class="btn btn-primary">Primary</button>

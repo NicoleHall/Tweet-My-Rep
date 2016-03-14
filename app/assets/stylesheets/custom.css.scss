@@ -5,11 +5,30 @@
 
 body {
   font-family: 'Lora', serif;
+  background-image: url('tilebackground.png');
   padding-top: 60px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-repeat: repeat;
 }
+
+.center {
+  text-align: center;
+}
+
+.longboxed {
+  background-color: white;
+  width: 400px;
+  min-height: 100px;
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid gray ;
+  display: block;
+     margin: auto;
+  margin-top: 50px;
+  background-color: lavenderblush;
+  border: 2px solid grey;
+  border-radius: 25px;
+}
+
 
 .invalid_zip_img {
   position:fixed;
