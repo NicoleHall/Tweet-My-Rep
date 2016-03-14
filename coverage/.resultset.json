@@ -233,15 +233,45 @@
   },
   "Unit Tests": {
     "coverage": {
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/random_zipcodes_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        1,
+        null
+      ],
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/helpers/random_zipcodes_helper.rb": [
+        1,
+        null
+      ],
       "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/zipcode.rb": [
         1,
         null,
         1,
-        3,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1457985260
+    "timestamp": 1457986601
   }
 }
