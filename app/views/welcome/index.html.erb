@@ -10,7 +10,7 @@
 <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:zipcode, "Search your zipcode") %>
   <%= text_field_tag(:zipcode) %>
-  <%= submit_tag("Search") %>
+  <%= submit_tag("Search", id: "searching") %>
 <% end %>
 <br>
 <%= link_to "Search A Random Zipcode", random_zipcodes_path, class: "btn btn-primary" %>
@@ -19,5 +19,5 @@
 
 <% else %>
 
-<%= link_to "Login", login_path, class: "btn btn-primary" %>
+<%= link_to "Login", login_path, class: "btn btn-primary", id: "logging_in" %>
 <% end %>

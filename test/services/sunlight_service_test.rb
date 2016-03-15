@@ -2,14 +2,13 @@ require './test/test_helper'
 
 class SunlightServiceTest < ActiveSupport::TestCase
   test "it finds the legislators for a given location" do
-    VCR.use_cassette("legislators#search") do
-      visit "/"
-      fill_in("Search your zipcode", :with => '80205')
-      click_button "Search"
-      assert page.has_content?("The legislators who represent you are:")
-      assert page.has_content?("Cory Gardner")
-      assert page.has_content?("Diana DeGette")
-      assert page.has_content?("Michael Bennet")
+    VCR.use_cassette("sunlightservice#legs_for_zip") do
+      legislators = SunlightService.legislators_for_zip('80205')
+
+      assert legislators.find_index do |legislator|
+        legislator.first_name == "Cory" &&
+        legislator.last_name == "Gardner"
+      end
     end
   end
 end

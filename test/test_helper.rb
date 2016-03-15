@@ -16,6 +16,7 @@ class ActiveSupport::TestCase
     config.cassette_library_dir = 'test/cassettes'
     config.hook_into :webmock
   end
+
 end
 
 class ActionDispatch::IntegrationTest

@@ -36,4 +36,5 @@ class ZipcodeTest < ActiveSupport::TestCase
     refute_equal result1.postal_code, result2.postal_code && result3.postal_code
     refute_equal result2.postal_code, result3.postal_code && result1.postal_code
   end
+
 end
