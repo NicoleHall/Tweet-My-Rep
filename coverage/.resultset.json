@@ -1,11 +1,13 @@
 {
   "MiniTest": {
     "coverage": {
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/random_zipcodes_controller.rb": [
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/legislators_controller.rb": [
         1,
         null,
         1,
-        1,
+        4,
+        4,
+        null,
         null,
         null
       ],
@@ -21,29 +23,11 @@
         1,
         null
       ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/helpers/random_zipcodes_helper.rb": [
-        1,
-        null
-      ],
       "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/zipcode.rb": [
         1,
         null,
         1,
         4,
-        null,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/legislators_controller.rb": [
-        1,
-        null,
-        1,
-        4,
-        4,
-        null,
         null,
         null
       ],
@@ -74,11 +58,25 @@
         null,
         null
       ],
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/legislator.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        20,
+        null,
+        null,
+        1,
+        6,
+        null,
+        null,
+        null
+      ],
       "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/welcome_controller.rb": [
         1,
         null,
         1,
-        null,
         null,
         null,
         null
@@ -91,7 +89,6 @@
         5,
         null,
         5,
-        null,
         null,
         null,
         1,
@@ -110,21 +107,6 @@
         5,
         5,
         5,
-        null,
-        null,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/legislator.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        20,
-        null,
-        null,
-        1,
-        6,
         null,
         null,
         null
@@ -148,7 +130,6 @@
         null,
         1,
         1,
-        null,
         6,
         18,
         null,
@@ -174,9 +155,17 @@
         1,
         1,
         null
+      ],
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/random_zipcodes_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1458061101
+    "timestamp": 1458065415
   },
   "Integration Tests": {
     "coverage": {

@@ -1,43 +1,34 @@
 <%= render :partial => "layouts/navbar" %>
-
-  <% if @legislators == [] %>
-  <%= render partial: "layouts/invalid_zip" %>
-
-  <% else %>
+<% if @legislators == [] %>
+<%= render :partial => "layouts/invalid_zip" %>
+<% else %>
 <div class="betterwell">
-
-
-    <div class="center"><h1>The legislators who represent you are: <br>
-    <%= @legislators.map(&:full_name).to_sentence %></h1></div>
-  <% end %>
-  <hr>
-
-  <%#= if current_user %>
-  <% @legislators.each do |legislator|%>
-
-    <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
-    <%= f.label "Type Tweet Here" %>
-    <div class="count"><%= f.text_field(:message, :value => "@#{legislator.twitter_id}", :maxlength => 140) %>
-      <h6 class="char_count">remaining characters in tweet</h6>
-      <%= f.submit "Send Tweet" %><br><br>
+  <div class="center">
+    <h1>The legislators who represent you are: <br>
+      <%= @legislators.map(&:full_name).to_sentence %></h1>
       <% end %>
     </div>
 
-<h4><%= legislator.full_name %> in the News</h4>
+    <% @legislators.each do |legislator|%>
+      <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
+      <hr><%= f.label "Type Tweet Here" %>
+      <div class="count"><%= f.text_field(:message, :value => "@#{legislator.twitter_id}", :maxlength => 140) %>
+      <h6 class="char_count">remaining characters in tweet</h6>
+      <%= f.submit "Send Tweet" %><br><br>
+        <% end %>
+    </div>
 
-<%legislator.articles.each do |article| %>
+    <h4><%= legislator.full_name %> in the News</h4>
+
+    <%legislator.articles.each do |article| %>
 
     <a target="_blank" href=<%= article["web_url"] %>> <%= article["snippet"] %></a><br><br>
 
     <% end %>
 
-  <% end %>
-  <%#= else %>
-
-  <%#= end %>
+    <% end %>
 
 
+    <div class="center"><%= link_to "Find Legislators at Random" , random_zipcodes_path, class: "btn btn-success" unless @legislators == []%></div>
 
-    <div class="center"><%= link_to "Find Legislators at Random" , random_zipcodes_path, class: "btn btn-success"%></div>
-
-</div>
+  </div>
