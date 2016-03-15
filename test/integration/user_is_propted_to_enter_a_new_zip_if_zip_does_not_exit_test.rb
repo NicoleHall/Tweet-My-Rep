@@ -4,6 +4,7 @@ class UserIsProptedToEnterANewZipIfZipDoesNotExitTest < ActionDispatch::Integrat
   test "user is propted to enter a new zip if zip does not exist" do
     VCR.use_cassette("legislators#wrong_zip") do
       visit "/"
+      click_link("logging_in")
       fill_in("Search your zipcode", :with => '55555')
       click_button "Search"
       assert_equal search_path, current_path

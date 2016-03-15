@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://congress.api.sunlightfoundation.com/legislators/locate?apikey=9f19d387e7904184af2eb15c6c1d7bc5&zip=55555
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Tue, 15 Mar 2016 16:56:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[],"count":0}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 16:56:51 GMT
+recorded_with: VCR 3.0.1
