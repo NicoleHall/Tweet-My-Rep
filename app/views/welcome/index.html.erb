@@ -1,23 +1,18 @@
 <%= render :partial => "layouts/navbar" %>
 <div class="container widerlongboxed center">
 
+  <h1>Tweet My Rep</h1>
+  <h2>Tell the powers that be what you <em>really</em> think</h2>
 
-<h1>Tweet My Rep</h1>
-<h2>Tell the powers that be what you <em>really</em> think</h2>
+   <% if current_user %>
+        <%= form_tag("/search", method: "get") do %>
+          <%= label_tag(:zipcode, "Search your zipcode") %>
+          <%= text_field_tag(:zipcode) %>
+          <%= submit_tag("Search", id: "searching") %>
+        <% end %><br>
 
-<% if current_user %>
-
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:zipcode, "Search your zipcode") %>
-  <%= text_field_tag(:zipcode) %>
-  <%= submit_tag("Search", id: "searching") %>
-<% end %>
-<br>
-<%= link_to "Search A Random Zipcode", random_zipcodes_path, class: "btn btn-primary" %>
-</div>
-
-
-<% else %>
-
-<%= link_to "Login", login_path, class: "btn btn-primary", id: "logging_in" %>
-<% end %>
+        <%= link_to "Search A Random Zipcode", random_zipcodes_path, class: "btn btn-primary" %>
+        </div>
+    <% else %>
+       <%= link_to "Login", login_path, class: "btn btn-primary", id: "logging_in" %>
+    <% end %>
