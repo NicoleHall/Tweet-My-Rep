@@ -1,9 +1,13 @@
-<div class="container">
-  <p>
-    <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
-      <%= f.label "Type Tweet Here" %>
-      <%= f.text_field :message %>
-      <%= f.submit "Send Tweet" %>
-    <% end %>
-  </p>
-</div>
+
+<%= render :partial => "layouts/navbar" %>
+
+
+  <br><br><div class="container smallerwell center">
+    <p>
+      <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
+        <%= f.label "Type Tweet Here" %>
+        <%= f.text_field :message %>
+        <%= f.submit "Send Tweet" %>
+      <% end %>
+    </p>
+  </div>
