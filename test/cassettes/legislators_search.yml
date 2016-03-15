@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Tue, 15 Mar 2016 16:58:19 GMT
+      - Tue, 15 Mar 2016 21:22:50 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -39,7 +39,7 @@ http_interactions:
         Rayburn House Office Building","party":"D","phone":"202-225-4431","state":"CO","state_name":"Colorado","term_end":"2017-01-03","term_start":"2015-01-06","thomas_id":"01479","title":"Rep","twitter_id":"RepDianaDeGette","votesmart_id":561,"website":"http://degette.house.gov","youtube_id":"RepDianaDeGette"},{"bioguide_id":"B001267","birthday":"1964-11-28","chamber":"senate","contact_form":"http://www.bennet.senate.gov/contact/email","crp_id":"N00030608","district":null,"facebook_id":"97172997732","fax":"202-228-5036","fec_ids":["S0CO00211"],"first_name":"Michael","gender":"M","govtrack_id":"412330","icpsr_id":40910,"in_office":true,"last_name":"Bennet","lis_id":"S330","middle_name":"F.","name_suffix":null,"nickname":null,"oc_email":"Sen.Bennet@opencongress.org","ocd_id":"ocd-division/country:us/state:co","office":"261
         Russell Senate Office Building","party":"D","phone":"202-224-5852","senate_class":3,"state":"CO","state_name":"Colorado","state_rank":"senior","term_end":"2017-01-03","term_start":"2011-01-05","thomas_id":"01965","title":"Sen","twitter_id":"SenBennetCo","votesmart_id":110942,"website":"http://www.bennet.senate.gov","youtube_id":"SenatorBennet"}],"count":3,"page":{"count":3,"per_page":20,"page":1}}'
     http_version: 
-  recorded_at: Tue, 15 Mar 2016 16:58:19 GMT
+  recorded_at: Tue, 15 Mar 2016 21:22:49 GMT
 - request:
     method: get
     uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Cory%20Gardner
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - nginx/1.4.1
       Date:
-      - Tue, 15 Mar 2016 16:14:46 GMT
+      - Tue, 15 Mar 2016 21:20:33 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -78,9 +78,11 @@ http_interactions:
       - "*"
       Access-Control-Allow-Credentials:
       - 'true'
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '{"response":{"meta":{"hits":919,"time":48,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2016\/02\/11\/world\/asia\/senate-approves-penalties-for-aiding-north-korean-nuclear-program.html","snippet":"The
+      string: '{"response":{"meta":{"hits":919,"time":30,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2016\/02\/11\/world\/asia\/senate-approves-penalties-for-aiding-north-korean-nuclear-program.html","snippet":"The
         legislation, coming days after a rocket launch by North Korea, is intended
         to limit Pyongyang\u2019s ability to finance warheads and missiles.","lead_paragraph":"The
         legislation, coming days after a rocket launch by North Korea, is intended
@@ -202,7 +204,7 @@ http_interactions:
         NATE COHN"},"type_of_material":"News","_id":"54a6e43f38f0d85f31aae4ba","word_count":"1184","slideshow_credits":null}]},"status":"OK","copyright":"Copyright
         (c) 2013 The New York Times Company.  All Rights Reserved."}'
     http_version: 
-  recorded_at: Tue, 15 Mar 2016 16:58:20 GMT
+  recorded_at: Tue, 15 Mar 2016 21:22:50 GMT
 - request:
     method: get
     uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Diana%20DeGette
@@ -222,11 +224,11 @@ http_interactions:
       message: OK
     headers:
       X-Mashery-Responder:
-      - prod-j-worker-atl-03.mashery.com
+      - prod-j-worker-atl-04.mashery.com
       Server:
       - nginx/1.4.1
       Date:
-      - Tue, 15 Mar 2016 16:14:46 GMT
+      - Tue, 15 Mar 2016 21:20:33 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -241,9 +243,11 @@ http_interactions:
       - "*"
       Access-Control-Allow-Credentials:
       - 'true'
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '{"response":{"meta":{"hits":181,"time":38,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2002\/03\/20\/us\/national-briefing-rockies-colorado-seeking-re-election.html","snippet":"Representative
+      string: '{"response":{"meta":{"hits":181,"time":40,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2002\/03\/20\/us\/national-briefing-rockies-colorado-seeking-re-election.html","snippet":"Representative
         Diana DeGette, a Demo- crat, has announced she will run for a fourth term.
         Ms. DeGette, a 44-year-old from Denver, represents the state''s First District
         and sits on the Energy and Commerce Committee. She said she was seeking...","lead_paragraph":"Representative
@@ -434,7 +438,7 @@ http_interactions:
         ROBERT PEAR and  DAVID M. HERSZENHORN"},"type_of_material":"News","_id":"54446ce738f0d82782d9b934","word_count":"738","slideshow_credits":null}]},"status":"OK","copyright":"Copyright
         (c) 2013 The New York Times Company.  All Rights Reserved."}'
     http_version: 
-  recorded_at: Tue, 15 Mar 2016 16:58:20 GMT
+  recorded_at: Tue, 15 Mar 2016 21:22:51 GMT
 - request:
     method: get
     uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Michael%20Bennet
@@ -454,11 +458,11 @@ http_interactions:
       message: OK
     headers:
       X-Mashery-Responder:
-      - prod-j-worker-atl-03.mashery.com
+      - prod-j-worker-atl-04.mashery.com
       Server:
       - nginx/1.4.1
       Date:
-      - Tue, 15 Mar 2016 16:14:47 GMT
+      - Tue, 15 Mar 2016 21:20:34 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -468,11 +472,13 @@ http_interactions:
       X-Powered-By:
       - PHP/5.3.27
       X-Cached:
-      - MISS
+      - EXPIRED
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
       - 'true'
+      Connection:
+      - close
     body:
       encoding: UTF-8
       string: '{"response":{"meta":{"hits":1286,"time":36,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/1997\/10\/26\/style\/weddings-susan-daggett-michael-bennet.html","snippet":"Susan
@@ -645,5 +651,5 @@ http_interactions:
         MICHAEL D. SHEAR"},"type_of_material":"Blog","_id":"4fd39c1e8eb7c8105d8db878","word_count":575,"slideshow_credits":null}]},"status":"OK","copyright":"Copyright
         (c) 2013 The New York Times Company.  All Rights Reserved."}'
     http_version: 
-  recorded_at: Tue, 15 Mar 2016 16:58:20 GMT
+  recorded_at: Tue, 15 Mar 2016 21:22:51 GMT
 recorded_with: VCR 3.0.1

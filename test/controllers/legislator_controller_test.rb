@@ -1,11 +1,10 @@
 require 'test_helper'
 
 class LegislatorsControllerTest < ActionController::TestCase
-  test "#searh when user visits search they will get a success response" do
-    VCR.use_cassette("localhost") do
-      generate_five_random_zipcodes
+  test "#search redirects to root if no zip provided" do
+    VCR.use_cassette("legislator#search") do
       get :search
-      assert_response :success
+      assert_redirected_to root_path
     end
   end
 end
