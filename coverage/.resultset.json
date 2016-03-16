@@ -136,14 +136,6 @@
         null,
         null
       ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/random_zipcodes_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
       "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/services/twitter_service.rb": [
         1,
         1,
@@ -163,9 +155,17 @@
         1,
         1,
         null
+      ],
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/random_zipcodes_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1458076971
+    "timestamp": 1458167066
   },
   "Integration Tests": {
     "coverage": {
