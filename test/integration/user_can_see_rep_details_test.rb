@@ -10,8 +10,8 @@ class UserCanSeeRepDetailsTest < ActionDispatch::IntegrationTest
       click_link("logging_in")
       fill_in("Search your zipcode", :with => '90210')
       click_button("searching")
+      
       assert_equal "/search", current_path
-      assert Zipcode.find_by(postal_code: "90210")
       assert page.has_content?("The legislators who represent you are: ")
       assert page.has_content?("Ted Lieu")
       assert page.has_content?("Barbara Boxer")

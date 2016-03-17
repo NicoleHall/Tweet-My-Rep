@@ -13,6 +13,9 @@ class ZipcodeTest < ActiveSupport::TestCase
   end
 
   test "it can check if a zipcode exists in the database" do
+    generate_five_random_zipcodes
+    
     assert Zipcode.zipcode_does_not_exist?("00000")
+    refute Zipcode.zipcode_does_not_exist?("80205")
   end
 end
