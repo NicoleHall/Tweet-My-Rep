@@ -48,16 +48,16 @@ class ActiveSupport::TestCase
      state: "California",
      state_abbreviation: "CA",
      county: "Los Angeles",
-     latitude: "27.5612",
-     longitude: "-68.41"},
+     latitude: "34.0901",
+     longitude: "-118.4065"},
 
      {postal_code: "80205",
      place_name: "Denver",
      state: "Colorado",
      state_abbreviation: "CO",
      county: "Denver",
-     latitude: "38.3267",
-     longitude: "21.3650"}]
+     latitude: "39.759",
+     longitude: "-104.9661"}]
 
      zipcodes.each {|zip| Zipcode.create(zip)}
   end

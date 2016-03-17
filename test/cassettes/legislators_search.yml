@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://congress.api.sunlightfoundation.com/legislators/locate?apikey=9f19d387e7904184af2eb15c6c1d7bc5&zip=80205
+    uri: https://congress.api.sunlightfoundation.com/legislators/locate?apikey=9f19d387e7904184af2eb15c6c1d7bc5&latitude=34.0901&longitude=-118.4065
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Tue, 15 Mar 2016 21:22:50 GMT
+      - Thu, 17 Mar 2016 01:51:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -34,15 +34,15 @@ http_interactions:
       - 200 OK
     body:
       encoding: ASCII-8BIT
-      string: '{"results":[{"bioguide_id":"G000562","birthday":"1974-08-22","chamber":"senate","contact_form":null,"crp_id":"N00030780","district":null,"facebook_id":"160924893954206","fax":null,"fec_ids":["H0CO04122","S4CO00395"],"first_name":"Cory","gender":"M","govtrack_id":"412406","icpsr_id":21112,"in_office":true,"last_name":"Gardner","lis_id":"S377","middle_name":null,"name_suffix":null,"nickname":null,"oc_email":"Sen.Gardner@opencongress.org","ocd_id":"ocd-division/country:us/state:co","office":"354
-        Russell Senate Office Building","party":"R","phone":"202-224-5941","senate_class":2,"state":"CO","state_name":"Colorado","state_rank":"junior","term_end":"2021-01-03","term_start":"2015-01-06","thomas_id":"01998","title":"Sen","twitter_id":"SenCoryGardner","votesmart_id":30004,"website":"http://www.gardner.senate.gov","youtube_id":null},{"bioguide_id":"D000197","birthday":"1957-07-29","chamber":"house","contact_form":"https://degette.house.gov/contact/send-me-an-email/email-me","crp_id":"N00006134","district":1,"facebook_id":"110757973488","fax":"202-225-5657","fec_ids":["H6CO01141"],"first_name":"Diana","gender":"F","govtrack_id":"400101","icpsr_id":29710,"in_office":true,"last_name":"DeGette","middle_name":"L.","name_suffix":null,"nickname":null,"oc_email":"Rep.Degette@opencongress.org","ocd_id":"ocd-division/country:us/state:co/cd:1","office":"2368
-        Rayburn House Office Building","party":"D","phone":"202-225-4431","state":"CO","state_name":"Colorado","term_end":"2017-01-03","term_start":"2015-01-06","thomas_id":"01479","title":"Rep","twitter_id":"RepDianaDeGette","votesmart_id":561,"website":"http://degette.house.gov","youtube_id":"RepDianaDeGette"},{"bioguide_id":"B001267","birthday":"1964-11-28","chamber":"senate","contact_form":"http://www.bennet.senate.gov/contact/email","crp_id":"N00030608","district":null,"facebook_id":"97172997732","fax":"202-228-5036","fec_ids":["S0CO00211"],"first_name":"Michael","gender":"M","govtrack_id":"412330","icpsr_id":40910,"in_office":true,"last_name":"Bennet","lis_id":"S330","middle_name":"F.","name_suffix":null,"nickname":null,"oc_email":"Sen.Bennet@opencongress.org","ocd_id":"ocd-division/country:us/state:co","office":"261
-        Russell Senate Office Building","party":"D","phone":"202-224-5852","senate_class":3,"state":"CO","state_name":"Colorado","state_rank":"senior","term_end":"2017-01-03","term_start":"2011-01-05","thomas_id":"01965","title":"Sen","twitter_id":"SenBennetCo","votesmart_id":110942,"website":"http://www.bennet.senate.gov","youtube_id":"SenatorBennet"}],"count":3,"page":{"count":3,"per_page":20,"page":1}}'
+      string: '{"results":[{"bioguide_id":"L000582","birthday":"1969-03-29","chamber":"house","contact_form":null,"crp_id":"N00035825","district":33,"facebook_id":"RepTedLieu","fax":"202-225-4099","fec_ids":["H4CA33119"],"first_name":"Ted","gender":"M","govtrack_id":"412616","in_office":true,"last_name":"Lieu","leadership_role":null,"middle_name":null,"name_suffix":null,"nickname":null,"oc_email":"Rep.Lieu@opencongress.org","ocd_id":"ocd-division/country:us/state:ca/cd:33","office":"415
+        Cannon House Office Building","party":"D","phone":"202-225-3976","state":"CA","state_name":"California","term_end":"2017-01-03","term_start":"2015-01-06","thomas_id":"02230","title":"Rep","twitter_id":"RepTedLieu","website":"https://lieu.house.gov"},{"bioguide_id":"B000711","birthday":"1940-11-11","chamber":"senate","contact_form":"https://www.boxer.senate.gov/contact/shareyourviews.html","crp_id":"N00006692","district":null,"facebook_id":"116513005087055","fax":"202-224-0454","fec_ids":["S2CA00286","H2CA06028","P80003247"],"first_name":"Barbara","gender":"F","govtrack_id":"300011","icpsr_id":15011,"in_office":true,"last_name":"Boxer","lis_id":"S223","middle_name":null,"name_suffix":null,"nickname":null,"oc_email":"Sen.Boxer@opencongress.org","ocd_id":"ocd-division/country:us/state:ca","office":"112
+        Hart Senate Office Building","party":"D","phone":"202-224-3553","senate_class":3,"state":"CA","state_name":"California","state_rank":"junior","term_end":"2017-01-03","term_start":"2011-01-05","thomas_id":"00116","title":"Sen","twitter_id":"SenatorBoxer","votesmart_id":53274,"website":"http://www.boxer.senate.gov","youtube_id":"SenatorBoxer"},{"bioguide_id":"F000062","birthday":"1933-06-22","chamber":"senate","contact_form":"https://www.feinstein.senate.gov/public/index.cfm/e-mail-me","crp_id":"N00007364","district":null,"facebook_id":"334887279867783","fax":"202-228-3954","fec_ids":["S0CA00199"],"first_name":"Dianne","gender":"F","govtrack_id":"300043","icpsr_id":49300,"in_office":true,"last_name":"Feinstein","lis_id":"S221","middle_name":null,"name_suffix":null,"nickname":null,"oc_email":"Sen.Feinstein@opencongress.org","ocd_id":"ocd-division/country:us/state:ca","office":"331
+        Hart Senate Office Building","party":"D","phone":"202-224-3841","senate_class":1,"state":"CA","state_name":"California","state_rank":"senior","term_end":"2019-01-03","term_start":"2013-01-03","thomas_id":"01332","title":"Sen","twitter_id":"SenFeinstein","votesmart_id":53273,"website":"http://www.feinstein.senate.gov","youtube_id":"SenatorFeinstein"}],"count":3,"page":{"count":3,"per_page":20,"page":1}}'
     http_version: 
-  recorded_at: Tue, 15 Mar 2016 21:22:49 GMT
+  recorded_at: Thu, 17 Mar 2016 01:51:48 GMT
 - request:
     method: get
-    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Cory%20Gardner
+    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Ted%20Lieu
     body:
       encoding: US-ASCII
       string: ''
@@ -63,11 +63,11 @@ http_interactions:
       Server:
       - nginx/1.4.1
       Date:
-      - Tue, 15 Mar 2016 21:20:33 GMT
+      - Thu, 17 Mar 2016 01:47:09 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '19514'
+      - '15354'
       Vary:
       - Accept-Encoding
       X-Powered-By:
@@ -82,132 +82,151 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"response":{"meta":{"hits":919,"time":30,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2016\/02\/11\/world\/asia\/senate-approves-penalties-for-aiding-north-korean-nuclear-program.html","snippet":"The
-        legislation, coming days after a rocket launch by North Korea, is intended
-        to limit Pyongyang\u2019s ability to finance warheads and missiles.","lead_paragraph":"The
-        legislation, coming days after a rocket launch by North Korea, is intended
-        to limit Pyongyang\u2019s ability to finance warheads and missiles.","abstract":"United
-        States Senate unanimously approves new sanctions aimed at restricting North
-        Korea''s nuclear program, following country''s recent rocket launches.","print_page":"10","blog":[],"source":"The
-        New York Times","multimedia":[{"width":190,"url":"images\/2016\/02\/11\/us\/11cong-web\/11cong-web-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2016\/02\/11\/us\/11cong-web\/11cong-web-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2016\/02\/11\/us\/11cong-web\/11cong-web-articleLarge.jpg","height":389,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2016\/02\/11\/us\/11cong-web\/11cong-web-articleLarge.jpg","xlargeheight":"389"},"type":"image"},{"width":75,"url":"images\/2016\/02\/11\/us\/11cong-web\/11cong-web-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2016\/02\/11\/us\/11cong-web\/11cong-web-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Senate
-        Approves Penalties for Aiding North Korean Nuclear Program","print_headline":"Senate
-        Approves Penalties for Aiding Korean Nuclear Program"},"keywords":[{"rank":"1","is_major":"Y","name":"glocations","value":"North
-        Korea"},{"rank":"2","is_major":"Y","name":"subject","value":"Nuclear Weapons"},{"rank":"3","is_major":"Y","name":"subject","value":"United
-        States Politics and Government"},{"rank":"4","is_major":"N","name":"subject","value":"United
-        States International Relations"},{"rank":"5","is_major":"N","name":"subject","value":"Embargoes
-        and Sanctions"},{"rank":"6","is_major":"N","name":"organizations","value":"Senate"},{"rank":"7","is_major":"N","name":"subject","value":"Law
-        and Legislation"},{"rank":"8","is_major":"N","name":"persons","value":"Rubio,
-        Marco"},{"rank":"9","is_major":"N","name":"subject","value":"Nuclear Tests"},{"rank":"10","is_major":"N","name":"persons","value":"Gardner,
-        Cory S"}],"pub_date":"2016-02-11T00:00:00Z","document_type":"article","news_desk":"Foreign","section_name":"World","subsection_name":"Asia
-        Pacific","byline":{"person":[{"organization":"","role":"reported","firstname":"Emmarie","rank":1,"lastname":"HUETTEMAN"}],"original":"By
-        EMMARIE HUETTEMAN"},"type_of_material":"News","_id":"56bbd6c938f0d862fbbced8f","word_count":"423","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/video\/us\/politics\/100000003217372\/cory-gardners-victory-speech.html","snippet":"Representative
-        Cory Gardner, Republican of Colorado, spoke after defeating Senator Mark Udall.","lead_paragraph":"Representative
-        Cory Gardner, Republican of Colorado, spoke after defeating Senator Mark Udall.","abstract":null,"print_page":null,"blog":[],"source":"The
-        New York Times","multimedia":[{"width":190,"url":"images\/2014\/11\/05\/multimedia\/speeches-co-gardner\/speeches-co-gardner-thumbWide-v2.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2014\/11\/05\/multimedia\/speeches-co-gardner\/speeches-co-gardner-thumbWide-v2.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2014\/11\/05\/multimedia\/speeches-co-gardner\/speeches-co-gardner-articleLarge-v2.jpg","height":338,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2014\/11\/05\/multimedia\/speeches-co-gardner\/speeches-co-gardner-articleLarge-v2.jpg","xlargeheight":"338"},"type":"image"},{"width":75,"url":"images\/2014\/11\/05\/multimedia\/speeches-co-gardner\/speeches-co-gardner-thumbStandard-v2.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2014\/11\/05\/multimedia\/speeches-co-gardner\/speeches-co-gardner-thumbStandard-v2.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Cory
-        Gardner\u2019s Victory Speech"},"keywords":[{"rank":"1","is_major":"N","name":"persons","value":"Gardner,
-        Cory S"},{"rank":"2","is_major":"N","name":"glocations","value":"Colorado"},{"rank":"3","is_major":"N","name":"organizations","value":"Republican
-        Party"}],"pub_date":"2014-11-05T03:54:26Z","document_type":"multimedia","news_desk":"U.S.
-        \/ Politics","section_name":"U.S.","subsection_name":"Politics","byline":{"person":[{"organization":"","role":"reported","firstname":"Kmgh","rank":1},{"organization":"","role":"reported","rank":2}],"original":"KMGH,
-        via The Associated Press"},"type_of_material":"Video","_id":"5459e5d738f0d82ce42687c8","word_count":"12","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/video\/us\/politics\/100000003190921\/cory-gardner-on-fixing-washington.html","snippet":"Mr.
-        Gardner, a Republican representative from Colorado running for Senate, pleads
-        for more cooperation in Washington in the latest installment of our video
-        series about fixing Washington.","lead_paragraph":"Mr. Gardner, a Republican
-        representative from Colorado running for Senate, pleads for more cooperation
-        in Washington in the latest installment of our video series about fixing Washington.","abstract":null,"print_page":null,"blog":[],"source":"The
-        New York Times","multimedia":[{"width":190,"url":"images\/2014\/10\/20\/multimedia\/first-draft-gardner\/first-draft-gardner-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2014\/10\/20\/multimedia\/first-draft-gardner\/first-draft-gardner-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2014\/10\/20\/multimedia\/first-draft-gardner\/first-draft-gardner-articleLarge.jpg","height":338,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2014\/10\/20\/multimedia\/first-draft-gardner\/first-draft-gardner-articleLarge.jpg","xlargeheight":"338"},"type":"image"},{"width":75,"url":"images\/2014\/10\/20\/multimedia\/first-draft-gardner\/first-draft-gardner-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2014\/10\/20\/multimedia\/first-draft-gardner\/first-draft-gardner-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Cory
-        Gardner on Fixing Washington"},"keywords":[{"rank":"1","is_major":"N","name":"persons","value":"Gardner,
-        Cory S"},{"rank":"2","is_major":"N","name":"subject","value":"Midterm Elections
-        (2014)"},{"rank":"3","is_major":"N","name":"subject","value":"Elections, Senate"},{"rank":"4","is_major":"N","name":"glocations","value":"Colorado"}],"pub_date":"2014-10-22T15:15:15Z","document_type":"multimedia","news_desk":"U.S.
-        \/ Politics","section_name":"U.S.","subsection_name":"Politics","byline":{"person":[{"organization":"","role":"reported","firstname":"Carl","rank":1,"lastname":"Hulse"}],"original":"Carl
-        Hulse"},"type_of_material":"Video","_id":"544a811438f0d8160d830722","word_count":"27","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/politics\/first-draft\/2014\/10\/22\/first-draft-video-gardner-on-fixing-washington\/","snippet":"Representative
-        Cory Gardner, a Republican representative from Colorado running for Senate,
-        pleads for more cooperation in Washington in the latest installment of our
-        video series about fixing Washington.","lead_paragraph":null,"abstract":"Representative
-        Cory Gardner, a Republican representative from Colorado running for Senate,
-        pleads for more cooperation in Washington in the latest installment of our
-        video series about fixing Washington.","print_page":null,"blog":[],"source":"The
-        New York Times","multimedia":[],"headline":{"main":"First Draft Video: Gardner
-        on Fixing Washington","kicker":"First Draft"},"keywords":[{"value":"Gardner,
-        Cory S","name":"persons","rank":"1"},{"value":"Colorado","name":"glocations","rank":"1"},{"value":"Elections,
-        Senate","name":"subject","rank":"1"},{"value":"Midterm Elections (2014)","name":"subject","rank":"2"}],"pub_date":"2014-10-22T15:16:07Z","document_type":"blogpost","news_desk":null,"section_name":null,"subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Carl","lastname":"HULSE"}],"original":"By
-        CARL HULSE"},"type_of_material":"Blog","_id":"544802cc38f0d873ead24183","word_count":"28","slideshow_credits":null},{"web_url":"http:\/\/query.nytimes.com\/gst\/fullpage.html?res=9D0DE2DC1738F932A15753C1A9669D8B63","snippet":"Cory
-        Gardner''s latest campaign ad seems to have hit a bit off the mark - er, make
-        that, off the Markey.     In a 30-second spot released Tuesday, Mr. Gardner,
-        a Republican running against Representative Betsy Markey, the incumbent Democrat,
-        to...","lead_paragraph":"Cory Gardner''s latest campaign ad seems to have
-        hit a bit off the mark - er, make that, off the Markey. In a 30-second spot
-        released Tuesday, Mr. Gardner, a Republican running against Representative
-        Betsy Markey, the incumbent Democrat, to represent Colorado''s Fourth Congressional
-        District, begins his ad by trying to tie Ms. Markey to House Speaker Nancy
-        Pelosi of California. As images of Ms. Markey flash by, the ad says she voted
-        for ''''the most fiscally irresponsible budget in history.''''","abstract":"The
-        Caucus column; campaign ad by Cory Gardner, Colorado Republican who is challenging
-        Democratic Rep Betsy Markey, makes gaffe on Markey''s voting record (M)","print_page":"25","blog":[],"source":"The
-        New York Times","multimedia":[],"headline":{"main":"THE AD CAMPAIGN: In Colorado,
-        a Commercial Miss","kicker":"THE CAUCUS"},"keywords":[{"name":"persons","value":"GARDNER,
-        CORY"},{"name":"persons","value":"MARKEY, BETSY"},{"name":"glocations","value":"COLORADO"},{"name":"organizations","value":"HOUSE
-        OF REPRESENTATIVES"},{"name":"subject","value":"POLITICAL ADVERTISING"},{"name":"subject","value":"ELECTIONS"}],"pub_date":"2010-10-21T00:00:00Z","document_type":"article","news_desk":"National
-        Desk","section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Ashley","lastname":"PARKER"}],"original":"By
-        ASHLEY PARKER"},"type_of_material":"News","_id":"4fd29c748eb7c8105d87dfe9","word_count":489,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2014\/04\/18\/business\/energy-environment\/study-chides-us-over-loan-default-by-solar-business.html","snippet":"The
-        critical report was issued as the Obama administration prepared to offer as
-        much as $8 billion in additional loan guarantees.","lead_paragraph":"The critical
-        report was issued as the Obama administration prepared to offer as much as
-        $8 billion in additional loan guarantees.","abstract":"Energy Department inspector
-        general report says long before it lost $68 million on bankrupt solar business
-        Abound Solar, it should have known that company''s chance of repaying loan
-        was deteriorating; report is issued as Obama administration prepares to offer
-        as much as $8 billion in additional loan guarantees.","print_page":"2","blog":[],"source":"The
-        New York Times","multimedia":[],"headline":{"main":"Study Chides U.S. Over
-        Loan Default by Solar Business","print_headline":"Study Chides U.S. Over Loan
-        Default by Solar Business"},"keywords":[{"rank":"5","is_major":"N","value":"Solyndra
-        Inc","name":"organizations"},{"rank":"1","is_major":"Y","value":"Solar Energy","name":"subject"},{"rank":"8","is_major":"N","value":"United
-        States","name":"glocations"},{"rank":"6","is_major":"Y","value":"Abound Solar","name":"organizations"},{"rank":"9","is_major":"N","value":"Colorado","name":"glocations"},{"rank":"7","is_major":"N","value":"Gardner,
-        Cory S","name":"persons"},{"rank":"3","is_major":"N","value":"Bankruptcies","name":"subject"},{"rank":"2","is_major":"N","value":"Federal
-        Aid (US)","name":"subject"},{"rank":"4","is_major":"Y","value":"Energy Department","name":"organizations"}],"pub_date":"2014-04-18T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Business
-        Day","subsection_name":"Energy & Environment ","byline":{"contributor":"","person":[{"firstname":"Matthew","middlename":"L.","lastname":"WALD","rank":1,"role":"reported","organization":""}],"original":"By
-        MATTHEW L. WALD"},"type_of_material":"News","_id":"53507a8538f0d8777a368219","word_count":"610","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/politics\/first-draft\/2014\/10\/17\/so-did-gardner-play-football-in-h-s-well-sort-of\/","snippet":"Representative
-        Cory Gardner\u2019s unspectacular high school football career is still the
-        buzz of the Senate race out here in Colorado.","lead_paragraph":null,"abstract":"Representative
-        Cory Gardner\u2019s unspectacular high school football career is still the
-        buzz of the Senate race out here in Colorado.","print_page":null,"blog":[],"source":"The
-        New York Times","multimedia":[],"headline":{"main":"So, Did Gardner Play Football
-        in H.S.? Well, Sort Of ...","kicker":"First Draft"},"keywords":[{"value":"Gardner,
-        Cory S","name":"persons","rank":"1"},{"value":"Colorado","name":"glocations","rank":"1"},{"value":"Deadspin","name":"organizations","rank":"1"},{"value":"Senate","name":"organizations","rank":"2"},{"value":"Elections,
-        Senate","name":"subject","rank":"1"},{"value":"Football","name":"subject","rank":"2"}],"pub_date":"2014-10-17T15:29:40Z","document_type":"blogpost","news_desk":null,"section_name":null,"subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Carl","lastname":"HULSE"}],"original":"By
-        CARL HULSE"},"type_of_material":"Blog","_id":"5441701f38f0d811e19d7515","word_count":"151","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/politics\/first-draft\/2014\/10\/29\/could-colorados-senate-race-lead-to-a-condom-shortage\/","snippet":"It\u2019s
-        getting personal in the final days of Colorado\u2019s Senate race.","lead_paragraph":null,"abstract":"It\u2019s
-        getting personal in the final days of Colorado\u2019s Senate race.","print_page":null,"blog":[],"source":"The
-        New York Times","multimedia":[{"subtype":"wide","url":"images\/2014\/10\/29\/us\/politics\/29firstdraft-ad2\/29firstdraft-ad2-thumbWide.jpg","height":126,"width":190,"legacy":{"wide":"images\/2014\/10\/29\/us\/politics\/29firstdraft-ad2\/29firstdraft-ad2-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"subtype":"xlarge","url":"images\/2014\/10\/29\/us\/politics\/29firstdraft-ad2\/29firstdraft-ad2-articleLarge.jpg","height":339,"width":600,"legacy":{"xlargewidth":"600","xlarge":"images\/2014\/10\/29\/us\/politics\/29firstdraft-ad2\/29firstdraft-ad2-articleLarge.jpg","xlargeheight":"339"},"type":"image"},{"subtype":"thumbnail","url":"images\/2014\/10\/29\/us\/politics\/29firstdraft-ad2\/29firstdraft-ad2-thumbStandard.jpg","height":75,"width":75,"legacy":{"thumbnailheight":"75","thumbnail":"images\/2014\/10\/29\/us\/politics\/29firstdraft-ad2\/29firstdraft-ad2-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Could
-        Colorado''s Senate Race Lead to a Condom Shortage?","kicker":"First Draft"},"keywords":[{"value":"Gardner,
-        Cory S","name":"persons","rank":"1"},{"value":"Udall, Mark","name":"persons","rank":"2"},{"value":"Colorado","name":"glocations","rank":"1"},{"value":"Senate","name":"organizations","rank":"1"},{"value":"Birth
-        Control and Family Planning","name":"subject","rank":"1"},{"value":"Elections,
-        Senate","name":"subject","rank":"2"},{"value":"Midterm Elections (2014)","name":"subject","rank":"3"}],"pub_date":"2014-10-29T13:09:20Z","document_type":"blogpost","news_desk":null,"section_name":null,"subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Alan","lastname":"RAPPEPORT"}],"original":"By
-        ALAN RAPPEPORT"},"type_of_material":"Blog","_id":"54511f7c38f0d87c5c3674e7","word_count":"238","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/politics\/first-draft\/2014\/09\/24\/parental-politics-in-colorado\/","snippet":"Senator
-        Mark Udall is outraged that his father is being mentioned in an opponent\u2019s
-        campaign ad.","lead_paragraph":null,"abstract":"Senator Mark Udall is outraged
-        that his father is being mentioned in an opponent\u2019s campaign ad.","print_page":null,"blog":[],"source":"The
-        New York Times","multimedia":[],"headline":{"main":"Parental Politics in Colorado","kicker":"First
-        Draft"},"keywords":[{"rank":"1","name":"persons","value":"Gardner, Cory S"},{"rank":"2","name":"persons","value":"Udall,
-        Mark"},{"rank":"1","name":"glocations","value":"Colorado"},{"rank":"1","name":"organizations","value":"Democratic
-        Senatorial Campaign Committee"}],"pub_date":"2014-09-24T19:07:34Z","document_type":"blogpost","news_desk":null,"section_name":"false","subsection_name":"false","byline":{"person":[{"organization":"","role":"reported","firstname":"Alan","rank":1,"lastname":"RAPPEPORT"}],"original":"By
-        ALAN RAPPEPORT"},"type_of_material":"Blog","_id":"54234edc38f0d84b4e7e9e6e","word_count":"167","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2015\/01\/03\/upshot\/a-closer-look-at-the-colorado-senate-race.html","snippet":"How
-        turnout and shifting loyalties affected one of the closest Senate races of
-        2014.","lead_paragraph":"How turnout and shifting loyalties affected one of
-        the closest Senate races of 2014.","abstract":null,"print_page":null,"blog":[],"source":"The
-        New York Times","multimedia":[{"subtype":"wide","url":"images\/2015\/01\/03\/upshot\/03UP-Colorado\/03UP-Colorado-thumbWide.jpg","height":126,"width":190,"legacy":{"wide":"images\/2015\/01\/03\/upshot\/03UP-Colorado\/03UP-Colorado-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"subtype":"xlarge","url":"images\/2015\/01\/03\/upshot\/03UP-Colorado\/03UP-Colorado-articleLarge.jpg","height":400,"width":600,"legacy":{"xlargewidth":"600","xlarge":"images\/2015\/01\/03\/upshot\/03UP-Colorado\/03UP-Colorado-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"subtype":"thumbnail","url":"images\/2015\/01\/03\/upshot\/03UP-Colorado\/03UP-Colorado-thumbStandard.jpg","height":75,"width":75,"legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/01\/03\/upshot\/03UP-Colorado\/03UP-Colorado-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"A
-        Closer Look at the Colorado Senate Race","kicker":"The Upshot","content_kicker":"Political
-        Calculus"},"keywords":[{"value":"Colorado","is_major":"N","rank":"1","name":"glocations"},{"value":"Midterm
-        Elections (2014)","is_major":"N","rank":"2","name":"subject"},{"value":"Senate","is_major":"N","rank":"3","name":"organizations"},{"value":"Gardner,
-        Cory S","is_major":"N","rank":"4","name":"persons"},{"value":"Udall, Mark","is_major":"N","rank":"5","name":"persons"},{"value":"Voting
-        and Voters","is_major":"N","rank":"6","name":"subject"}],"pub_date":"2015-01-03T00:00:00Z","document_type":"article","news_desk":"Upshot","section_name":"The
-        Upshot","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Nate","lastname":"COHN"}],"original":"By
-        NATE COHN"},"type_of_material":"News","_id":"54a6e43f38f0d85f31aae4ba","word_count":"1184","slideshow_credits":null}]},"status":"OK","copyright":"Copyright
+      string: '{"response":{"meta":{"hits":3858,"time":79,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2016\/01\/21\/science\/california-said-to-target-exxon-in-climate-inquiry.html","snippet":"California
+        appears to have joined New York in weighing Exxon Mobil&#8217;s honesty in
+        admitting to the risks posed by climate change.","lead_paragraph":"California
+        appears to have joined New York in weighing Exxon Mobil&#8217;s honesty in
+        admitting to the risks posed by climate change.","abstract":"California Atty
+        Gen Kamala D Harris is investigating whether Exxon Mobil lied to public and
+        shareholders about risks of climate change, and whether firm''s statements
+        are violations of securities laws.","print_page":"4","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"California Said to Target
+        Exxon in Climate Inquiry ","print_headline":"California Said to Target Exxon
+        in Climate Inquiry "},"keywords":[{"rank":"1","is_major":"Y","name":"organizations","value":"Exxon
+        Mobil Corp"},{"rank":"2","is_major":"Y","name":"subject","value":"Global Warming"},{"rank":"3","is_major":"Y","name":"glocations","value":"California"},{"rank":"4","is_major":"Y","name":"persons","value":"Harris,
+        Kamala D"},{"rank":"5","is_major":"N","name":"persons","value":"Schneiderman,
+        Eric T"},{"rank":"6","is_major":"N","name":"subject","value":"Securities and
+        Commodities Violations"},{"rank":"7","is_major":"N","name":"persons","value":"Lieu,
+        Ted W (1969- )"}],"pub_date":"2016-01-21T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Science","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"John","rank":1,"lastname":"SCHWARTZ"}],"original":"By
+        JOHN SCHWARTZ"},"type_of_material":"News","_id":"56a02e3338f0d80627b20b94","word_count":"803","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/interactive\/2015\/09\/29\/world\/middleeast\/document-ted-lieus-letter-to-jcs-chairman-dunford-on-yemen.html","snippet":"In
+        a letter sent on Tuesday to Gen. Joseph F. Dunford Jr., the coming chairman
+        of the Joint Chiefs of Staff, Mr. Lieu requested that the Defense Department
+        clarify whether American officials knew how many civilians had died as a result
+        of coalition...","lead_paragraph":"In a letter sent on Tuesday to Gen. Joseph
+        F. Dunford Jr., the coming chairman of the Joint Chiefs of Staff, Mr. Lieu
+        requested that the Defense Department clarify whether American officials knew
+        how many civilians had died as a result of coalition airstrikes in Yemen.","abstract":null,"print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":75,"url":"images\/2015\/09\/29\/world\/document-ted-lieus-letter-to-jcs-chairman-dunford-on-yemen\/document-ted-lieus-letter-to-jcs-chairman-dunford-on-yemen-thumbStandard.gif","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/09\/29\/world\/document-ted-lieus-letter-to-jcs-chairman-dunford-on-yemen\/document-ted-lieus-letter-to-jcs-chairman-dunford-on-yemen-thumbStandard.gif","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Ted
+        Lieu''s Letter to JCS Chairman Dunford on Yemen"},"keywords":[{"rank":"1","is_major":"N","name":"subject","value":"Civilian
+        Casualties"},{"rank":"2","is_major":"N","name":"glocations","value":"Yemen"},{"rank":"3","is_major":"N","name":"glocations","value":"Saudi
+        Arabia"},{"rank":"4","is_major":"N","name":"persons","value":"Dunford, Joseph
+        F Jr"},{"rank":"5","is_major":"N","name":"persons","value":"Lieu, Ted W (1969-
+        )"}],"pub_date":"2015-09-29T00:00:00Z","document_type":"multimedia","news_desk":"World
+        \/ Middle East","section_name":"World","subsection_name":"Middle East","byline":[],"type_of_material":"Interactive
+        Feature","_id":"560b16d638f0d84e27991203","word_count":null,"slideshow_credits":null},{"web_url":"http:\/\/query.nytimes.com\/gst\/abstract.html?res=9800E2DF163EEF33A25751C1A9609C94629ED7CF","snippet":"Navy
+        Department officials announce that the historic old warship Hartford is to
+        be placed in commission again next year.","lead_paragraph":"Navy Department
+        officials announce that the historic old warship Hartford is to be placed
+        in commission again next year.","abstract":null,"print_page":"4","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"THE HARTFORD NOT DEAD
+        YET.; Farragut''s Old Flagship to be Put into Commission Again."},"keywords":[{"name":"subject","value":"UN
+        TED STATES NAVAL VESSELS"}],"pub_date":"1893-06-12T00:00:00Z","document_type":"article","news_desk":null,"section_name":null,"subsection_name":null,"byline":null,"type_of_material":"Article","_id":"4fc02b4a45c1498b0d19ceca","word_count":540,"slideshow_credits":null},{"web_url":"http:\/\/query.nytimes.com\/gst\/abstract.html?res=9E01EEDA133AE336A05755C1A9679D946490D6CF","snippet":"Ted
+        Morgan article on activities of NYC Police Dept Runaway Unit; notes that girls
+        picked up by police Prostitution Control Unit often turn out to be runaway
+        juveniles; typical cases cited; case of Karen Baxter, murdered by client,
+        who was discovered...","lead_paragraph":null,"abstract":"Ted Morgan article
+        on activities of NYC Police Dept Runaway Unit; notes that girls picked up
+        by police Prostitution Control Unit often turn out to be runaway juveniles;
+        typical cases cited; case of Karen Baxter, murdered by client, who was discovered
+        to be minor after her death, noted; role of pimps in lives of girls discussed;
+        article recounts typical tour of Sgt Jim Greenlay and Officer Warren McGinniss;
+        illus (L)","print_page":"273","blog":[],"source":"The New York Times","multimedia":[],"headline":{"main":"Little
+        ladies of the night; Today''s runaway is no Norman Rockwell tyke. Instead,
+        she may well be a 14-year-old in hot pants on New York''s Minnesota Strip."},"keywords":[{"name":"subject","value":"PROSTITUTION"},{"name":"subject","value":"CHILDREN
+        AND YOUTH"},{"name":"subject","value":"LOST, MISSING AND RUNAWAY CHILDREN"}],"pub_date":"1975-11-16T00:00:00Z","document_type":"article","news_desk":null,"section_name":null,"subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Ted","lastname":"Morgan"}],"original":"By
+        Ted Morgan"},"type_of_material":"Article","_id":"4fc48eb145c1498b0da556ec","word_count":4703,"slideshow_credits":null},{"web_url":"http:\/\/query.nytimes.com\/gst\/abstract.html?res=9D06E0DC1731E033A25752C1A9649C94629ED7CF","snippet":"The
+        dispatch vessel Dolphin has received on board two four-inch rapid-fire guns,
+        in lieu of her single six-inch rifle recently carried amid-ships. The two
+        four-inch guns are carried on the bows and in positions admitting practically
+        of a direct-ahead...","lead_paragraph":"The dispatch vessel Dolphin has received
+        on board two four-inch rapid-fire guns, in lieu of her single six-inch rifle
+        recently carried amid-ships. The two four-inch guns are carried on the bows
+        and in positions admitting practically of a direct-ahead fire. The Dolphin
+        is the first ship in the United States Navy to be given rapid-fire guns of
+        large calibre.","abstract":"Dolphin; Rapid-Fire Guns","print_page":"8","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"THE DOLPHIN''S NEW GUNS.;
+        RAPID-FIRE CANNON OF LARGE CALIBRE -- TO BE ADOPTED IN OTHER VESSELS."},"keywords":[{"name":"subject","value":"NAVAL
+        AFFAIRS"},{"name":"subject","value":"UN TED STATES NAVAL VESSELS"}],"pub_date":"1893-02-11T00:00:00Z","document_type":"article","news_desk":null,"section_name":null,"subsection_name":null,"byline":null,"type_of_material":"Article","_id":"4fc01ae045c1498b0d15080e","word_count":510,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2004\/12\/15\/dining\/15KNIF.html","snippet":"A
+        search for the qualities in a blade that might make chopping onions a sublime
+        experience.","lead_paragraph":"JOE HEFLIN is a roller-coaster salesman with
+        a penchant for hand-forged knives made by the German manufacturer C. Hugo
+        Pott. On business trips to D\u00fcsseldorf, Mr. Heflin buys Pott''s sleek,
+        expensive Bauhaus-inspired blades at B\u00f6rgermann, a fifth-generation cutlery
+        shop in the old quarter. ''''The heavier handles of the Pott knives are a
+        real advantage for me because it makes chopping and mincing easier,'''' said
+        Mr. Heflin, who lives in Reston, Va. ''''But there''s also the art form: the
+        aesthetics, the craftsmanship, the romance.''''","abstract":"Matt Lee and
+        Ted Lee article explores what constitutes a good knife; selection is determined
+        by individual preference having to do with tactile sensations and size of
+        user''s hand, among other things; photos (M)","print_page":"1","blog":[],"source":"The
+        New York Times","multimedia":[{"url":"images\/2004\/12\/15\/fashion\/15knife75.jpg","subtype":"thumbnail","legacy":{"hasthumbnail":"Y","thumbnailheight":75,"thumbnail":"images\/2004\/12\/15\/fashion\/15knife75.jpg"},"type":"image","height":75}],"headline":{"main":"When
+        a Knife Is the Gleam In a Cook''s Eye"},"keywords":[{"name":"subject","value":"KNIVES"},{"name":"subject","value":"COOKING
+        AND COOKBOOKS"}],"pub_date":"2004-12-15T00:00:00Z","document_type":"article","news_desk":"Dining
+        In, Dining Out\/Style Desk","section_name":"Dining and Wine; Style","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Matt","lastname":"LEE"},{"organization":"","role":"reported","rank":2,"firstname":"Ted","lastname":"LEE"}],"original":"By
+        MATT LEE and TED LEE"},"type_of_material":"News","_id":"4fd2414c8eb7c8105d7d9840","word_count":1897,"slideshow_credits":null},{"web_url":"http:\/\/query.nytimes.com\/gst\/abstract.html?res=9B05E5DB1731E033A25750C1A9649C94629ED7CF","snippet":"The
+        Port Royal dispatches, published in the columns of Sunday''s NEW-YORK TIMES
+        and describing the tests of the pneumatic guns of the cruiser Vesuvius on
+        Saturday last, were variously speculated on yesterday in expert and well-posted
+        circles in this...","lead_paragraph":"The Port Royal dispatches, published
+        in the columns of Sunday''s NEW-YORK TIMES and describing the tests of the
+        pneumatic guns of the cruiser Vesuvius on Saturday last, were variously speculated
+        on yesterday in expert and well-posted circles in this city.","abstract":null,"print_page":"8","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"IMPERFECT FUSES USED;
+        OPINIONS AS TO THE TESTS ON THE VESUVIUS. WHY SHOULD SECRETARY TRACY HAVE
+        ABANDONED A DEVICE THAT WAS SUCCESSFUL? -- THE TEST OF MARCH 13. 189O -- ACTION
+        THAT IS LAYING THE VESUVIUS OPEN TO REJECTION."},"keywords":[{"name":"subject","value":"NAVAL
+        AFFAIRS"},{"name":"subject","value":"UN TED STATES NAVAL VESSELS"},{"name":"subject","value":"UN
+        TED STATES NAVAL VESSELS"}],"pub_date":"1893-02-13T00:00:00Z","document_type":"article","news_desk":null,"section_name":null,"subsection_name":null,"byline":null,"type_of_material":"Article","_id":"4fc01ae145c1498b0d150900","word_count":1458,"slideshow_credits":null},{"web_url":"http:\/\/query.nytimes.com\/gst\/fullpage.html?res=9F0DE3DF1439F933A05751C1A9629C8B63","snippet":"LEVINSON--Ted.
+        Of New York and Palm Beach, FL. Died peacefully December 26, 2004 at age 74.
+        Graduate of the Pennington School, Class of 1948, and Lafayette College, Class
+        of 1952. Beloved husband of the late Doris. Loving father of Harlan and Randy,...","lead_paragraph":"LEVINSON--Ted.
+        Of New York and Palm Beach, FL. Died peacefully December 26, 2004 at age 74.
+        Graduate of the Pennington School, Class of 1948, and Lafayette College, Class
+        of 1952. Beloved husband of the late Doris. Loving father of Harlan and Randy,
+        and father-in-law of Jennifer. Adoring grandfather of William Douglas. A thoroughly
+        decent, kind and generous man. He will be greatly missed by all who knew and
+        loved him. Friends may call at Frank E. Campbell, 1076 Madison Avenue at 81
+        Street, Saturday, January 1st, 5-7PM with service Sunday, 11:30AM. Interment
+        to follow at Mount Ararat Cemetery. In lieu of flowers donations may be made
+        to the American Heart Association.","abstract":null,"print_page":"10","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Paid Notice: Deaths   LEVINSON,
+        TED"},"keywords":[{"name":"persons","value":"LEVINSON, TED"}],"pub_date":"2004-12-30T00:00:00Z","document_type":"article","news_desk":"Classified","section_name":"Paid
+        Death Notices","subsection_name":null,"byline":null,"type_of_material":"Paid
+        Death Notice","_id":"4fd2414f8eb7c8105d7d9bc5","word_count":111,"slideshow_credits":null},{"web_url":"http:\/\/query.nytimes.com\/gst\/fullpage.html?res=9D01E0D81F3AF932A35752C0A96E9C8B63","snippet":"O''CONNELL--Ted.
+        Died of cancer at his home December 23. Ted was a CBS executive for 36 years,
+        retiring in 1988 as VP Affiliate Relations. He is survived by his wife Molly
+        King-O''Connell and children Jessie, Amy, and Ted. Memorial service Saturday,...","lead_paragraph":"O''CONNELL--Ted.
+        Died of cancer at his home December 23. Ted was a CBS executive for 36 years,
+        retiring in 1988 as VP Affiliate Relations. He is survived by his wife Molly
+        King-O''Connell and children Jessie, Amy, and Ted. Memorial service Saturday,
+        January 19, at 2pm, St. Michael''s Church, Greenwich, CT. In lieu of flowers,
+        contributions may be made to the American Cancer Society.","abstract":null,"print_page":"26","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Paid Notice: Deaths   O''CONNELL,
+        TED"},"keywords":[{"name":"persons","value":"O''CONNELL, TED"}],"pub_date":"2008-01-01T00:00:00Z","document_type":"article","news_desk":"Classified","section_name":"Paid
+        Death Notices","subsection_name":null,"byline":null,"type_of_material":"Paid
+        Death Notice","_id":"4fd282268eb7c8105d84efa3","word_count":63,"slideshow_credits":null},{"web_url":"http:\/\/query.nytimes.com\/gst\/fullpage.html?res=9B03EFD81F30F93AA15751C1A9629C8B63","snippet":"LEVINSON--Ted.
+        Of New York and Palm Beach, FL. Died peacefully December 26, 2004 at age 74.
+        Graduate of the Pennington School, Class of 1948, and Lafayette College, Class
+        of 1952. Beloved husband of the late Doris. Loving father of Harlan and Randy,...","lead_paragraph":"LEVINSON--Ted.
+        Of New York and Palm Beach, FL. Died peacefully December 26, 2004 at age 74.
+        Graduate of the Pennington School, Class of 1948, and Lafayette College, Class
+        of 1952. Beloved husband of the late Doris. Loving father of Harlan and Randy,
+        and father-in-law of Jennifer. Adoring grandfather of William Douglas. A thoroughly
+        decent, kind and generous man. He will be greatly missed by all who knew and
+        loved him. Friends may call at Frank E. Campbell, 1076 Madison Avenue at 81
+        Street, Saturday, January 1st, 5-7PM with service Sunday, 11:30AM. Interment
+        to follow at Mount Ararat Cemetery. In lieu of flowers donations may be made
+        to the American Heart Association.","abstract":null,"print_page":"19","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Paid Notice: Deaths   LEVINSON,
+        TED"},"keywords":[{"name":"persons","value":"LEVINSON, TED"}],"pub_date":"2004-12-29T00:00:00Z","document_type":"article","news_desk":"Classified","section_name":"Paid
+        Death Notices","subsection_name":null,"byline":null,"type_of_material":"Paid
+        Death Notice","_id":"4fd25a708eb7c8105d8072a3","word_count":111,"slideshow_credits":null}]},"status":"OK","copyright":"Copyright
         (c) 2013 The New York Times Company.  All Rights Reserved."}'
     http_version: 
-  recorded_at: Tue, 15 Mar 2016 21:22:50 GMT
+  recorded_at: Thu, 17 Mar 2016 01:51:48 GMT
 - request:
     method: get
-    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Diana%20DeGette
+    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Barbara%20Boxer
     body:
       encoding: US-ASCII
       string: ''
@@ -224,15 +243,15 @@ http_interactions:
       message: OK
     headers:
       X-Mashery-Responder:
-      - prod-j-worker-atl-04.mashery.com
+      - prod-j-worker-atl-03.mashery.com
       Server:
       - nginx/1.4.1
       Date:
-      - Tue, 15 Mar 2016 21:20:33 GMT
+      - Thu, 17 Mar 2016 01:47:10 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '24179'
+      - '16563'
       Vary:
       - Accept-Encoding
       X-Powered-By:
@@ -247,201 +266,129 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"response":{"meta":{"hits":181,"time":40,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2002\/03\/20\/us\/national-briefing-rockies-colorado-seeking-re-election.html","snippet":"Representative
-        Diana DeGette, a Demo- crat, has announced she will run for a fourth term.
-        Ms. DeGette, a 44-year-old from Denver, represents the state''s First District
-        and sits on the Energy and Commerce Committee. She said she was seeking...","lead_paragraph":"Representative
-        Diana DeGette, a Demo- crat, has announced she will run for a fourth term.
-        Ms. DeGette, a 44-year-old from Denver, represents the state''s First District
-        and sits on the Energy and Commerce Committee. She said she was seeking re-election
-        because she wanted to focus on health care, affordable housing and Social
-        Security. She faces a challenge from a Denver councilwoman, Ramona Martinez,
-        in the Democratic primary in August. Mindy Sink (NYT)","abstract":"Rep Diana
-        Degette, Colorado Democrat, announces that she will run for fourth term; photo
-        (S)","print_page":"25","blog":[],"source":"The New York Times","multimedia":[],"headline":{"main":"National
-        Briefing | Rockies: Colorado: Seeking Re-Election"},"keywords":[{"name":"persons","value":"DEGETTE,
-        DIANA"},{"name":"glocations","value":"COLORADO"},{"name":"organizations","value":"HOUSE
-        OF REPRESENTATIVES"},{"name":"subject","value":"ELECTIONS"}],"pub_date":"2002-03-20T00:00:00Z","document_type":"article","news_desk":"National
-        Desk","section_name":"U.S.","subsection_name":null,"byline":{"person":[{"firstname":"Mindy","middlename":"Sink","lastname":"NYT","rank":1,"role":"reported","organization":""}],"original":"By
-        Mindy Sink (NYT)"},"type_of_material":"News","_id":"4fd22cb18eb7c8105d7b89ed","word_count":72,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2014\/03\/29\/business\/lawmaker-urges-owners-to-stop-driving-their-cobalts.html","snippet":"The
-        move adds 971,000 small cars worldwide, including 824,000 in the United States,
-        that may have been previously repaired with faulty switches.","lead_paragraph":"The
-        move adds 971,000 small cars worldwide, including 824,000 in the United States,
-        that may have been previously repaired with faulty switches.","abstract":"General
-        Motors announces that it is expanding its ignition switch recall to include
-        additional 971,000 small cars worldwide that may have been previously repaired
-        with defective switches; GM is already recalling 1.62 million cars, made in
-        2007 model year and earlier, to replace switches that could accidentally cut
-        off engine power, deactivating air bags.","print_page":"1","blog":[],"source":"The
-        New York Times","multimedia":[{"width":190,"url":"images\/2014\/03\/29\/business\/29motors-375\/29motors-375-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2014\/03\/29\/business\/29motors-375\/29motors-375-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2014\/03\/29\/business\/Motors\/Motors-articleLarge.jpg","height":827,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2014\/03\/29\/business\/Motors\/Motors-articleLarge.jpg","xlargeheight":"827"},"type":"image"},{"width":75,"url":"images\/2014\/03\/29\/business\/29motors-375\/29motors-375-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2014\/03\/29\/business\/29motors-375\/29motors-375-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"G.M.
-        Expands Ignition Switch Recall to Later Models","print_headline":"G.M. Expands
-        Ignition Switch Recall to Later Models"},"keywords":[{"rank":"5","is_major":"Y","value":"Recalls
-        and Bans of Products","name":"subject"},{"rank":"1","is_major":"Y","value":"Automobile
-        Safety Features and Defects","name":"subject"},{"rank":"3","is_major":"Y","value":"General
-        Motors","name":"organizations"},{"rank":"4","is_major":"N","value":"DeGette,
-        Diana","name":"persons"},{"rank":"2","is_major":"N","value":"House of Representatives","name":"organizations"}],"pub_date":"2014-03-29T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Business
-        Day","subsection_name":null,"byline":{"contributor":"","person":[{"organization":"","role":"reported","firstname":"Bill","rank":1,"lastname":"VLASIC"},{"firstname":"Matthew","middlename":"L.","lastname":"WALD","rank":2,"role":"reported","organization":""}],"original":"By
-        BILL VLASIC and MATTHEW L. WALD"},"type_of_material":"News","_id":"5335cefa38f0d84df8c8dc8c","word_count":"1177","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2015\/07\/11\/us\/politics\/house-passes-product-of-unusual-bipartisan-partnership-on-health-care.html","snippet":"The
-        bill could spur biomedical innovation, change how federal health officials
-        approve drugs and increase funding for the National Institutes of Health.","lead_paragraph":"The
-        bill could spur biomedical innovation, change how federal health officials
-        approve drugs and increase funding for the National Institutes of Health.","abstract":"Health
-        care legislation written by Reps Fred Upton, Republican of Michigan, and Diana
-        DeGette, Democrat of Colorado, passes easily; bill, which would update FDA
-        approval process and increase funding to National Institutes of Health, would
-        be funded by sale of oil from strategic petroleum reserve.","print_page":"12","blog":[],"source":"The
-        New York Times","multimedia":[{"width":190,"url":"images\/2015\/07\/11\/us\/11cures-web-SUB\/11cures-web-SUB-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/07\/11\/us\/11cures-web-SUB\/11cures-web-SUB-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/07\/11\/us\/11cures-web-SUB\/11cures-web-SUB-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/07\/11\/us\/11cures-web-SUB\/11cures-web-SUB-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2015\/07\/11\/us\/11cures-web-SUB\/11cures-web-SUB-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/07\/11\/us\/11cures-web-SUB\/11cures-web-SUB-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Bipartisan
-        Partnership Produces a Health Bill That Passes the House","print_headline":"Bipartisan
-        Partnership Produces a Health Bill That Passes the House"},"keywords":[{"rank":"1","is_major":"Y","name":"subject","value":"Medicine
-        and Health"},{"rank":"2","is_major":"Y","name":"organizations","value":"Food
-        and Drug Administration"},{"rank":"3","is_major":"Y","name":"organizations","value":"National
-        Institutes of Health"},{"rank":"4","is_major":"N","name":"persons","value":"Upton,
-        Fred"},{"rank":"5","is_major":"N","name":"persons","value":"DeGette, Diana"},{"rank":"6","is_major":"N","name":"subject","value":"Strategic
-        Petroleum Reserve (US)"},{"rank":"7","is_major":"N","name":"subject","value":"Law
-        and Legislation"},{"rank":"8","is_major":"N","name":"subject","value":"Drugs
-        (Pharmaceuticals)"}],"pub_date":"2015-07-11T00:00:00Z","document_type":"article","news_desk":"National","section_name":"U.S.","subsection_name":"Politics","byline":{"person":[{"organization":"","role":"reported","firstname":"Jennifer","rank":1,"lastname":"STEINHAUER"},{"organization":"","role":"reported","firstname":"Sabrina","rank":2,"lastname":"TAVERNISE"}],"original":"By
-        JENNIFER STEINHAUER and SABRINA TAVERNISE"},"type_of_material":"News","_id":"559fea9238f0d8526a38bdeb","word_count":"1216","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2004\/07\/20\/us\/after-breach-lawmakers-tour-los-alamos.html","snippet":"Energy
-        Department officials and two members of Congress descended on Los Alamos National
-        Laboratory yesterday to gauge the fallout from security lapses there, including
-        the disappearance of two computer disks of classified information two weeks
-        ago. ...","lead_paragraph":"Energy Department officials and two members of
-        Congress descended on Los Alamos National Laboratory yesterday to gauge the
-        fallout from security lapses there, including the disappearance of two computer
-        disks of classified information two weeks ago. But it remained unclear just
-        what information was lost, what happened to it and whether national security
-        was compromised as a result.","abstract":"Energy Department officials and
-        Reps Joe L Barton and Diana DeGette tour Los Alamos National Laboratory in
-        aftermath of latest security lapses, including disappearance of two computer
-        disks of classified information; work there is virtually halted for security
-        review (S)","print_page":"15","blog":[],"source":"The New York Times","multimedia":[],"headline":{"main":"After
-        Breach, Lawmakers Tour Los Alamos"},"keywords":[{"name":"persons","value":"BARTON,
-        JOE L"},{"name":"persons","value":"DEGETTE, DIANA"},{"name":"organizations","value":"ENERGY
-        DEPARTMENT"},{"name":"organizations","value":"LOS ALAMOS NATIONAL LABORATORY"},{"name":"subject","value":"ATOMIC
-        WEAPONS"},{"name":"subject","value":"CLASSIFICATION OF INFORMATION"},{"name":"subject","value":"SECURITY
-        AND WARNING SYSTEMS"},{"name":"subject","value":"COMPUTERS AND THE INTERNET"}],"pub_date":"2004-07-20T00:00:00Z","document_type":"article","news_desk":"National
-        Desk","section_name":"Technology; U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Kenneth","rank":1,"lastname":"CHANG"},{"organization":"","role":"reported","firstname":"Sandra","rank":2,"lastname":"BLAKESLEE"}],"original":"By
-        KENNETH CHANG and SANDRA BLAKESLEE"},"type_of_material":"News","_id":"4fd256b38eb7c8105d800c0e","word_count":483,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2000\/05\/24\/us\/us-still-pays-contractor-bills-for-whistle-blower-lawsuits.html","snippet":"Five
-        years ago, the Energy Department, trying to protect workers who raised safety
-        concerns at its nuclear weapons plants, said it would stop covering the legal
-        bills of its contractors when they were caught retaliating against such whistle-blowers.
-        ...","lead_paragraph":"Five years ago, the Energy Department, trying to protect
-        workers who raised safety concerns at its nuclear weapons plants, said it
-        would stop covering the legal bills of its contractors when they were caught
-        retaliating against such whistle-blowers. But witnesses and lawmakers said
-        at a Congressional hearing today that the department was still paying those
-        bills, sometimes without knowing it.","abstract":"Witnesses and lawmakers
-        at House subcommittee hearing say Energy Department continues to pay legal
-        bills of nuclear weapons plant contractors caught retaliating against workers
-        who raise safety concerns despite 1995 pledge to stop practice; department
-        officials admit they have not written final rule on when to withhold payment;
-        Reps Diana DeGette and Richard M Burr scores agency''s failure to help whistle-blowers
-        (M)","print_page":"22","blog":[],"source":"The New York Times","multimedia":[],"headline":{"main":"U.S.
-        Still Pays Contractor Bills For Whistle-Blower Lawsuits"},"keywords":[{"name":"persons","value":"BURR,
-        RICHARD M"},{"name":"persons","value":"DEGETTE, DIANA"},{"name":"organizations","value":"ENERGY
-        DEPARTMENT"},{"name":"subject","value":"ATOMIC WEAPONS"},{"name":"subject","value":"WHISTLE-BLOWERS"},{"name":"subject","value":"SUITS
-        AND LITIGATION"},{"name":"subject","value":"INDUSTRIAL AND OCCUPATIONAL HAZARDS"}],"pub_date":"2000-05-24T00:00:00Z","document_type":"article","news_desk":"National
-        Desk","section_name":"U.S.","subsection_name":null,"byline":{"person":[{"firstname":"Matthew","middlename":"L.","lastname":"WALD","rank":1,"role":"reported","organization":""}],"original":"By
-        MATTHEW L. WALD"},"type_of_material":"News","_id":"4fd224128eb7c8105d7aa2a6","word_count":554,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2015\/05\/14\/us\/house-vote-on-revised-abortion-bill.html","snippet":"The
-        measure is almost certain to be blocked by Democrats in the Senate.","lead_paragraph":"The
-        measure is almost certain to be blocked by Democrats in the Senate.","abstract":"House
-        votes, 242-to-184, to ban most abortions after 20 weeks of pregnancy, approving
-        revised version of earlier Republican-introduced bill; bill is not expected
-        to pass Senate, making vote largely symbolic gesture.","print_page":"15","blog":[],"source":"The
-        New York Times","multimedia":[{"width":190,"url":"images\/2015\/05\/14\/us\/14AABORTION\/14AABORTION-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/05\/14\/us\/14AABORTION\/14AABORTION-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/05\/14\/us\/14AABORTION\/14AABORTION-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/05\/14\/us\/14AABORTION\/14AABORTION-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2015\/05\/14\/us\/14AABORTION\/14AABORTION-thumbStandard-v2.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/05\/14\/us\/14AABORTION\/14AABORTION-thumbStandard-v2.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"House
-        Approves Revised Measure Banning Most Abortions After 20 Weeks","print_headline":"House
-        Approves Revised Measure Banning Most Abortions After 20 Weeks"},"keywords":[{"rank":"1","is_major":"Y","name":"subject","value":"Abortion"},{"rank":"2","is_major":"N","name":"organizations","value":"Republican
-        Party"},{"rank":"3","is_major":"N","name":"organizations","value":"House of
-        Representatives"},{"rank":"4","is_major":"N","name":"organizations","value":"Democratic
-        Party"},{"rank":"5","is_major":"N","name":"persons","value":"Franks, Trent"},{"rank":"6","is_major":"N","name":"persons","value":"DeGette,
-        Diana"},{"rank":"7","is_major":"N","name":"persons","value":"Slaughter, Louise
-        M"}],"pub_date":"2015-05-14T00:00:00Z","document_type":"article","news_desk":"National","section_name":"U.S.","subsection_name":"Politics","byline":{"person":[{"organization":"","role":"reported","firstname":"Emmarie","rank":1,"lastname":"HUETTEMAN"}],"original":"By
-        EMMARIE HUETTEMAN"},"type_of_material":"News","_id":"555312b038f0d86643ac583b","word_count":"526","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/1996\/09\/26\/us\/a-contentious-contest-develops-in-denver-to-fill-schroeder-s-seat.html","snippet":"With
-        Denver''s Congressional seat up for grabs for the first time since Patricia
-        Schroeder won here in 1972, a surprisingly contentious race has come down
-        to fan clothing and accessories.    Joe Rogers, a Republican lawyer and the
-        first black to run...","lead_paragraph":"With Denver''s Congressional seat
-        up for grabs for the first time since Patricia Schroeder won here in 1972,
-        a surprisingly contentious race has come down to fan clothing and accessories.
-        Joe Rogers, a Republican lawyer and the first black to run for Congress from
-        Colorado, hands out T-shirts showing him standing shoulder to shoulder with
-        his idol, Gen. Colin L. Powell.","abstract":"Article on race between Joe Rogers,
-        Republican lawyer and first black to run for Congress from Colorado, and Diana
-        DeGette, Democratic candidate, to fill House seat of retiring Rep Patricia
-        Schroeder; photo (M)","print_page":"18","blog":[],"source":"The New York Times","multimedia":[],"headline":{"main":"A
-        Contentious Contest Develops in Denver to Fill Schroeder''s Seat"},"keywords":[{"name":"persons","value":"ROGERS,
-        JOE"},{"name":"persons","value":"SCHROEDER, PATRICIA"},{"name":"persons","value":"DEGETTE,
-        DIANA"},{"name":"glocations","value":"COLORADO"},{"name":"organizations","value":"HOUSE
-        OF REPRESENTATIVES"},{"name":"subject","value":"BLACKS"},{"name":"subject","value":"ELECTIONS"}],"pub_date":"1996-09-26T00:00:00Z","document_type":"article","news_desk":"National
-        Desk","section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"James","rank":1,"lastname":"BROOKE"}],"original":"By
-        JAMES BROOKE"},"type_of_material":"News","_id":"4fd1cbd28eb7c8105d701a9b","word_count":804,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2014\/03\/22\/business\/lawmakers-attack-cost-of-new-hepatitis-drug.html","snippet":"The
-        congressmen\u2019s inquiry about the $84,000 price for a 12-week course of
-        treatment spurred a sell-off in biotechnology stocks on Friday.","lead_paragraph":"The
-        congressmen\u2019s inquiry about the $84,000 price for a 12-week course of
-        treatment spurred a sell-off in biotechnology stocks on Friday.","abstract":"New
-        drug to treat hepatitis C that costs $1,000 a pill is raising concern among
-        insurers and state Medicaid programs; is also spurring interest from Democratic
-        lawmakers, whose queries into drug developed by Gilead Sciences prompted a
-        sell-off in biotechnology stocks.","print_page":"1","blog":[],"source":"The
-        New York Times","multimedia":[{"width":190,"url":"images\/2014\/03\/22\/business\/Biotech\/Biotech-thumbWide-v2.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2014\/03\/22\/business\/Biotech\/Biotech-thumbWide-v2.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2014\/03\/22\/business\/Biotech\/Biotech-articleLarge.jpg","height":363,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2014\/03\/22\/business\/Biotech\/Biotech-articleLarge.jpg","xlargeheight":"363"},"type":"image"},{"width":75,"url":"images\/2014\/03\/22\/business\/Biotech\/Biotech-thumbStandard-v2.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2014\/03\/22\/business\/Biotech\/Biotech-thumbStandard-v2.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Lawmakers
-        Attack Cost of New Hepatitis Drug","print_headline":"Lawmakers Attack Cost
-        of New Hepatitis Drug"},"keywords":[{"rank":"11","is_major":"N","value":"Biotechnology","name":"subject"},{"rank":"5","is_major":"Y","value":"Hepatitis","name":"subject"},{"rank":"9","is_major":"N","value":"Pallone,
-        Frank Jr","name":"persons"},{"rank":"7","is_major":"N","value":"House Committee
-        on Energy and Commerce","name":"organizations"},{"rank":"6","is_major":"Y","value":"Gilead
-        Sciences Inc","name":"organizations"},{"rank":"3","is_major":"N","value":"Prices
-        (Fares, Fees and Rates)","name":"subject"},{"rank":"8","is_major":"N","value":"Waxman,
-        Henry A","name":"persons"},{"rank":"10","is_major":"N","value":"DeGette, Diana","name":"persons"},{"rank":"1","is_major":"N","value":"Sovaldi
-        (Drug)","name":"subject"},{"rank":"12","is_major":"N","value":"Stocks and
-        Bonds","name":"subject"},{"rank":"2","is_major":"Y","value":"Drugs (Pharmaceuticals)","name":"subject"},{"rank":"4","is_major":"N","value":"United
-        States Politics and Government","name":"subject"}],"pub_date":"2014-03-22T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Business
-        Day","subsection_name":null,"byline":{"contributor":"","person":[{"organization":"","role":"reported","firstname":"Andrew","rank":1,"lastname":"POLLACK"}],"original":"By
-        ANDREW POLLACK"},"type_of_material":"News","_id":"532cd7d838f0d85412dca87e","word_count":"840","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/1996\/08\/15\/us\/senate-nominees-picked-in-colorado.html","snippet":"A
-        Republican Congressman who opposes abortion will face a Democratic lawyer
-        who has never held elective office for Colorado''s open Senate seat after
-        both won their primaries.    In the Republican race, Representative Wayne
-        Allard, beat Attorney...","lead_paragraph":"A Republican Congressman who opposes
-        abortion will face a Democratic lawyer who has never held elective office
-        for Colorado''s open Senate seat after both won their primaries. In the Republican
-        race, Representative Wayne Allard, beat Attorney General Gale Norton, 57 percent
-        to 43 percent, on Tuesday. while in the Democratic race, Tom Strickland defeated
-        Gene Nichol, a former law school dean, 66 percent to 34 percent.","abstract":"Results
-        of Republican and Democratic primaries for US Senate seat from Colorado; in
-        Republican race, Repr Wayne Alard beats Attorney General Gale Norton, 57 percent
-        to 43 percent; in Democratic race, Tom Strickland defeats Gene Nichol, 66
-        percent to 34 percent; in race to succeed retiring Repr Patricia Schroeder,
-        State Repr Diana DeGette defeats former Denver Councilman Tim Sandos, 56 percent
-        to 44 percent; she now faces Joe Rogers, a Republican lawyer (M)","print_page":"20","blog":[],"source":"AP","multimedia":[],"headline":{"main":"Senate
-        Nominees Picked in Colorado"},"keywords":[{"name":"persons","value":"SANDOS,
-        TIM"},{"name":"persons","value":"ROGERS, JOE"},{"name":"persons","value":"NICHOL,
-        GENE"},{"name":"persons","value":"STRICKLAND, TOM"},{"name":"persons","value":"ALLARD,
-        WAYNE"},{"name":"persons","value":"SCHROEDER, PATRICIA"},{"name":"persons","value":"DEGETTE,
-        DIANA"},{"name":"persons","value":"NORTON, GALE"},{"name":"glocations","value":"COLORADO"},{"name":"organizations","value":"SENATE"},{"name":"organizations","value":"HOUSE
-        OF REPRESENTATIVES"},{"name":"subject","value":"BIOGRAPHICAL INFORMATION"},{"name":"subject","value":"ELECTIONS"},{"name":"subject","value":"PRIMARIES"}],"pub_date":"1996-08-15T00:00:00Z","document_type":"article","news_desk":"National
-        Desk","section_name":null,"subsection_name":null,"byline":null,"type_of_material":"News","_id":"4fd1f6408eb7c8105d7506fc","word_count":219,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2010\/03\/27\/health\/policy\/27health.html","snippet":"Members
-        of Congress headed home for a two-week recess during which they will try to
-        shape public opinion and defend their votes for or against the new health
-        insurance law.","lead_paragraph":"Members of Congress headed home for a two-week
-        recess during which they will try to shape public opinion and defend their
-        votes for or against the new health insurance law.","abstract":null,"print_page":"12","blog":[],"source":"The
-        New York Times","multimedia":[{"subtype":"thumbnail","url":"images\/2010\/03\/27\/us\/27health_CA0\/27health_CA0-thumbStandard.jpg","height":75,"width":75,"legacy":{"thumbnailheight":"75","thumbnail":"images\/2010\/03\/27\/us\/27health_CA0\/27health_CA0-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Lawmakers
-        Recess and Prepare to Defend Health Votes","print_headline":"Lawmakers Recess
-        and Prepare to Defend Health Votes"},"keywords":[{"value":"House of Representatives","is_major":"N","rank":"1","name":"organizations"},{"value":"Slaughter,
-        Louise M","is_major":"N","rank":"11","name":"persons"},{"value":"DeGette,
-        Diana","is_major":"N","rank":"12","name":"persons"},{"value":"Waxman, Henry
-        A","is_major":"N","rank":"13","name":"persons"},{"value":"Boehner, John A","is_major":"N","rank":"14","name":"persons"},{"value":"Health
-        Insurance and Managed Care","is_major":"N","rank":"2","name":"subject"},{"value":"Reform
-        and Reorganization","is_major":"N","rank":"3","name":"subject"},{"value":"Senate","is_major":"N","rank":"4","name":"organizations"},{"value":"Law
-        and Legislation","is_major":"N","rank":"5","name":"subject"},{"value":"United
-        States Politics and Government","is_major":"N","rank":"6","name":"subject"},{"value":"Pingree,
-        Chellie","is_major":"N","rank":"7","name":"persons"},{"value":"Pelosi, Nancy","is_major":"N","rank":"8","name":"persons"},{"value":"Levin,
-        Sander M","is_major":"N","rank":"9","name":"persons"},{"value":"Welch, Peter","is_major":"N","rank":"10","name":"persons"}],"pub_date":"2010-03-27T00:00:00Z","document_type":"article","news_desk":"National","section_name":"Health","subsection_name":"Money
-        & Policy","byline":{"contributor":"","person":[{"organization":"","role":"reported","rank":1,"firstname":"Robert","lastname":"PEAR"},{"organization":"","role":"reported","rank":2,"firstname":"David"}],"original":"By
-        ROBERT PEAR and  DAVID M. HERSZENHORN"},"type_of_material":"News","_id":"54446ce738f0d82782d9b934","word_count":"738","slideshow_credits":null}]},"status":"OK","copyright":"Copyright
+      string: '{"response":{"meta":{"hits":3283,"time":42,"offset":0},"docs":[{"web_url":"http:\/\/takingnote.blogs.nytimes.com\/2013\/03\/28\/transplanting-madison-square-garden\/","snippet":"City
+        officials should deny the arena\u2019s request to live on top of Pennsylvania
+        Station \u201cin perpetuity.\u201d","lead_paragraph":null,"abstract":"City
+        officials should deny the arena\u2019s request to live on top of Pennsylvania
+        Station \u201cin perpetuity.\u201d","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2013\/03\/28\/opinion\/3282013penn\/3282013penn-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2013\/03\/28\/opinion\/3282013penn\/3282013penn-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2013\/03\/28\/opinion\/3282013penn\/3282013penn-articleLarge.jpg","height":393,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2013\/03\/28\/opinion\/3282013penn\/3282013penn-articleLarge.jpg","xlargeheight":"393"},"type":"image"},{"width":75,"url":"images\/2013\/03\/28\/opinion\/3282013penn\/3282013penn-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2013\/03\/28\/opinion\/3282013penn\/3282013penn-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Transplanting
+        Madison Square Garden","kicker":"Taking Note"},"keywords":[{"rank":"1","name":"persons","value":"Moynihan,
+        Daniel Patrick"},{"rank":"2","name":"persons","value":"Stringer, Scott M"},{"rank":"1","name":"organizations","value":"Barbara
+        Boxer"},{"rank":"1","name":"subject","value":"Pennsylvania Station (NYC)"}],"pub_date":"2013-03-28T17:12:37Z","document_type":"blogpost","news_desk":null,"section_name":"Opinion","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Eleanor","rank":1,"lastname":"RANDOLPH"}],"original":"By
+        ELEANOR RANDOLPH"},"type_of_material":"Blog","_id":"5154b3e2fdc59278db000530","word_count":"342","slideshow_credits":null},{"web_url":"http:\/\/bucks.blogs.nytimes.com\/2012\/01\/26\/new-rules-for-booking-air-travel\/","snippet":"New
+        federal rules give travelers more information and flexibility when making
+        airline reservations.","lead_paragraph":"New federal rules giving consumers
+        more information and flexibility when they book air travel took effect this
+        week.","abstract":"New federal rules give travelers more information and flexibility
+        when making airline reservations.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"New Rules for Booking
+        Air Travel","kicker":"Bucks"},"keywords":[{"rank":"4","name":"subject","value":"Prices
+        (Fares, Fees and Rates)"},{"rank":"3","name":"subject","value":"Airlines and
+        Airplanes"},{"rank":"2","name":"persons","value":"Boxer, Barbara"},{"rank":"5","name":"organizations","value":"Spirit
+        Airlines"},{"rank":"1","name":"type_of_material","value":"News"},{"rank":"6","name":"organizations","value":"Transportation
+        Department (US)"}],"pub_date":"2012-01-26T13:33:32Z","document_type":"blogpost","news_desk":null,"section_name":"Business
+        Day","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Ann","rank":1,"lastname":"CARRNS"}],"original":"By
+        ANN CARRNS"},"type_of_material":"Blog","_id":"4fd3a2a48eb7c8105d8eacfc","word_count":277,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2007\/05\/05\/opinion\/05sat1.html","snippet":"Significant
+        progress toward stabilizing and reducing global warming emissions can be achieved
+        at a relatively low cost using known technologies.","lead_paragraph":"Significant
+        progress toward stabilizing and reducing global warming emissions can be achieved
+        at a relatively low cost using known technologies.","abstract":null,"print_page":"12","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"The Warming Challenge","content_kicker":"Editorial","print_headline":"The
+        Warming Challenge"},"keywords":[{"rank":"1","is_major":"N","name":"subject","value":"Global
+        Warming"},{"rank":"2","is_major":"N","name":"organizations","value":"Intergovernmental
+        Panel on Climate Change"},{"rank":"3","is_major":"N","name":"subject","value":"Carbon
+        Dioxide"},{"rank":"4","is_major":"N","name":"subject","value":"United States
+        Politics and Government"},{"rank":"5","is_major":"N","name":"persons","value":"Boxer,
+        Barbara"},{"rank":"6","is_major":"N","name":"organizations","value":"Senate"},{"rank":"7","is_major":"N","name":"organizations","value":"House
+        of Representatives"},{"rank":"8","is_major":"N","name":"subject","value":"Editorials"}],"pub_date":"2007-05-05T00:00:00Z","document_type":"article","news_desk":"Editorial","section_name":"Opinion","subsection_name":null,"byline":null,"type_of_material":"Editorial","_id":"5489c0d838f0d82a67124cfa","word_count":"466","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/politics\/first-draft\/2015\/03\/05\/california-senate-race-gets-a-republican-contender\/","snippet":"California
+        now has a Republican contender for its soon-to-be open senate seat: Rocky
+        Ch\u00e1vez, a state assemblyman.","lead_paragraph":null,"abstract":"California
+        now has a Republican contender for its soon-to-be open senate seat: Rocky
+        Ch\u00e1vez, a state assemblyman.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2015\/03\/05\/us\/politics\/05firstdraft-rocky-chavez\/05firstdraft-rocky-chavez-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/03\/05\/us\/politics\/05firstdraft-rocky-chavez\/05firstdraft-rocky-chavez-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/03\/05\/us\/politics\/05firstdraft-rocky-chavez\/05firstdraft-rocky-chavez-articleLarge.jpg","height":348,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/03\/05\/us\/politics\/05firstdraft-rocky-chavez\/05firstdraft-rocky-chavez-articleLarge.jpg","xlargeheight":"348"},"type":"image"},{"width":75,"url":"images\/2015\/03\/05\/us\/politics\/05firstdraft-rocky-chavez\/05firstdraft-rocky-chavez-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/03\/05\/us\/politics\/05firstdraft-rocky-chavez\/05firstdraft-rocky-chavez-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"California
+        Senate Race Gets a Republican Contender","kicker":"First Draft"},"keywords":[{"rank":"1","name":"persons","value":"Boxer,
+        Barbara"},{"rank":"1","name":"glocations","value":"California"},{"rank":"1","name":"organizations","value":"Democratic
+        Party"},{"rank":"2","name":"organizations","value":"Senate"}],"pub_date":"2015-03-05T15:26:40Z","document_type":"blogpost","news_desk":null,"section_name":"false","subsection_name":"false","byline":{"person":[{"organization":"","role":"reported","firstname":"Alan","rank":1,"lastname":"RAPPEPORT"}],"original":"By
+        ALAN RAPPEPORT"},"type_of_material":"Blog","_id":"55030a4638f0d835da194cd7","word_count":"197","slideshow_credits":null},{"web_url":"http:\/\/takingnote.blogs.nytimes.com\/2012\/08\/02\/facts-are-offensive\/","snippet":"The
+        scientific consensus on climate change offends Jeff Sessions.","lead_paragraph":null,"abstract":"The
+        scientific consensus on climate change offends Jeff Sessions.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Facts Are Offensive","kicker":"Taking
+        Note"},"keywords":[{"rank":"1","name":"persons","value":"Boxer, Barbara"},{"rank":"1","name":"subject","value":"Global
+        Warming"}],"pub_date":"2012-08-02T11:33:15Z","document_type":"blogpost","news_desk":null,"section_name":"Opinion","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Juliet","rank":1,"lastname":"LAPIDOS"}],"original":"By
+        JULIET LAPIDOS"},"type_of_material":"Blog","_id":"501a9fd11c22dfde670b3d20","word_count":"288","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2006\/11\/25\/opinion\/25sat1.html","snippet":"Energy
+        companies in China and America are locking themselves (and the environment)
+        into at least 50 more years of the most carbon-intensive technology around.","lead_paragraph":"Energy
+        companies in China and America are locking themselves (and the environment)
+        into at least 50 more years of the most carbon-intensive technology around.","abstract":null,"print_page":"14","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Taming King Coal","content_kicker":"Editorial","print_headline":"Taming
+        King Coal"},"keywords":[{"rank":"1","is_major":"N","name":"subject","value":"Energy
+        and Power"},{"rank":"2","is_major":"N","name":"subject","value":"Coal"},{"rank":"3","is_major":"N","name":"subject","value":"Carbon
+        Dioxide"},{"rank":"4","is_major":"N","name":"subject","value":"United States
+        Politics and Government"},{"rank":"5","is_major":"N","name":"persons","value":"Boxer,
+        Barbara"},{"rank":"6","is_major":"N","name":"glocations","value":"China"},{"rank":"7","is_major":"N","name":"glocations","value":"Texas"}],"pub_date":"2006-11-25T00:00:00Z","document_type":"article","news_desk":"Editorial","section_name":"Opinion","subsection_name":null,"byline":null,"type_of_material":"Editorial","_id":"54a7db0438f0d85f31aaf18f","word_count":"484","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/1992\/06\/01\/us\/1992-campaign-senate-races-primaries-for-cranston-s-seat-expose-rifts-california.html","snippet":"The
+        push and pull of Barbara Boxer''s Senate campaign is a template for this election
+        season, when women and other political outsiders and are \"in\" and lawmakers
+        who can''t balance their checkbooks are \"out.\"   Representative Boxer fits
+        into both...","lead_paragraph":"The push and pull of Barbara Boxer''s Senate
+        campaign is a template for this election season, when women and other political
+        outsiders and are \"in\" and lawmakers who can''t balance their checkbooks
+        are \"out.\" Representative Boxer fits into both categories. And therein lies
+        both her strength and weakness in the election here Tuesday, when four Senate
+        primaries are simultaneously being contested, this one a three-way race, also
+        involving Lieut. Gov. Leo McCarthy and Representative Mel Levine, to pick
+        a Democrat to run for the seat vacated by the retiring Alan Cranston.","abstract":null,"print_page":"14","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"THE 1992 CAMPAIGN: Senate
+        Races Primaries for Cranston''s Seat Expose Rifts in California Parties''
+        Ideologies; Democrats Attack One Another After Some Shift Views"},"keywords":[{"name":"persons","value":"BOXER,
+        BARBARA"},{"name":"glocations","value":"CALIFORNIA"},{"name":"organizations","value":"DEMOCRATIC
+        PARTY"},{"name":"subject","value":"PRIMARIES"}],"pub_date":"1992-06-01T00:00:00Z","document_type":"article","news_desk":"National
+        Desk","section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Jane","rank":1,"lastname":"GROSS"}],"original":"By
+        JANE GROSS"},"type_of_material":"News","_id":"4fd1b4188eb7c8105d6d8b1b","word_count":1148,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2015\/01\/09\/upshot\/barbara-boxer-and-the-rise-of-democratic-partisan-discipline.html","snippet":"The
+        California senator voted with her colleagues 98 percent of the time in the
+        last two years. She was part of a trend.","lead_paragraph":"The California
+        senator voted with her colleagues 98 percent of the time in the last two years.
+        She was part of a trend.","abstract":null,"print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2015\/01\/14\/upshot\/09UP-Boxer\/09UP-Boxer-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/01\/14\/upshot\/09UP-Boxer\/09UP-Boxer-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/01\/14\/upshot\/09UP-Boxer\/09UP-Boxer-articleLarge.jpg","height":396,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/01\/14\/upshot\/09UP-Boxer\/09UP-Boxer-articleLarge.jpg","xlargeheight":"396"},"type":"image"},{"width":75,"url":"images\/2015\/01\/14\/upshot\/09UP-Boxer\/09UP-Boxer-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/01\/14\/upshot\/09UP-Boxer\/09UP-Boxer-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Barbara
+        Boxer and the Rise of Democratic Partisan Discipline","content_kicker":"Capital
+        Field Notes","kicker":"The Upshot"},"keywords":[{"rank":"1","is_major":"N","name":"persons","value":"Boxer,
+        Barbara"},{"rank":"2","is_major":"N","name":"organizations","value":"Senate"},{"rank":"3","is_major":"N","name":"subject","value":"United
+        States Politics and Government"},{"rank":"4","is_major":"N","name":"organizations","value":"Democratic
+        Party"}],"pub_date":"2015-01-09T00:00:00Z","document_type":"article","news_desk":"Upshot","section_name":"The
+        Upshot","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Derek","rank":1,"lastname":"WILLIS"}],"original":"By
+        DEREK WILLIS"},"type_of_material":"News","_id":"54aef6ee38f0d84dd51ada2a","word_count":"424","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2004\/11\/20\/politics\/20spend.html","snippet":"House
+        and Senate negotiators have tucked a potentially far-reaching anti-abortion
+        provision into a $388 billion must-pass spending bill.","lead_paragraph":"House
+        and Senate negotiators have tucked a potentially far-reaching anti-abortion
+        provision into a $388 billion must-pass spending bill, complicating plans
+        for Congress to wrap up its business and adjourn for the year. The provision
+        may be an early indication of the growing political muscle of social conservatives
+        who provided crucial support for Republican candidates, including President
+        Bush, in the election.","abstract":"House and Senate negotiators add potentially
+        far-reaching anti-abortion provision to $388 billion must-pass spending bill,
+        complicating plans for Congress to wrap up its business and adjourn for year;
+        provision would bar federal, state and local agencies from withholding taxpayer
+        money from health care providers that refuse to provide or pay for abortions
+        or refuse to offer abortion counseling or referrals; Sen Barbara Boxer says
+        she will use procedural tactics to slow Senate business to crawl if abortion
+        language is not altered (M)","print_page":"1","blog":[],"source":"The New
+        York Times","multimedia":[],"headline":{"main":"NEGOTIATORS ADD ABORTION CLAUSE
+        TO SPENDING BILL"},"keywords":[{"name":"persons","value":"BOXER, BARBARA"},{"name":"glocations","value":"UNITED
+        STATES"},{"name":"organizations","value":"CONGRESS"},{"name":"subject","value":"ABORTION"},{"name":"subject","value":"FINANCES"},{"name":"subject","value":"LAW
+        AND LEGISLATION"},{"name":"subject","value":"BUDGETS AND BUDGETING"}],"pub_date":"2004-11-20T00:00:00Z","document_type":"article","news_desk":"National
+        Desk","section_name":"Front Page; U.S.","subsection_name":null,"byline":{"person":[{"firstname":"Sheryl","middlename":"Gay","lastname":"STOLBERG","rank":1,"role":"reported","organization":""},{"organization":"","role":"reported","rank":2,"firstname":"Carl","lastname":"HULSE"}],"original":"By
+        SHERYL GAY STOLBERG and CARL HULSE"},"type_of_material":"News","_id":"4fd23f1f8eb7c8105d7d6526","word_count":1299,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/1988\/10\/10\/opinion\/l-pentagon-needs-separate-procurement-board-009488.html","snippet":"LEAD:
+        To the Editor:","lead_paragraph":"LEAD: To the Editor:","abstract":null,"print_page":"18","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Pentagon Needs Separate
+        Procurement Board"},"keywords":[{"name":"persons","value":"BOXER, BARBARA"},{"name":"glocations","value":"UNITED
+        STATES"},{"name":"subject","value":"DEFENSE CONTRACTS"},{"name":"subject","value":"LAW
+        AND LEGISLATION"},{"name":"subject","value":"UNITED STATES ARMAMENT AND DEFENSE"}],"pub_date":"1988-10-10T00:00:00Z","document_type":"article","news_desk":"Editorial
+        Desk","section_name":"Opinion","subsection_name":null,"byline":null,"type_of_material":"Letter","_id":"4fd1a0368eb7c8105d6b4dd1","word_count":567,"slideshow_credits":null}]},"status":"OK","copyright":"Copyright
         (c) 2013 The New York Times Company.  All Rights Reserved."}'
     http_version: 
-  recorded_at: Tue, 15 Mar 2016 21:22:51 GMT
+  recorded_at: Thu, 17 Mar 2016 01:51:48 GMT
 - request:
     method: get
-    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Michael%20Bennet
+    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Dianne%20Feinstein
     body:
       encoding: US-ASCII
       string: ''
@@ -458,21 +405,21 @@ http_interactions:
       message: OK
     headers:
       X-Mashery-Responder:
-      - prod-j-worker-atl-04.mashery.com
+      - prod-j-worker-atl-02.mashery.com
       Server:
       - nginx/1.4.1
       Date:
-      - Tue, 15 Mar 2016 21:20:34 GMT
+      - Thu, 17 Mar 2016 01:47:10 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '18615'
+      - '21460'
       Vary:
       - Accept-Encoding
       X-Powered-By:
       - PHP/5.3.27
       X-Cached:
-      - EXPIRED
+      - MISS
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
@@ -481,175 +428,142 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"response":{"meta":{"hits":1286,"time":36,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/1997\/10\/26\/style\/weddings-susan-daggett-michael-bennet.html","snippet":"Susan
-        Diane Daggett, a daughter of Patricia B. Palmer of Little Rock, Ark., and
-        Jesse B. Daggett of Marianna, Ark., was married yesterday to Michael Farrand
-        Bennet, a son of Douglas J. Bennet Jr. of Middletown, Conn., and Susanne K.
-        Bennet of...","lead_paragraph":"Susan Diane Daggett, a daughter of Patricia
-        B. Palmer of Little Rock, Ark., and Jesse B. Daggett of Marianna, Ark., was
-        married yesterday to Michael Farrand Bennet, a son of Douglas J. Bennet Jr.
-        of Middletown, Conn., and Susanne K. Bennet of Washington. The Rev. Arnold
-        W. Hearn, an Episcopal priest, performed the ceremony at Crystal Lake in Marianna.
-        The bride, 33, a lawyer, is to join the Earthjustice Legal Defense Fund, formerly
-        the Sierra Club Legal Defense Fund, in Denver next month. Ms. Daggett, who
-        is keeping her name, graduated magna cum laude from Mount Holyoke College,
-        and she and the bridegroom received law degrees from Yale University.","abstract":null,"print_page":"7","blog":[],"source":"The
-        New York Times","multimedia":[],"headline":{"main":"Susan Daggett, Michael
-        Bennet","kicker":"WEDDINGS"},"keywords":[{"name":"persons","value":"DAGGETT,
-        SUSAN DIANE"},{"name":"persons","value":"BENNET, MICHAEL FARRAND"},{"name":"subject","value":"WEDDINGS
-        AND ENGAGEMENTS"}],"pub_date":"1997-10-26T00:00:00Z","document_type":"article","news_desk":"Society
-        Desk","section_name":"Style","subsection_name":null,"byline":null,"type_of_material":"News","_id":"4fd1d8888eb7c8105d71762a","word_count":211,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2013\/01\/02\/opinion\/dowd-the-man-who-said-nay.html","snippet":"Michael
-        Bennet risks his status as Democratic Golden Boy to protest America\u2019s
-        red ink.","lead_paragraph":"Michael Bennet risks his status as Democratic
-        Golden Boy to protest America\u2019s red ink.","abstract":"Maureen Dowd Op-Ed
-        column recounts conversation with Sen Michael Bennet, one of only three Democratic
-        senators to vote against Pres Obama''s fiscal deal.","print_page":"19","blog":[],"source":"The
-        New York Times","multimedia":[{"width":190,"url":"images\/2014\/11\/01\/opinion\/dowd-circular\/dowd-circular-thumbWide-v2.png","height":126,"subtype":"wide","legacy":{"wide":"images\/2014\/11\/01\/opinion\/dowd-circular\/dowd-circular-thumbWide-v2.png","wideheight":"126","widewidth":"190"},"type":"image"},{"width":75,"url":"images\/2010\/09\/16\/opinion\/Dowd_New\/Dowd_New-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2010\/09\/16\/opinion\/Dowd_New\/Dowd_New-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"seo":"The
-        Man Who Said \u2018Nay\u2019","main":"The Man Who Said \u2018Nay\u2019","content_kicker":"Op-Ed
-        Columnist","kicker":"Op-Ed Columnist","print_headline":"The Man Who Said \u2018Nay\u2019"},"keywords":[{"rank":"1","is_major":"Y","name":"persons","value":"Bennet,
-        Michael Farrand"},{"rank":"2","is_major":"Y","name":"subject","value":"Federal
-        Budget (US)"},{"rank":"3","is_major":"N","name":"subject","value":"United
-        States Politics and Government"},{"rank":"4","is_major":"N","name":"organizations","value":"Senate"},{"rank":"5","is_major":"N","name":"subject","value":"National
-        Debt (US)"},{"rank":"6","is_major":"N","name":"glocations","value":"Colorado"}],"pub_date":"2013-01-02T00:00:00Z","document_type":"article","news_desk":"Editorial","section_name":"Opinion","subsection_name":null,"byline":{"contributor":"","person":[{"organization":"","role":"reported","firstname":"Maureen","rank":1,"lastname":"DOWD"}],"original":"By
-        MAUREEN DOWD"},"type_of_material":"Op-Ed","_id":"50e3a29800315214fbb81fd9","word_count":"872","slideshow_credits":null},{"web_url":"http:\/\/query.nytimes.com\/gst\/fullpage.html?res=9D07EFDB133AF935A2575AC0A9669D8B63","snippet":"A
-        conservative group that has vowed to play a big role in this year''s midterm
-        elections went on the attack Wednesday with television advertisements that
-        knock two Democratic Senate candidates for supporting the economic stimulus
-        package and the...","lead_paragraph":"A conservative group that has vowed
-        to play a big role in this year''s midterm elections went on the attack Wednesday
-        with television advertisements that knock two Democratic Senate candidates
-        for supporting the economic stimulus package and the health care overhaul.
-        The spots from American Crossroads use different scripts against Missouri''s
-        Robin Carnahan and Senator Michael Bennet of Colorado. But the commercials
-        certainly have some overlap, with each, for example, showing the targeted
-        candidate literally embracing President Obama.","abstract":"Caucus column
-        on new TV ads from conservative group American Crossroads attacking Democratic
-        Senate candidates Robin Carnahan of Missouri and Sen Michael Bennet of Colorado;
-        photos (M)","print_page":"23","blog":[],"source":"The New York Times","multimedia":[],"headline":{"main":"THE
-        AD CAMPAIGN: Two Draw Fire From the Right","kicker":"THE CAUCUS"},"keywords":[{"name":"persons","value":"CARNAHAN,
-        ROBIN"},{"name":"persons","value":"BENNET, MICHAEL"},{"name":"glocations","value":"COLORADO"},{"name":"glocations","value":"MISSOURI"},{"name":"organizations","value":"AMERICAN
-        CROSSROADS"},{"name":"organizations","value":"SENATE"},{"name":"subject","value":"TELEVISION"},{"name":"subject","value":"POLITICAL
-        ADVERTISING"},{"name":"subject","value":"ELECTION ISSUES"},{"name":"subject","value":"ELECTIONS"}],"pub_date":"2010-09-16T00:00:00Z","document_type":"article","news_desk":"National
-        Desk","section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Bernie","lastname":"BECKER"}],"original":"By
-        BERNIE BECKER"},"type_of_material":"News","_id":"4fd2aa738eb7c8105d89688a","word_count":285,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2010\/03\/25\/health\/policy\/25memo.html","snippet":"For
-        all the applause among Democrats, some still lament the lack of a public option
-        in the health insurance bill.","lead_paragraph":"For all the applause among
-        Democrats, some still lament the lack of a public option in the health insurance
-        bill.","abstract":null,"print_page":"21","blog":[],"source":"The New York
-        Times","multimedia":[],"headline":{"seo":"Some Democrats Still Lament Lack
-        of a Public Insurance Option","main":"A Grand Achievement, or a Lost Opportunity?","kicker":"Congressional
-        Memo","print_headline":"A Grand Achievement, Or a Lost Opportunity?","content_kicker":"Congressional
-        Memo"},"keywords":[{"value":"Health Insurance and Managed Care","is_major":"N","rank":"1","name":"subject"},{"value":"Reform
-        and Reorganization","is_major":"N","rank":"2","name":"subject"},{"value":"United
-        States Politics and Government","is_major":"N","rank":"3","name":"subject"},{"value":"Democratic
-        Party","is_major":"N","rank":"4","name":"organizations"},{"value":"House of
-        Representatives","is_major":"N","rank":"5","name":"organizations"},{"value":"Senate","is_major":"N","rank":"6","name":"organizations"},{"value":"Bennet,
-        Michael","is_major":"N","rank":"7","name":"persons"},{"value":"Sanders, Bernard","is_major":"N","rank":"8","name":"persons"}],"pub_date":"2010-03-25T00:00:00Z","document_type":"article","news_desk":"National","section_name":"Health","subsection_name":"Money
-        & Policy","byline":{"contributor":"","person":[{"organization":"","role":"reported","rank":1,"firstname":"David"}],"original":"By
-        DAVID M. HERSZENHORN"},"type_of_material":"News","_id":"544453b238f0d82782d9b722","word_count":"997","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/politics\/first-draft\/2014\/10\/24\/first-draft-video-bennet-on-fixing-washington\/","snippet":"Senator
-        Michael Bennet deplores the influence of money and negative attack ads in
-        politics in the latest in our \u201cFixing Washington\u201d video series.","lead_paragraph":null,"abstract":"Senator
-        Michael Bennet deplores the influence of money and negative attack ads in
-        politics in the latest in our \u201cFixing Washington\u201d video series.","print_page":null,"blog":[],"source":"The
-        New York Times","multimedia":[],"headline":{"main":"First Draft Video: Bennet
-        on Fixing Washington","kicker":"First Draft"},"keywords":[{"value":"Bennet,
-        Michael Farrand","name":"persons","rank":"1"},{"value":"Colorado","name":"glocations","rank":"1"},{"value":"Midterm
-        Elections (2014)","name":"subject","rank":"1"}],"pub_date":"2014-10-24T13:20:54Z","document_type":"blogpost","news_desk":null,"section_name":null,"subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Carl","lastname":"HULSE"}],"original":"By
-        CARL HULSE"},"type_of_material":"Blog","_id":"544a8a9738f0d8160d830754","word_count":"23","slideshow_credits":null},{"web_url":"http:\/\/thecaucus.blogs.nytimes.com\/2012\/12\/04\/bennet-chosen-to-lead-democratic-senate-campaign-committee\/","snippet":"Senate
-        Democrats elevated one of their most battle-tested members, Michael Bennet
-        of Colorado, to head the Democratic Senatorial Campaign Committee as the party
-        gears up for what is expected to be a tough cycle in 2014.","lead_paragraph":null,"abstract":"Senate
-        Democrats elevated one of their most battle-tested members, Michael Bennet
-        of Colorado, to head the Democratic Senatorial Campaign Committee as the party
-        gears up for what is expected to be a tough cycle in 2014.","print_page":null,"blog":[],"source":"The
-        New York Times","multimedia":[],"headline":{"main":"Bennet Chosen to Lead
-        Democratic Senate Campaign Committee","kicker":"The Caucus"},"keywords":[{"rank":"1","name":"persons","value":"Bennet,
-        Michael Farrand"},{"rank":"1","name":"glocations","value":"Colorado"},{"rank":"1","name":"organizations","value":"Senate"},{"rank":"1","name":"subject","value":"Elections,
-        Senate"},{"rank":"2","name":"subject","value":"United States Politics and
-        Government"}],"pub_date":"2012-12-04T16:06:40Z","document_type":"blogpost","news_desk":null,"section_name":"U.S.","subsection_name":"Politics","byline":{"person":[{"firstname":"Jeremy","middlename":"W.","lastname":"PETERS","rank":1,"role":"reported","organization":""}],"original":"By
-        JEREMY W. PETERS"},"type_of_material":"Blog","_id":"50be679d00315214fbb7d7b6","word_count":"245","slideshow_credits":null},{"web_url":"http:\/\/dealbook.nytimes.com\/2010\/08\/06\/exotic-deals-put-denver-schools-deeper-in-debt\/","snippet":"Denver
-        is confronted with budgetary woes aggravated by esoteric financial deals that
-        Wall Street peddled in the years before the credit crisis.","lead_paragraph":"In
-        the spring of 2008, the Denver public school system needed to plug a $400
-        million hole in its pension fund. Bankers at JPMorgan Chase offered what seemed
-        to be a perfect solution, Gretchen Morgenson reports in The New York Times.","abstract":"Denver
-        is confronted with budgetary woes aggravated by esoteric financial deals that
-        Wall Street peddled in the years before the credit crisis.","print_page":null,"blog":[],"source":"The
-        New York Times","multimedia":[],"headline":{"main":"Exotic Deals Put Denver
-        Schools Deeper in Debt","kicker":"DealBook"},"keywords":[{"rank":"4","name":"glocations","value":"Denver
-        (Colo)"},{"rank":"3","name":"organizations","value":"JPMorgan Chase & Co."},{"rank":"2","name":"persons","value":"Bennet,
-        Michael F"},{"rank":"1","name":"type_of_material","value":"News"}],"pub_date":"2010-08-06T00:42:18Z","document_type":"blogpost","news_desk":null,"section_name":"Business
-        Day","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1}],"original":"By
-        DEALBOOK"},"type_of_material":"Blog","_id":"4fd39c608eb7c8105d8dc4e2","word_count":402,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2006\/03\/02\/business\/media\/02mag.html","snippet":"After
-        a lengthy search, The Atlantic Monthly yesterday named a new editor \u0097
-        James Bennet, a reporter for The New York Times.","lead_paragraph":"After
-        a lengthy search, The Atlantic Monthly yesterday named a new editor -- James
-        Bennet, a reporter for The New York Times, who will be following a long line
-        of storied editors from James Russell Lowell and William Dean Howells to Michael
-        Kelly. Mr. Bennet, 39, is The Atlantic''s first official editor in chief since
-        Mr. Kelly stepped down in September 2002 to return to writing. Mr. Kelly was
-        on assignment for the magazine in Iraq when he was killed the following year.","abstract":"James
-        Bennet, reporter for New York Times, is named editor of Atlantic Monthly;
-        Bennet is magazine''s first official editor in chief since Michael Kelly stepped
-        down in September 2002 (M)","print_page":"4","blog":[],"source":"The New York
-        Times","multimedia":[],"headline":{"main":"The Atlantic Picks Writer At The
-        Times As Its Editor"},"keywords":[{"name":"persons","value":"BENNET, JAMES"},{"name":"persons","value":"KELLY,
-        MICHAEL"},{"name":"organizations","value":"ATLANTIC MONTHLY"},{"name":"organizations","value":"NEW
-        YORK TIMES"},{"name":"subject","value":"SUSPENSIONS, DISMISSALS AND RESIGNATIONS"},{"name":"subject","value":"APPOINTMENTS
-        AND EXECUTIVE CHANGES"},{"name":"subject","value":"NEWSPAPERS"},{"name":"subject","value":"BIOGRAPHICAL
-        INFORMATION"},{"name":"subject","value":"MAGAZINES"},{"name":"subject","value":"NEWS
-        AND NEWS MEDIA"}],"pub_date":"2006-03-02T00:00:00Z","document_type":"article","news_desk":"Business\/Financial
-        Desk","section_name":"Business","subsection_name":null,"byline":{"person":[{"firstname":"Katharine","middlename":"Q.","lastname":"SEELYE","rank":1,"role":"reported","organization":""}],"original":"By
-        KATHARINE Q. SEELYE"},"type_of_material":"News","_id":"4fd2ab7b8eb7c8105d8982bb","word_count":733,"slideshow_credits":null},{"web_url":"http:\/\/query.nytimes.com\/gst\/fullpage.html?res=9F01E0DF1031F935A3575BC0A9669D8B63","snippet":"In
-        the spring of 2008, the Denver public school system needed to plug a $400
-        million hole in its pension fund. Bankers at JPMorgan Chase offered what seemed
-        to be a perfect solution.     The bankers said that the school system could
-        raise $750...","lead_paragraph":"In the spring of 2008, the Denver public
-        school system needed to plug a $400 million hole in its pension fund. Bankers
-        at JPMorgan Chase offered what seemed to be a perfect solution. The bankers
-        said that the school system could raise $750 million in an exotic transaction
-        that would eliminate the pension gap and save tens of millions of dollars
-        annually in debt costs -- money that could be plowed back into Denver''s classrooms,
-        starved in recent years for funds.","abstract":"Denver public school system,
-        trying to plug $400 million hole in its pension fund in 2008, followed banker
-        JPMorgan Chase''s suggestions and engaged in exotic transaction that has resulted
-        in school system paying $115 million in interest and fees, some $25 million
-        more than anticipated; Denver Board of Education issued so-called pension
-        certificates with derivative attached; debt carried lower rate but could also
-        fluctuate if economic conditions changed; transaction went awry shortly after
-        deal closed because of stress in credit markets and plummeting interest rates;
-        Denver schools want to renegotiate deal but to unwind it all, schools must
-        pay banks $81 million in termination fees; both Michael F Bennet, now US senator
-        from Colorado who was school superintendant at time, and Thomas Boasberg,
-        then system''s chief operating officer, recommended financing and say no one
-        could have predicted financial crisis of 2008 that elevated deal''s costs;
-        experts contend Denver transaction was false solution for what issuers want
-        to achieve--lower long-term costs--because banks selling deals rarely quantified
-        potential risks involved; Denver just one of many cities with budgetary woes
-        aggravated by esoteric deals peddled by Wall Street in years before credit
-        crisis; analysts say financial stress from these deals could not come at worse
-        time; photos (M)","print_page":"1","blog":[],"source":"The New York Times","multimedia":[],"headline":{"main":"Exotic
-        Deals Put Denver Schools Deeper in Debt","kicker":"PAYBACK TIME"},"keywords":[{"name":"persons","value":"BOASBERG,
-        THOMAS"},{"name":"persons","value":"BENNET, MICHAEL"},{"name":"glocations","value":"DENVER
-        (COLO)"},{"name":"organizations","value":"JPMORGAN CHASE & CO"},{"name":"subject","value":"RECESSION
-        AND DEPRESSION"},{"name":"subject","value":"SURVEYS AND SERIES"},{"name":"subject","value":"UNITED
-        STATES ECONOMY"},{"name":"subject","value":"DERIVATIVES (FINANCIAL INSTRUMENTS)"},{"name":"subject","value":"EDUCATION
-        AND SCHOOLS"},{"name":"subject","value":"FINANCES"},{"name":"subject","value":"PRICES
-        (FARES, FEES AND RATES)"},{"name":"subject","value":"PENSIONS AND RETIREMENT
-        PLANS"},{"name":"subject","value":"TEACHERS AND SCHOOL EMPLOYEES"},{"name":"subject","value":"STOCKS
-        AND BONDS"},{"name":"subject","value":"BUDGETS AND BUDGETING"}],"pub_date":"2010-08-06T00:00:00Z","document_type":"article","news_desk":"Business\/Financial
-        Desk","section_name":"Front Page; Education; Business","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Gretchen","lastname":"MORGENSON"}],"original":"By
-        GRETCHEN MORGENSON"},"type_of_material":"News","_id":"4fd282a98eb7c8105d85024a","word_count":3120,"slideshow_credits":null},{"web_url":"http:\/\/thecaucus.blogs.nytimes.com\/2010\/09\/16\/sen-bennet-insider-step-outside-and-say-that\/","snippet":"At
-        an insider''s press breakfast, Senator Michael Bennet of Colorado explains
-        how he''s campaigning as an outsider.","lead_paragraph":"Senator Michael Bennet
-        of Colorado was in a K Street conference room Thursday morning, the guest
-        speaker at an insider''s breakfast with two dozen Washington reporters and
-        columnists.","abstract":"At an insider''s press breakfast, Senator Michael
-        Bennet of Colorado explains how he''s campaigning as an outsider.","print_page":null,"blog":[],"source":"The
-        New York Times","multimedia":[],"headline":{"main":"Senator Bennet Runs as
-        a Newcomer","kicker":"The Caucus"},"keywords":[{"rank":"1","name":"type_of_material","value":"News"}],"pub_date":"2010-09-16T13:34:44Z","document_type":"blogpost","news_desk":null,"section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1}],"original":"By
-        MICHAEL D. SHEAR"},"type_of_material":"Blog","_id":"4fd39c1e8eb7c8105d8db878","word_count":575,"slideshow_credits":null}]},"status":"OK","copyright":"Copyright
+      string: '{"response":{"meta":{"hits":3251,"time":38,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2016\/03\/16\/opinion\/human-trafficking.html","snippet":"Senator
+        Dianne Feinstein discusses the role of website in facilitating the sex trade
+        of children.","lead_paragraph":"Senator Dianne Feinstein discusses the role
+        of website in facilitating the sex trade of children.","abstract":"Letter
+        from Sen Dianne Feinstein responds to March 10 column by Nicholas Kristof
+        denouncing websites like Backpage.com for facilitating sex trafficking of
+        minors.","print_page":"22","blog":[],"source":"The New York Times","multimedia":[],"headline":{"main":"Human
+        Trafficking","content_kicker":"Letter","kicker":"Letter","print_headline":"Human
+        Trafficking"},"keywords":[{"rank":"2","is_major":"Y","name":"subject","value":"Sex
+        Crimes"},{"rank":"3","is_major":"Y","name":"subject","value":"Child Abuse
+        and Neglect"},{"rank":"4","is_major":"Y","name":"subject","value":"Prostitution"},{"rank":"5","is_major":"Y","name":"subject","value":"Human
+        Trafficking"},{"rank":"6","is_major":"N","name":"persons","value":"Feinstein,
+        Dianne"},{"rank":"7","is_major":"N","name":"subject","value":"Law and Legislation"}],"pub_date":"2016-03-16T00:00:00Z","document_type":"article","news_desk":"Letters","section_name":"Opinion","subsection_name":null,"byline":[],"type_of_material":"Letter","_id":"56e853be38f0d85c820e6323","word_count":"191","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2016\/02\/04\/us\/bills-seek-transparency-of-shell-companies.html","snippet":"State
+        governments are usually not given the name of the person who owns the corporation,
+        which is a barrier for law enforcement authorities.","lead_paragraph":"State
+        governments are usually not given the name of the person who owns the corporation,
+        which is a barrier for law enforcement authorities.","abstract":null,"print_page":"13","blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2016\/02\/04\/us\/04SHELL1\/04SHELL1-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2016\/02\/04\/us\/04SHELL1\/04SHELL1-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2016\/02\/04\/us\/04SHELL1\/04SHELL1-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2016\/02\/04\/us\/04SHELL1\/04SHELL1-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2016\/02\/04\/us\/04SHELL1\/04SHELL1-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2016\/02\/04\/us\/04SHELL1\/04SHELL1-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Bills
+        Seek Transparency of Shell Companies","print_headline":" Congress Takes Up
+        Bills on Shell Companies "},"keywords":[{"rank":"1","is_major":"Y","name":"subject","value":"Tax
+        Shelters"},{"rank":"2","is_major":"Y","name":"subject","value":"Money Laundering"},{"rank":"3","is_major":"N","name":"subject","value":"Law
+        and Legislation"},{"rank":"4","is_major":"N","name":"persons","value":"Feinstein,
+        Dianne"},{"rank":"5","is_major":"N","name":"organizations","value":"Global
+        Witness"}],"pub_date":"2016-02-04T00:00:00Z","document_type":"article","news_desk":"National","section_name":"U.S.","subsection_name":null,"byline":{"contributor":"","person":[{"organization":"","role":"reported","firstname":"Louise","rank":1,"lastname":"STORY"}],"original":"By
+        LOUISE STORY"},"type_of_material":"News","_id":"56b2bdec38f0d82036f0a92f","word_count":"324","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2016\/02\/13\/us\/obama-california-national-monument.html","snippet":"The
+        move drew immediate rebuke from some Republicans, who have criticized the
+        president\u2019s aggressive use of executive action to protect lands.","lead_paragraph":"The
+        move drew immediate rebuke from some Republicans, who have criticized the
+        president\u2019s aggressive use of executive action to protect lands.","abstract":null,"print_page":"10","blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2016\/02\/13\/us\/13MONUMENTS\/13MONUMENTS-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2016\/02\/13\/us\/13MONUMENTS\/13MONUMENTS-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2016\/02\/13\/us\/13MONUMENTS\/13MONUMENTS-articleLarge.jpg","height":399,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2016\/02\/13\/us\/13MONUMENTS\/13MONUMENTS-articleLarge.jpg","xlargeheight":"399"},"type":"image"},{"width":75,"url":"images\/2016\/02\/13\/us\/13MONUMENTS\/13MONUMENTS-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2016\/02\/13\/us\/13MONUMENTS\/13MONUMENTS-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"With
+        3 California Sites, Obama Nearly Doubles Public Land He\u2019s Protected","print_headline":"With
+        3 New Sites in California, Obama Extends Protection of Public Land "},"keywords":[{"rank":"1","is_major":"N","name":"subject","value":"National
+        Parks, Monuments and Seashores"},{"rank":"2","is_major":"N","name":"persons","value":"Obama,
+        Barack"},{"rank":"3","is_major":"N","name":"glocations","value":"California"},{"rank":"4","is_major":"N","name":"persons","value":"Feinstein,
+        Dianne"}],"pub_date":"2016-02-13T00:00:00Z","document_type":"article","news_desk":"National","section_name":"U.S.","subsection_name":null,"byline":{"contributor":"Mark
+        Landler reported from Los Angeles, and Julie Turkewitz from Denver.","person":[{"organization":"","role":"reported","firstname":"Mark","rank":1,"lastname":"LANDLER"},{"organization":"","role":"reported","firstname":"Julie","rank":2,"lastname":"TURKEWITZ"}],"original":"By
+        MARK LANDLER and JULIE TURKEWITZ"},"type_of_material":"News","_id":"56bd9eab38f0d810e6a1a3d8","word_count":"771","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2015\/12\/31\/us\/farmers-try-political-force-to-twist-open-californias-taps.html","snippet":"Few
+        in agriculture have shaped the debate over water more than the several hundred
+        owners of an arid finger of farmland west of Fresno.","lead_paragraph":"Few
+        in agriculture have shaped the debate over water more than the several hundred
+        owners of an arid finger of farmland west of Fresno.","abstract":"Westlands
+        Water District in California, agricultural irrigation contractor run by few
+        hundred farmers who hold land west of Fresno, has emerged as most wealthy
+        and powerful lobbying force amid debate over water and drought in state; Westlands
+        has $100-million-a-year budget and has pushed successfully to keep water flowing
+        to its own farmers and others in the San Joaquin Valley, despite restrictions
+        across state. ","print_page":"1","blog":[],"source":"The New York Times","multimedia":[{"width":190,"url":"images\/2015\/07\/26\/us\/00agriculture-web01\/testcrista-donotpub01-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/07\/26\/us\/00agriculture-web01\/testcrista-donotpub01-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/07\/26\/us\/00agriculture-web01\/testcrista-donotpub01-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/07\/26\/us\/00agriculture-web01\/testcrista-donotpub01-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2015\/07\/26\/us\/00agriculture-web01\/00agriculture-web01-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/07\/26\/us\/00agriculture-web01\/00agriculture-web01-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Farmers
+        Try Political Force to Twist Open California\u2019s Taps","content_kicker":"The
+        Parched West","print_headline":"California\u2019s Farmers Try Political Force
+        to Open Taps in Drought"},"keywords":[{"rank":"1","is_major":"Y","name":"subject","value":"Agriculture
+        and Farming"},{"rank":"11","is_major":"N","name":"glocations","value":"San
+        Joaquin Valley (Calif)"},{"rank":"12","is_major":"N","name":"organizations","value":"Interior
+        Department"},{"rank":"13","is_major":"N","name":"persons","value":"Feinstein,
+        Dianne"},{"rank":"2","is_major":"Y","name":"organizations","value":"Westlands
+        Water District"},{"rank":"3","is_major":"Y","name":"glocations","value":"California"},{"rank":"4","is_major":"Y","name":"subject","value":"Water"},{"rank":"5","is_major":"Y","name":"subject","value":"Drought"},{"rank":"6","is_major":"Y","name":"subject","value":"Conservation
+        of Resources"},{"rank":"7","is_major":"N","name":"subject","value":"Shortages"},{"rank":"8","is_major":"N","name":"subject","value":"Irrigation"},{"rank":"9","is_major":"N","name":"glocations","value":"Central
+        Valley (Calif)"},{"rank":"10","is_major":"N","name":"organizations","value":"Bureau
+        of Reclamation"}],"pub_date":"2015-12-31T00:00:00Z","document_type":"article","news_desk":"National","section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Michael","rank":1,"lastname":"WINES"},{"organization":"","role":"reported","firstname":"Jennifer","rank":2,"lastname":"MEDINA"}],"original":"By
+        MICHAEL WINES and JENNIFER MEDINA"},"type_of_material":"News","_id":"5684775738f0d83cec270ec4","word_count":"3411","slideshow_credits":null},{"web_url":"http:\/\/green.blogs.nytimes.com\/2011\/03\/24\/a-park-an-oyster-farm-and-science\/","snippet":"A
+        federal investigation of scientific misconduct at Point Reyes National Seashore
+        found no deliberate intent to deceive. But it did not find exemplary conduct,
+        either.","lead_paragraph":"The question at the core of the seven-year-old
+        feud in California''s Marin County is whether an oyster farm at Point Reyes
+        National Seashore should be allowed to continue operations after 2012. The
+        controversy, centering on the management of an area designated as potential
+        wilderness, remains unresolved. Both sides are putting forth their best arguments
+        for a continuing environmental impact review.","abstract":"A federal investigation
+        of scientific misconduct at Point Reyes National Seashore found no deliberate
+        intent to deceive. But it did not find exemplary conduct, either.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"A Park, an Oyster Farm
+        and Science","kicker":"Green"},"keywords":[{"rank":"11","name":"organizations","value":"National
+        Park Service"},{"rank":"4","name":"subject","value":"National Parks, Monuments
+        and Seashores"},{"rank":"10","name":"organizations","value":"Interior Department"},{"rank":"3","name":"subject","value":"Environment"},{"rank":"2","name":"persons","value":"Feinstein,
+        Dianne"},{"rank":"5","name":"subject","value":"Oysters"},{"rank":"1","name":"type_of_material","value":"News"},{"rank":"6","name":"subject","value":"Parks
+        and Other Recreation Areas"},{"rank":"7","name":"subject","value":"Research"},{"rank":"13","name":"glocations","value":"Point
+        Reyes National Seashore (Calif)"},{"rank":"8","name":"subject","value":"Science
+        and Technology"},{"rank":"9","name":"subject","value":"Wilderness Areas"},{"rank":"12","name":"glocations","value":"California"}],"pub_date":"2011-03-24T08:30:25Z","document_type":"blogpost","news_desk":null,"section_name":"Science","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Felicity","rank":1,"lastname":"BARRINGER"}],"original":"By
+        FELICITY BARRINGER"},"type_of_material":"Blog","_id":"4fd39f398eb7c8105d8e2ef9","word_count":907,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2009\/12\/22\/business\/energy-environment\/22solar.html","snippet":"Senator
+        Dianne Feinstein introduced legislation to protect a million acres of the
+        Mojave Desert in California by scuttling planned solar plants and wind farms.","lead_paragraph":"Senator
+        Dianne Feinstein introduced legislation to protect a million acres of the
+        Mojave Desert in California by scuttling planned solar plants and wind farms.","abstract":null,"print_page":"1","blog":[],"source":"The
+        New York Times","multimedia":[{"width":600,"url":"images\/2009\/12\/22\/business\/22solar_CA0\/articleLarge-v2.jpg","height":330,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2009\/12\/22\/business\/22solar_CA0\/articleLarge-v2.jpg","xlargeheight":"330"},"type":"image"},{"width":75,"url":"images\/2009\/12\/22\/business\/22solar_CA0\/thumbStandard-v2.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2009\/12\/22\/business\/22solar_CA0\/thumbStandard-v2.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"seo":"Protection
+        of Desert Land Faces Off With New Energy Sources","main":"Desert Vistas vs.
+        Solar Power","sub":"Preservation of Mojave Faces Off With Plans For Renewable
+        Energy ;","print_headline":"Desert Vistas vs. Solar Power"},"keywords":[{"rank":"1","is_major":"N","name":"glocations","value":"Mojave
+        Desert (Calif)"},{"rank":"2","is_major":"N","name":"subject","value":"Solar
+        Energy"},{"rank":"3","is_major":"N","name":"subject","value":"Wind Power"},{"rank":"4","is_major":"N","name":"glocations","value":"California"},{"rank":"5","is_major":"N","name":"subject","value":"Alternative
+        and Renewable Energy"},{"rank":"6","is_major":"N","name":"subject","value":"Deserts"},{"rank":"7","is_major":"N","name":"subject","value":"Law
+        and Legislation"},{"rank":"8","is_major":"N","name":"persons","value":"Feinstein,
+        Dianne"}],"pub_date":"2009-12-22T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Business
+        Day","subsection_name":"Energy & Environment ","byline":{"person":[{"organization":"","role":"reported","firstname":"Todd","rank":1,"lastname":"WOODY"}],"original":"By
+        TODD WOODY"},"type_of_material":"News","_id":"545ac4d138f0d842c59d1a1f","word_count":"1438","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2014\/08\/06\/us\/redactions-of-report-on-cia-stoke-ire.html","snippet":"Senator
+        Dianne Feinstein, the chairwoman of the Senate Intelligence Committee, pledged
+        to fight for more of the report to be declassified, saying the redactions
+        obscure its conclusions.","lead_paragraph":"Senator Dianne Feinstein, the
+        chairwoman of the Senate Intelligence Committee, pledged to fight for more
+        of the report to be declassified, saying the redactions obscure its conclusions.","abstract":"Senator
+        Dianne Feinstein pledges to fight for more of Senate Intelligence Committee''s
+        report on Central Intelligence Agency''s detention program to be declassified,
+        saying the redactions obscure its conclusions.","print_page":"14","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Senator Denounces Redactions
+        of Report on C.I.A. Detention Program","print_headline":"Redactions of Report
+        on C.I.A. Stoke Ire"},"keywords":[{"rank":"5","is_major":"Y","value":"Detainees","name":"subject"},{"rank":"1","is_major":"Y","value":"Feinstein,
+        Dianne","name":"persons"},{"rank":"6","is_major":"N","value":"United States
+        Politics and Government","name":"subject"},{"rank":"7","is_major":"N","value":"Espionage
+        and Intelligence Services","name":"subject"},{"rank":"3","is_major":"N","value":"Senate
+        Committee on Intelligence","name":"organizations"},{"rank":"2","is_major":"Y","value":"Central
+        Intelligence Agency","name":"organizations"},{"rank":"4","is_major":"Y","value":"Classified
+        Information and State Secrets","name":"subject"}],"pub_date":"2014-08-06T00:00:00Z","document_type":"article","news_desk":"National","section_name":"U.S.","subsection_name":null,"byline":{"contributor":"","person":[{"organization":"","role":"reported","firstname":"Mark","rank":1,"lastname":"MAZZETTI"}],"original":"By
+        MARK MAZZETTI"},"type_of_material":"News","_id":"53e1817738f0d81effd09c6b","word_count":"446","slideshow_credits":null},{"web_url":"http:\/\/takingnote.blogs.nytimes.com\/2013\/02\/04\/obama-talks-gun-control-in-minneapolis\/","snippet":"Will
+        he put his muscle behind an assault weapons ban?","lead_paragraph":null,"abstract":"Will
+        he put his muscle behind an assault weapons ban?","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2013\/02\/04\/opinion\/242013guns\/242013guns-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2013\/02\/04\/opinion\/242013guns\/242013guns-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2013\/02\/04\/opinion\/242013guns\/242013guns-articleLarge.jpg","height":434,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2013\/02\/04\/opinion\/242013guns\/242013guns-articleLarge.jpg","xlargeheight":"434"},"type":"image"},{"width":75,"url":"images\/2013\/02\/04\/opinion\/242013guns\/242013guns-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2013\/02\/04\/opinion\/242013guns\/242013guns-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Obama
+        Talks Gun Control in Minneapolis","kicker":"Taking Note"},"keywords":[{"rank":"1","name":"persons","value":"Feinstein,
+        Dianne"},{"rank":"1","name":"subject","value":"Gun Control"}],"pub_date":"2013-02-04T16:43:37Z","document_type":"blogpost","news_desk":null,"section_name":"Opinion","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Andrew","rank":1,"lastname":"ROSENTHAL"}],"original":"By
+        ANDREW ROSENTHAL"},"type_of_material":"Blog","_id":"51102c2900315214fbb89190","word_count":"556","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2009\/04\/17\/us\/17nsa.html","snippet":"Senator
+        Dianne Feinstein called for the hearing after new reports that the National
+        Security Agency went beyond its authorization.","lead_paragraph":"Senator
+        Dianne Feinstein called for the hearing after new reports that the National
+        Security Agency went beyond its authorization.","abstract":null,"print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Head of Senate Panel Seeks
+        Hearing on Wiretaps","print_headline":"Head of Senate Panel Calls for Hearing
+        Into N.S.A. Wiretaps"},"keywords":[{"value":"National Security Agency","is_major":"N","rank":"1","name":"organizations"},{"value":"Feinstein,
+        Dianne","is_major":"N","rank":"2","name":"persons"},{"value":"Senate","is_major":"N","rank":"3","name":"organizations"},{"value":"Wiretapping
+        and Other Eavesdropping Devices and Methods","is_major":"N","rank":"4","name":"subject"}],"pub_date":"2009-04-17T00:00:00Z","document_type":"article","news_desk":"ContinuousNews","section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Eric","lastname":"LICHTBLAU"},{"organization":"","role":"reported","rank":2,"firstname":"James","lastname":"RISEN"}],"original":"By
+        ERIC LICHTBLAU and JAMES RISEN"},"type_of_material":"News","_id":"546986d238f0d8317bec136b","word_count":"1251","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/interactive\/2014\/08\/01\/world\/01cia-inspector-general-summary.html","snippet":"This
+        is the summary page from a report by the C.I.A.\u2019s inspector general.","lead_paragraph":"This
+        is the summary page from a report by the C.I.A.\u2019s inspector general.","abstract":null,"print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2014\/08\/01\/world\/01cia-inspector-general-summary-1406840748198\/01cia-inspector-general-summary-1406840748198-thumbWide.png","height":126,"subtype":"wide","legacy":{"wide":"images\/2014\/08\/01\/world\/01cia-inspector-general-summary-1406840748198\/01cia-inspector-general-summary-1406840748198-thumbWide.png","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2014\/08\/01\/world\/01cia-inspector-general-summary-1406840748198\/01cia-inspector-general-summary-1406840748198-articleLarge.png","height":492,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2014\/08\/01\/world\/01cia-inspector-general-summary-1406840748198\/01cia-inspector-general-summary-1406840748198-articleLarge.png","xlargeheight":"492"},"type":"image"},{"width":75,"url":"images\/2014\/08\/01\/world\/01cia-inspector-general-summary-1406840748198\/01cia-inspector-general-summary-1406840748198-thumbStandard.png","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2014\/08\/01\/world\/01cia-inspector-general-summary-1406840748198\/01cia-inspector-general-summary-1406840748198-thumbStandard.png","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Summary
+        of Inspector General Report"},"keywords":[{"rank":"1","is_major":"N","name":"organizations","value":"Central
+        Intelligence Agency"},{"rank":"2","is_major":"N","name":"organizations","value":"Senate
+        Committee on Intelligence"},{"rank":"3","is_major":"N","name":"persons","value":"Feinstein,
+        Dianne"}],"pub_date":"2014-08-01T00:00:00Z","document_type":"multimedia","news_desk":"World","section_name":"World","subsection_name":null,"byline":[],"type_of_material":"Interactive
+        Feature","_id":"53daafe538f0d8548aeb7d70","word_count":null,"slideshow_credits":null}]},"status":"OK","copyright":"Copyright
         (c) 2013 The New York Times Company.  All Rights Reserved."}'
     http_version: 
-  recorded_at: Tue, 15 Mar 2016 21:22:51 GMT
+  recorded_at: Thu, 17 Mar 2016 01:51:49 GMT
 recorded_with: VCR 3.0.1

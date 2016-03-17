@@ -5,6 +5,6 @@ class Zipcode < ActiveRecord::Base
   end
 
   def self.zipcode_does_not_exist?(zipcode)
-    Zipcode.exists?(zipcode) == false
+    Zipcode.find_by(postal_code: zipcode) == nil
   end
 end
