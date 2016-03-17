@@ -5,12 +5,6 @@ class SunlightService
 
   @@options = { apikey: ENV["sunlight_api_key"]}
 
-  def self.legislators_for_zip(zip)
-    response = get("/legislators/locate",
-                query: @@options.merge(zip: zip))
-    parse_legislators(response)
-  end
-
   def self.legislators_by_long_lat_from_zip(zip)
     zipcode_record = Zipcode.find_by(postal_code: "#{zip}")
 
