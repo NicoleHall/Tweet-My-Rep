@@ -5,7 +5,7 @@ class UserIsProptedToEnterANewZipIfZipDoesNotExitTest < ActionDispatch::Integrat
     VCR.use_cassette("legislators#wrong_zip") do
       visit "/"
       click_link("logging_in")
-      fill_in("Search your zipcode", :with => '55555')
+      fill_in("Search your zipcode", :with => '00000')
       click_button "Search"
       assert_equal search_path, current_path
       assert page.has_link?("You've entered an invalid zip, try again")

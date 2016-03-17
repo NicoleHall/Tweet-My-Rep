@@ -11,4 +11,8 @@ class ZipcodeTest < ActiveSupport::TestCase
     refute_equal result1.postal_code, result2.postal_code
     refute_equal result2.postal_code, result3.postal_code
   end
+
+  test "it can check if a zipcode exists in the database" do
+    assert Zipcode.zipcode_does_not_exist?("00000")
+  end
 end
