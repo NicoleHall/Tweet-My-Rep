@@ -1,6 +1,40 @@
 {
   "MiniTest": {
     "coverage": {
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/services/twitter_service.rb": [
+        1,
+        1,
+        4,
+        null,
+        4,
+        4,
+        4,
+        4,
+        4,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/user.rb": [
+        1,
+        1,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        null,
+        null,
+        null
+      ],
       "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/legislators_controller.rb": [
         1,
         null,
@@ -49,21 +83,6 @@
         null,
         null
       ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/legislator.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        32,
-        null,
-        null,
-        1,
-        9,
-        null,
-        null,
-        null
-      ],
       "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/sessions_controller.rb": [
         1,
         null,
@@ -77,20 +96,6 @@
         1,
         1,
         1,
-        null,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/user.rb": [
-        1,
-        1,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
-        null,
         null,
         null
       ],
@@ -126,6 +131,21 @@
         null,
         null
       ],
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/legislator.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        32,
+        null,
+        null,
+        1,
+        9,
+        null,
+        null,
+        null
+      ],
       "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/services/nyt_service.rb": [
         1,
         1,
@@ -151,26 +171,6 @@
         null,
         null
       ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/services/twitter_service.rb": [
-        1,
-        1,
-        4,
-        null,
-        4,
-        4,
-        4,
-        4,
-        4,
-        null,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
       "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/random_zipcodes_controller.rb": [
         1,
         null,
@@ -180,7 +180,7 @@
         null
       ]
     },
-    "timestamp": 1458181543
+    "timestamp": 1458181641
   },
   "Integration Tests": {
     "coverage": {
