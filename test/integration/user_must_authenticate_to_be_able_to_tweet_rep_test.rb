@@ -15,7 +15,7 @@ class UserMustAuthenticateToBeAbleToTweetRepTest < ActionDispatch::IntegrationTe
 
   test "after logging in user can searh and tweet" do
     VCR.use_cassette("legislators#search_and_tweet") do
-      generate_five_random_zipcodes
+      generate_six_random_zipcodes
       visit "/"
       click_link("logging_in")
       fill_in("Search your zipcode", :with => '80205')

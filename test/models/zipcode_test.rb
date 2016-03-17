@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ZipcodeTest < ActiveSupport::TestCase
   test "it can find a random zipcode" do
-    generate_five_random_zipcodes
+    generate_six_random_zipcodes
 
     result1 = Zipcode.get_a_random_zip
     result2 = Zipcode.get_a_random_zip
@@ -13,8 +13,8 @@ class ZipcodeTest < ActiveSupport::TestCase
   end
 
   test "it can check if a zipcode exists in the database" do
-    generate_five_random_zipcodes
-    
+    generate_six_random_zipcodes
+
     assert Zipcode.zipcode_does_not_exist?("00000")
     refute Zipcode.zipcode_does_not_exist?("80205")
   end

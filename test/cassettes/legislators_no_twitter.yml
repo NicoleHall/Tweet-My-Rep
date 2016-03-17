@@ -1,0 +1,588 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://congress.api.sunlightfoundation.com/legislators/locate?apikey=9f19d387e7904184af2eb15c6c1d7bc5&latitude=48.0372&longitude=-94.917
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Thu, 17 Mar 2016 02:15:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"bioguide_id":"P000258","birthday":"1944-06-29","chamber":"house","contact_form":"https://collinpeterson.house.gov/contact-me/email-me","crp_id":"N00004558","district":7,"facebook_id":"6595227967","fax":"202-225-1593","fec_ids":["H2MN07014"],"first_name":"Collin","gender":"M","govtrack_id":"400316","icpsr_id":29127,"in_office":true,"last_name":"Peterson","middle_name":"Clark","name_suffix":null,"nickname":null,"oc_email":"Rep.Collinpeterson@opencongress.org","ocd_id":"ocd-division/country:us/state:mn/cd:7","office":"2204
+        Rayburn House Office Building","party":"D","phone":"202-225-2165","state":"MN","state_name":"Minnesota","term_end":"2017-01-03","term_start":"2015-01-06","thomas_id":"00910","title":"Rep","twitter_id":null,"votesmart_id":26926,"website":"http://collinpeterson.house.gov","youtube_id":null},{"bioguide_id":"F000457","birthday":"1951-05-21","chamber":"senate","contact_form":"http://www.franken.senate.gov/?p=email_al","crp_id":"N00029016","district":null,"facebook_id":null,"fec_ids":["S8MN00438"],"first_name":"Alan","gender":"M","govtrack_id":"412378","icpsr_id":40904,"in_office":true,"last_name":"Franken","lis_id":"S332","middle_name":"Stuart","name_suffix":null,"nickname":"Al","oc_email":"Sen.Franken@opencongress.org","ocd_id":"ocd-division/country:us/state:mn","office":"309
+        Hart Senate Office Building","party":"D","phone":"202-224-5641","senate_class":2,"state":"MN","state_name":"Minnesota","state_rank":"junior","term_end":"2021-01-03","term_start":"2015-01-06","thomas_id":"01969","title":"Sen","twitter_id":null,"votesmart_id":108924,"website":"http://www.franken.senate.gov","youtube_id":"SenatorFranken"},{"bioguide_id":"K000367","birthday":"1960-05-25","chamber":"senate","contact_form":"http://www.klobuchar.senate.gov/public/email-amy","crp_id":"N00027500","district":null,"facebook_id":null,"fax":"202-228-2186","fec_ids":["S6MN00267"],"first_name":"Amy","gender":"F","govtrack_id":"412242","icpsr_id":40700,"in_office":true,"last_name":"Klobuchar","lis_id":"S311","middle_name":"Jean","name_suffix":null,"nickname":null,"oc_email":"Sen.Klobuchar@opencongress.org","ocd_id":"ocd-division/country:us/state:mn","office":"302
+        Hart Senate Office Building","party":"D","phone":"202-224-3244","senate_class":1,"state":"MN","state_name":"Minnesota","state_rank":"senior","term_end":"2019-01-03","term_start":"2013-01-03","thomas_id":"01826","title":"Sen","twitter_id":null,"votesmart_id":65092,"website":"http://www.klobuchar.senate.gov","youtube_id":"senatorklobuchar"}],"count":3,"page":{"count":3,"per_page":20,"page":1}}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 02:15:17 GMT
+- request:
+    method: get
+    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Collin%20Peterson
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-atl-03.mashery.com
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Thu, 17 Mar 2016 02:02:07 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '19354'
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.3.27
+      X-Cached:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"response":{"meta":{"hits":240,"time":134,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/1993\/11\/29\/nyregion\/chronicle-332793.html","snippet":"In
+        case politics doesn''t pan out, United States Representative COLLIN C. PETERSON
+        has a fallback: a singing career.   Mr. Peterson, a Democrat from Minnesota,
+        appeared Saturday night on the Grand Ole Opry and sang the Eddy Arnold hit
+        \"Make the World...","lead_paragraph":"In case politics doesn''t pan out,
+        United States Representative COLLIN C. PETERSON has a fallback: a singing
+        career. Mr. Peterson, a Democrat from Minnesota, appeared Saturday night on
+        the Grand Ole Opry and sang the Eddy Arnold hit \"Make the World Go Away.\"","abstract":null,"print_page":"4","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"CHRONICLE"},"keywords":[{"name":"creative_works","value":"CHRONICLE
+        (TIMES COLUMN)"},{"name":"persons","value":"PETERSON, COLLIN"},{"name":"subject","value":"MUSIC"}],"pub_date":"1993-11-29T00:00:00Z","document_type":"article","news_desk":"Metropolitan
+        Desk","section_name":"New York and Region","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Ron","rank":1,"lastname":"ALEXANDER"}],"original":"By
+        RON ALEXANDER"},"type_of_material":"News","_id":"4fd1d2958eb7c8105d70df21","word_count":119,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2007\/03\/30\/opinion\/30intro.html","snippet":"A
+        partial list of some of the most egregious earmarks shows that, despite lofty
+        rhetoric about the Iraq war, the new Democratic Congress is already feeding
+        at the trough.","lead_paragraph":"A partial list of some of the most egregious
+        earmarks shows that, despite lofty rhetoric about the Iraq war, the new Democratic
+        Congress is already feeding at the trough.","abstract":null,"print_page":"27","blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2007\/03\/29\/opinion\/30opchart-190.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2007\/03\/29\/opinion\/30opchart-190.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":190,"url":"images\/2007\/03\/29\/opinion\/30opchart-190.jpg","height":126,"subtype":"thumbnail","legacy":{"thumbnailheight":"126","thumbnail":"images\/2007\/03\/29\/opinion\/30opchart-190.jpg","thumbnailwidth":"190"},"type":"image"}],"headline":{"main":"Pork
+        Goes to War","content_kicker":"Op-Ed Contributor","kicker":"Op-Ed Contributor","print_headline":"Pork
+        Goes to War"},"keywords":[{"rank":"1","is_major":"N","name":"organizations","value":"Democratic
+        Party"},{"rank":"2","is_major":"N","name":"subject","value":"Lobbying and
+        Lobbyists"},{"rank":"3","is_major":"N","name":"organizations","value":"Senate"},{"rank":"4","is_major":"N","name":"organizations","value":"House
+        of Representatives"},{"rank":"5","is_major":"N","name":"subject","value":"United
+        States Politics and Government"},{"rank":"6","is_major":"N","name":"persons","value":"Peterson,
+        Collin"}],"pub_date":"2007-03-30T00:00:00Z","document_type":"article","news_desk":"OpEd","section_name":"Opinion","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Thomas","rank":1,"lastname":"SCHATZ"}],"original":"By
+        THOMAS SCHATZ"},"type_of_material":"Op-Ed","_id":"5490b21838f0d847ca7e247f","word_count":"231","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/1998\/12\/19\/opinion\/l-how-midwest-flood-relief-money-was-spent-505544.html","snippet":"To
+        the Editor:    A recent report by the Minnesota Office of the Attorney General
+        raised concerns about the collection and disbursement of money by the American
+        Red Cross during the 1997 Red River Valley flood (news article, Dec. 16).
+        It said the...","lead_paragraph":"To the Editor: A recent report by the Minnesota
+        Office of the Attorney General raised concerns about the collection and disbursement
+        of money by the American Red Cross during the 1997 Red River Valley flood
+        (news article, Dec. 16). It said the group should give more detailed information
+        about how it disbursed donations designated for flood recovery.","abstract":"Rep
+        Collin C Peterson letter says Red Cross did a good job helping victims of
+        1997 Red River Valley flood (Dec 16 article)","print_page":"14","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"How Midwest Flood Relief
+        Money Was Spent"},"keywords":[{"name":"persons","value":"PETERSON, COLLIN"},{"name":"glocations","value":"MINNESOTA"},{"name":"glocations","value":"SOUTH
+        DAKOTA"},{"name":"glocations","value":"RED RIVER"},{"name":"organizations","value":"RED
+        CROSS"},{"name":"subject","value":"WEATHER"},{"name":"subject","value":"FLOODS"}],"pub_date":"1998-12-19T00:00:00Z","document_type":"article","news_desk":"Editorial
+        Desk","section_name":"Opinion","subsection_name":null,"byline":null,"type_of_material":"Letter","_id":"4fd1e6e48eb7c8105d7335fa","word_count":153,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/1993\/05\/15\/business\/trade-pact-group-forms-its-legality-is-questioned.html","snippet":"Mickey
+        Kantor, the United States trade representative, has organized a coalition
+        of state and local officials to support the North American Free Trade Agreement,
+        prompting a Democratic Congressman to call for an investigation of whether
+        the group...","lead_paragraph":"Mickey Kantor, the United States trade representative,
+        has organized a coalition of state and local officials to support the North
+        American Free Trade Agreement, prompting a Democratic Congressman to call
+        for an investigation of whether the group violates Federal law. The group,
+        which Mr. Kantor announced on Wednesday, includes the Governors of Colorado,
+        Massachusetts, Texas and Wisconsin and its aim, according to a statement issued
+        by Mr. Kantor, is to \"work to generate support\" for the trade agreement.","abstract":null,"print_page":"44","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Trade Pact Group Forms;
+        Its Legality Is Questioned"},"keywords":[{"name":"persons","value":"KANTOR,
+        MICKEY"},{"name":"persons","value":"PETERSON, COLLIN"},{"name":"glocations","value":"CANADA"},{"name":"glocations","value":"UNITED
+        STATES"},{"name":"glocations","value":"MEXICO"},{"name":"subject","value":"NORTH
+        AMERICAN FREE TRADE AGREEMENT"},{"name":"subject","value":"INTERNATIONAL TRADE
+        AND WORLD MARKET"}],"pub_date":"1993-05-15T00:00:00Z","document_type":"article","news_desk":"Financial
+        Desk","section_name":"Business","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Keith","rank":1,"lastname":"BRADSHER"}],"original":"By
+        KEITH BRADSHER"},"type_of_material":"News","_id":"4fd1caed8eb7c8105d6ffe97","word_count":489,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2009\/05\/24\/opinion\/24sun2.html","snippet":"The
+        Environmental Protection Agency must do its duty to give an unbiased accounting
+        of biofuels so that eventually they can be produced efficiently.","lead_paragraph":"The
+        Environmental Protection Agency must do its duty to give an unbiased accounting
+        of biofuels so that eventually they can be produced efficiently.","abstract":null,"print_page":"7","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Getting Ethanol Right","print_headline":"Getting
+        Ethanol Right","content_kicker":"Editorial"},"keywords":[{"value":"Environmental
+        Protection Agency","is_major":"N","rank":"1","name":"organizations"},{"value":"Biofuels","is_major":"N","rank":"2","name":"subject"},{"value":"Peterson,
+        Collin","is_major":"N","rank":"3","name":"persons"},{"value":"Editorials","is_major":"N","rank":"4","name":"subject"},{"value":"Ethanol","is_major":"N","rank":"5","name":"subject"},{"value":"Greenhouse
+        Gas Emissions","is_major":"N","rank":"6","name":"subject"},{"value":"Jackson,
+        Lisa P","is_major":"N","rank":"7","name":"persons"}],"pub_date":"2009-05-24T00:00:00Z","document_type":"article","news_desk":"Editorial","section_name":"Opinion","subsection_name":null,"byline":null,"type_of_material":"Editorial","_id":"546af20d38f0d84ca2c5cfbf","word_count":"425","slideshow_credits":null},{"web_url":"http:\/\/dealbook.nytimes.com\/2013\/10\/30\/house-passes-bill-on-derivatives\/","snippet":"The
+        House of Representatives passed legislation that would roll back a major element
+        of the Dodd Frank law of 2010, intended to strengthen financial regulations.","lead_paragraph":null,"abstract":"The
+        House of Representatives passed legislation that would roll back a major element
+        of the Dodd Frank law of 2010, intended to strengthen financial regulations.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2013\/10\/31\/business\/Lobby\/Lobby-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2013\/10\/31\/business\/Lobby\/Lobby-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2013\/10\/31\/business\/Lobby\/Lobby-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2013\/10\/31\/business\/Lobby\/Lobby-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2013\/10\/31\/business\/Lobby\/Lobby-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2013\/10\/31\/business\/Lobby\/Lobby-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"House
+        Votes to Repeal Dodd-Frank Provision","kicker":"DealBook","print_headline":"House
+        Votes To Repeal Dodd-Frank Provision"},"keywords":[{"rank":"1","is_major":"N","name":"subject","value":"Regulation
+        and Deregulation of Industry"},{"rank":"11","is_major":"N","name":"subject","value":"Dodd-Frank
+        Wall Street Reform and Consumer Protection Act (2010)"},{"rank":"12","is_major":"N","name":"organizations","value":"House
+        of Representatives"},{"rank":"13","is_major":"N","name":"organizations","value":"JPMorgan
+        Chase & Company"},{"rank":"2","is_major":"N","name":"subject","value":"Lobbying
+        and Lobbyists"},{"rank":"3","is_major":"N","name":"subject","value":"Law and
+        Legislation"},{"rank":"4","is_major":"N","name":"organizations","value":"House
+        Financial Services Committee"},{"rank":"5","is_major":"N","name":"subject","value":"Banking
+        and Financial Institutions"},{"rank":"6","is_major":"N","name":"organizations","value":"American
+        International Group Inc"},{"rank":"7","is_major":"N","name":"persons","value":"Hensarling,
+        Jeb"},{"rank":"8","is_major":"N","name":"subject","value":"Derivatives (Financial
+        Instruments)"},{"rank":"9","is_major":"N","name":"persons","value":"Peterson,
+        Collin C"},{"rank":"10","is_major":"N","name":"subject","value":"United States
+        Politics and Government"}],"pub_date":"2013-10-30T19:03:48Z","document_type":"blogpost","news_desk":null,"section_name":"Business
+        Day","subsection_name":"Dealbook","byline":{"person":[{"organization":"","role":"reported","firstname":"Eric","rank":1,"lastname":"LIPTON"}],"original":"By
+        ERIC LIPTON"},"type_of_material":"Blog","_id":"527190ef38f0d869cf22d571","word_count":"555","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2014\/07\/08\/upshot\/flowers-foods-pac-gives-to-democrats-first-time-in-decades.html","snippet":"Flowers,
+        the bakery company behind Wonder Bread and Tastykakes, donated a total of
+        $10,000 to congressional Democrats last month.","lead_paragraph":"Flowers,
+        the bakery company behind Wonder Bread and Tastykakes, donated a total of
+        $10,000 to congressional Democrats last month.","abstract":null,"print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2014\/07\/08\/upshot\/08UP-Flowers\/08UP-Flowers-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2014\/07\/08\/upshot\/08UP-Flowers\/08UP-Flowers-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2014\/07\/08\/upshot\/08UP-Flowers\/08UP-Flowers-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2014\/07\/08\/upshot\/08UP-Flowers\/08UP-Flowers-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2014\/07\/08\/upshot\/08UP-Flowers\/08UP-Flowers-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2014\/07\/08\/upshot\/08UP-Flowers\/08UP-Flowers-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Flowers
+        Foods PAC Gives to Democrats, First Time in Decades","kicker":"The Upshot","content_kicker":"Campaign
+        Finance"},"keywords":[{"rank":"5","is_major":"N","value":"Peterson, Collin","name":"persons"},{"rank":"3","is_major":"N","value":"Democratic
+        Party","name":"organizations"},{"rank":"6","is_major":"N","value":"Shaheen,
+        Jeanne","name":"persons"},{"rank":"1","is_major":"N","value":"Campaign Finance","name":"subject"},{"rank":"2","is_major":"N","value":"Flowers
+        Foods Inc","name":"organizations"},{"rank":"4","is_major":"N","value":"Manchin,
+        Joe III","name":"persons"}],"pub_date":"2014-07-08T00:00:00Z","document_type":"article","news_desk":"Upshot","section_name":"The
+        Upshot","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Derek","rank":1,"lastname":"WILLIS"}],"original":"By
+        DEREK WILLIS"},"type_of_material":"News","_id":"53bb28c838f0d847f10f5c97","word_count":"250","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/1990\/10\/30\/us\/in-minnesota-politics-a-test-of-character.html","snippet":"Sinclair
+        Lewis, who grew up here and mocked the sanctimonious provincialism of rural
+        Minnesota in his novels, would have been stunned by the antics of the state''s
+        politicians this year.   Arlan Stangeland, who has represented Sauk Centre
+        and the rest...","lead_paragraph":"Sinclair Lewis, who grew up here and mocked
+        the sanctimonious provincialism of rural Minnesota in his novels, would have
+        been stunned by the antics of the state''s politicians this year. Arlan Stangeland,
+        who has represented Sauk Centre and the rest of northwestern Minnesota in
+        Congress since 1977, is in trouble because he made several hundred calls to
+        or from the phone of a Virginia woman who is a lobbyist. He says it was all
+        business. But in this land of lakes and birches and small towns, where politicians
+        talk constantly about family values and villages of 400 people support three
+        churches, his behavior has raised the suspicion that he was playing around,
+        and has raised questions about the 60-year-old legislator''s character.","abstract":null,"print_page":"1","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"In Minnesota Politics,
+        a Test of Character"},"keywords":[{"name":"persons","value":"PETERSON, COLLIN
+        C"},{"name":"persons","value":"GRUNSETH, JON"},{"name":"persons","value":"STANGELAND,
+        ARLAN"},{"name":"glocations","value":"MINNESOTA"},{"name":"organizations","value":"HOUSE
+        OF REPRESENTATIVES"},{"name":"organizations","value":"DEMOCRATIC PARTY"},{"name":"organizations","value":"REPUBLICAN
+        PARTY"},{"name":"subject","value":"ELECTION ISSUES"},{"name":"subject","value":"BIOGRAPHICAL
+        INFORMATION"},{"name":"subject","value":"GOVERNORS (US)"},{"name":"subject","value":"ETHICS"},{"name":"subject","value":"ELECTIONS"}],"pub_date":"1990-10-30T00:00:00Z","document_type":"article","news_desk":"National
+        Desk","section_name":"Front Page; U.S.","subsection_name":null,"byline":{"person":[{"qualifier":"Jr.","firstname":"R.","middlename":"W.","lastname":"APPLE","rank":1,"role":"reported","organization":""},{"organization":"","role":"reported","rank":2}],"original":"By
+        R. W. APPLE Jr., Special to The New York Times"},"type_of_material":"News","_id":"4fd1b09a8eb7c8105d6d218b","word_count":1196,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/1993\/05\/29\/us\/the-clinton-budget-arm-twisting-when-the-president-rings-mavericks-run-for-cover.html","snippet":"The
+        White House telephone operators can reach Boris N. Yeltsin or Queen Elizabeth
+        II in a snap. But they could not find Representative Collin C. Peterson all
+        Thursday afternoon.    He was hiding from the President in the House gym.","lead_paragraph":"The
+        White House telephone operators can reach Boris N. Yeltsin or Queen Elizabeth
+        II in a snap. But they could not find Representative Collin C. Peterson all
+        Thursday afternoon. He was hiding from the President in the House gym.","abstract":null,"print_page":"1","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"THE CLINTON BUDGET: Arm-Twisting;
+        When the President Rings, Mavericks Run for Cover"},"keywords":[{"name":"persons","value":"MCCURDY,
+        DAVID"},{"name":"persons","value":"CLINTON, BILL"},{"name":"persons","value":"PETERSON,
+        COLLIN"},{"name":"glocations","value":"UNITED STATES"},{"name":"organizations","value":"DEMOCRATIC
+        PARTY"},{"name":"subject","value":"ENERGY AND POWER"},{"name":"subject","value":"TAXATION"},{"name":"subject","value":"FINANCES"},{"name":"subject","value":"LAW
+        AND LEGISLATION"},{"name":"subject","value":"BUDGETS AND BUDGETING"},{"name":"subject","value":"CONSERVATISM
+        (US POLITICS)"}],"pub_date":"1993-05-29T00:00:00Z","document_type":"article","news_desk":"National
+        Desk","section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Clifford","rank":1,"lastname":"KRAUSS"}],"original":"By
+        CLIFFORD KRAUSS"},"type_of_material":"News","_id":"4fd1e68c8eb7c8105d732fc4","word_count":1307,"slideshow_credits":null},{"web_url":"http:\/\/thecaucus.blogs.nytimes.com\/2013\/05\/08\/food-stamp-program-faces-deeper-cuts-under-house-farm-bill\/","snippet":"A
+        new farm bill currently being crafted by the House Agriculture Committee includes
+        deeper cuts to the food stamp program than those included in legislation that
+        passed the Senate last year.","lead_paragraph":null,"abstract":"A new farm
+        bill currently being crafted by the House Agriculture Committee includes deeper
+        cuts to the food stamp program than those included in legislation that passed
+        the Senate last year.","print_page":null,"blog":[],"source":"The New York
+        Times","multimedia":[],"headline":{"main":"Food Stamp Program Faces Deeper
+        Cuts Under House Farm Bill","kicker":"The Caucus"},"keywords":[{"rank":"1","name":"persons","value":"Gillibrand,
+        Kirsten E"},{"rank":"2","name":"persons","value":"Huelskamp, Tim"},{"rank":"3","name":"persons","value":"Lucas,
+        Frank D"},{"rank":"4","name":"persons","value":"Peterson, Collin"},{"rank":"1","name":"organizations","value":"House
+        of Representatives"},{"rank":"2","name":"organizations","value":"Senate"},{"rank":"1","name":"subject","value":"Agriculture
+        and Farming"},{"rank":"2","name":"subject","value":"Farm Bill (US)"},{"rank":"3","name":"subject","value":"Law
+        and Legislation"},{"rank":"4","name":"subject","value":"United States Politics
+        and Government"}],"pub_date":"2013-05-08T14:47:07Z","document_type":"blogpost","news_desk":null,"section_name":"U.S.","subsection_name":"Politics","byline":{"person":[{"organization":"","role":"reported","firstname":"Ron","rank":1,"lastname":"NIXON"}],"original":"By
+        RON NIXON"},"type_of_material":"Blog","_id":"518a9e2acf28d05efe001928","word_count":"482","slideshow_credits":null}]},"status":"OK","copyright":"Copyright
+        (c) 2013 The New York Times Company.  All Rights Reserved."}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 02:15:18 GMT
+- request:
+    method: get
+    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Alan%20Franken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-atl-02.mashery.com
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Thu, 17 Mar 2016 02:02:50 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '18554'
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.3.27
+      X-Cached:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"response":{"meta":{"hits":250,"time":50,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2003\/09\/14\/books\/boox.html","snippet":"Mark
+        Alan Stamaty humorous comic strip portrays Fox News lawyers trying to come
+        up with a rationale for suing Al Franken and his new book; drawng (M)","lead_paragraph":null,"abstract":"Mark
+        Alan Stamaty humorous comic strip portrays Fox News lawyers trying to come
+        up with a rationale for suing Al Franken and his new book; drawng (M)","print_page":"31","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"BOOX"},"keywords":[{"name":"creative_works","value":"LIES
+        (AND THE LYING LIARS WHO TELL THEM) (BOOK)"},{"name":"persons","value":"FRANKEN,
+        AL"},{"name":"organizations","value":"FOX TELEVISION NETWORK"},{"name":"subject","value":"BOOKS
+        AND LITERATURE"},{"name":"subject","value":"SUITS AND LITIGATION"}],"pub_date":"2003-09-14T00:00:00Z","document_type":"article","news_desk":"Book
+        Review Desk","section_name":"Arts; Books","subsection_name":null,"byline":{"person":[{"firstname":"Mark","middlename":"Alan","lastname":"Stamaty","rank":1,"role":"reported","organization":""}],"original":"By
+        Mark Alan Stamaty"},"type_of_material":"Review","_id":"4fd233318eb7c8105d7c38b8","word_count":0,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2003\/09\/01\/books\/books-of-the-times-franken-retorts-you-decide.html","snippet":"LIES  (And
+        the Lying Liars Who Tell Them)  A Fair and Balanced Look at the Right  By
+        Al Franken  Illustrated. 379 pages. Dutton. $24.95.      In the kicking, spitting
+        spirit of current all-star political discourse, Al Franken gives as good as
+        he...","lead_paragraph":"LIES (And the Lying Liars Who Tell Them) A Fair and
+        Balanced Look at the Right By Al Franken Illustrated. 379 pages. Dutton. $24.95.
+        In the kicking, spitting spirit of current all-star political discourse, Al
+        Franken gives as good as he gets. His quintessential ad hominem attack title,
+        ''''Rush Limbaugh Is a Big, Fat Idiot,'''' has already established his flair
+        for the requisite games. Name calling, fact molding, gotcha!: all figure prominently
+        in Mr. Franken''s instant best seller ''''Lies,'''' just as they do in most
+        of the books that ''''Lies'''' attacks. Whatever their partisanship, these
+        sporting diatribes share two underlying attitudes: ''''What gray area?''''
+        and ''''It''s all about me.''''","abstract":"Janet Maslin reviews book Lies
+        (And the Lying Liars Who Tell Them): A Fair and Balanced Look at the Right
+        by Al Franken; photo (M)","print_page":"1","blog":[],"source":"The New York
+        Times","multimedia":[],"headline":{"main":"Franken Retorts, You Decide","kicker":"BOOKS
+        OF THE TIMES"},"keywords":[{"name":"creative_works","value":"LIES (AND THE
+        LYING LIARS WHO TELL THEM) (BOOK)"},{"name":"persons","value":"FRANKEN, AL"},{"name":"subject","value":"REVIEWS"},{"name":"subject","value":"BOOKS
+        AND LITERATURE"}],"pub_date":"2003-09-01T00:00:00Z","document_type":"article","news_desk":"The
+        Arts\/Cultural Desk","section_name":"Arts; Books","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Janet","rank":1,"lastname":"MASLIN"}],"original":"By
+        JANET MASLIN"},"type_of_material":"Review","_id":"4fd244e88eb7c8105d7df727","word_count":950,"slideshow_credits":null},{"web_url":"http:\/\/bits.blogs.nytimes.com\/2014\/04\/25\/creepshield-claims-to-out-the-creeps-in-online-dating\/","snippet":"Facial
+        recognition software is pushing the boundaries of our privacy. But what if
+        it is not always correct?","lead_paragraph":null,"abstract":"Facial recognition
+        software is pushing the boundaries of our privacy. But what if it is not always
+        correct?","print_page":null,"blog":[],"source":"The New York Times","multimedia":[{"width":190,"url":"images\/2014\/04\/23\/technology\/23bits-creepshield\/23bits-creepshield-thumbWide-v2.png","height":126,"subtype":"wide","legacy":{"wide":"images\/2014\/04\/23\/technology\/23bits-creepshield\/23bits-creepshield-thumbWide-v2.png","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2014\/04\/23\/technology\/23bits-creepshield\/23bits-creepshield-articleLarge-v2.png","height":336,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2014\/04\/23\/technology\/23bits-creepshield\/23bits-creepshield-articleLarge-v2.png","xlargeheight":"336"},"type":"image"},{"width":75,"url":"images\/2014\/04\/23\/technology\/23bits-creepshield\/23bits-creepshield-thumbStandard-v2.png","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2014\/04\/23\/technology\/23bits-creepshield\/23bits-creepshield-thumbStandard-v2.png","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"CreepShield
+        Claims to Out the Creeps in Online Dating","kicker":"Bits","print_headline":""},"keywords":[{"rank":"1","name":"persons","value":"Franken,
+        Al"},{"rank":"2","name":"persons","value":"Tussy, Kevin Alan"},{"rank":"1","name":"organizations","value":"CreepShield"},{"rank":"3","name":"subject","value":"Privacy"},{"rank":"2","name":"subject","value":"Online
+        Dating"},{"rank":"1","name":"subject","value":"Computer Vision"}],"pub_date":"2014-04-25T12:16:21Z","document_type":"blogpost","news_desk":"Business","section_name":"Technology","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Natasha","rank":1,"lastname":"SINGER"}],"original":"By
+        NATASHA SINGER"},"type_of_material":"Blog","_id":"535a8aa438f0d80f3c8b5fe1","word_count":"919","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2008\/05\/25\/us\/politics\/25bloggers.html","snippet":"Several
+        blows dealt to Al Franken\u2019s Senate campaign by a partisan blog have proven
+        that no Minnesota candidate can afford to ignore the state\u2019s political
+        Web sites.","lead_paragraph":"Several blows dealt to Al Franken\u2019s Senate
+        campaign by a partisan blog have proven that no Minnesota candidate can afford
+        to ignore the state\u2019s political Web sites.","abstract":null,"print_page":"16","blog":[],"source":"The
+        New York Times","multimedia":[{"width":600,"url":"images\/2008\/05\/25\/us\/25blog_1_span.jpg","height":280,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2008\/05\/25\/us\/25blog_1_span.jpg","xlargeheight":"280"},"type":"image"},{"width":75,"url":"images\/2008\/05\/25\/us\/25blog_1_75.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2008\/05\/25\/us\/25blog_1_75.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Senate
+        Race in Minnesota Shows Power of Bloggers","print_headline":"Senate Race In
+        Minnesota Shows Power Of Bloggers"},"keywords":[{"rank":"1","is_major":"N","name":"subject","value":"United
+        States Politics and Government"},{"rank":"2","is_major":"N","name":"subject","value":"Blogs
+        and Blogging (Internet)"},{"rank":"3","is_major":"N","name":"persons","value":"Franken,
+        Al"},{"rank":"4","is_major":"N","name":"glocations","value":"Minnesota"},{"rank":"5","is_major":"N","name":"organizations","value":"Senate"},{"rank":"6","is_major":"N","name":"organizations","value":"Democratic
+        Party"},{"rank":"7","is_major":"N","name":"subject","value":"Elections"}],"pub_date":"2008-05-25T00:00:00Z","document_type":"article","news_desk":"National","section_name":"U.S.","subsection_name":"Politics","byline":{"person":[{"organization":"","role":"reported","firstname":"Monica","rank":1,"lastname":"DAVEY"}],"original":"By
+        MONICA DAVEY"},"type_of_material":"News","_id":"547c4c8938f0d813efccbeab","word_count":"1224","slideshow_credits":null},{"web_url":"http:\/\/query.nytimes.com\/gst\/abstract.html?res=9A0CEFDB143BE33BBC4D53DFB5668383659EDE","snippet":"Seventeen
+        years have not improved the minds or toned the systems of the Hallams. When
+        Rose Franken first wrote about them in \"Another Language\" in 1931, they
+        fascinated theatregoers, who saw in them the morose images of family life.
+        Miss Franken came...","lead_paragraph":"Seventeen years have not improved
+        the minds or toned the systems of the Hallams. When Rose Franken first wrote
+        about them in \"Another Language\" in 1931, they fascinated theatregoers,
+        who saw in them the morose images of family life. Miss Franken came back to
+        them last evening in another family saga impulsively labeled \"The Hallams\"
+        and put on at the Booth, where \"Another Language\" first opened its eyes.","abstract":"Hallams,
+        The, by R Franken","print_page":"18","blog":[],"source":"The New York Times","multimedia":[],"headline":{"main":"AT
+        THE THEATRE; In ''The Hallams'' Rose Franken Restores to the Booth the Characters
+        of ''Another Language''"},"keywords":[{"name":"creative_works","value":"HALLAMS,
+        THE"},{"name":"persons","value":"R FRANKEN"},{"name":"subject","value":"THEATRE"},{"name":"subject","value":"REVIEWS
+        AND NOTES"}],"pub_date":"1948-03-05T00:00:00Z","document_type":"article","news_desk":null,"section_name":null,"subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Brooks","lastname":"ATKINSON"}],"original":"By
+        BROOKS ATKINSON"},"type_of_material":"Review","_id":"4fc28d0045c1498b0d6f6cf9","word_count":667,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2008\/05\/24\/us\/politics\/24bloggers.html","snippet":"No
+        Minnesota candidate this fall can afford to ignore the state\u2019s vast universe
+        of Web sites devoted to local politics.","lead_paragraph":"No Minnesota candidate
+        this fall can afford to ignore the state\u2019s vast universe of Web sites
+        devoted to local politics.","abstract":null,"print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":75,"url":"images\/2008\/05\/23\/us\/bloggers_7575.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2008\/05\/23\/us\/bloggers_7575.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Franken-Coleman
+        Race Is Going to the Blogs"},"keywords":[{"rank":"1","is_major":"N","name":"persons","value":"Franken,
+        Al"},{"rank":"2","is_major":"N","name":"persons","value":"Coleman, Norm"},{"rank":"3","is_major":"N","name":"subject","value":"Elections"},{"rank":"4","is_major":"N","name":"glocations","value":"Minnesota"}],"pub_date":"2008-05-24T00:00:00Z","document_type":"article","news_desk":"National","section_name":"U.S.","subsection_name":"Politics","byline":{"person":[{"organization":"","role":"reported","firstname":"Monica","rank":1,"lastname":"DAVEY"}],"original":"By
+        MONICA DAVEY"},"type_of_material":"News","_id":"5481aea238f0d874625c8eb2","word_count":"1215","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2009\/04\/19\/weekinreview\/19powell.html","snippet":"Al
+        Franken could become the first professional comedian to take a seat in the
+        United States Senate. Although Capitol Hill has never lacked for humor.","lead_paragraph":"Al
+        Franken could become the first professional comedian to take a seat in the
+        United States Senate. Although Capitol Hill has never lacked for humor.","abstract":null,"print_page":"3","blog":[],"source":"The
+        New York Times","multimedia":[{"subtype":"thumbnail","url":"images\/2009\/04\/19\/weekinreview\/19powell.751.jpg","height":75,"width":75,"legacy":{"thumbnailheight":"75","thumbnail":"images\/2009\/04\/19\/weekinreview\/19powell.751.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"The
+        Wits of Washington, Amateur Variety","print_headline":"The Wits of Washington,
+        Amateur Variety"},"keywords":[{"value":"United States Politics and Government","is_major":"N","rank":"1","name":"subject"},{"value":"Franken,
+        Al","is_major":"N","rank":"2","name":"persons"},{"value":"Coleman, Norm","is_major":"N","rank":"3","name":"persons"}],"pub_date":"2009-04-19T00:00:00Z","document_type":"article","news_desk":"WeekInReview","section_name":"Week
+        in Review","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Michael","lastname":"POWELL"}],"original":"By
+        MICHAEL POWELL"},"type_of_material":"News","_id":"54699aaa38f0d8317bec151f","word_count":"807","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2003\/07\/20\/arts\/why-liberals-are-no-fun.html","snippet":"IT
+        wasn''t in prime time, and the ratings weren''t even on the charts. But in
+        the 24\/7 broadcasting arena of political talk, where liberals are on the
+        losing side at least 22\/7, they must take whatever scraps they can get. For
+        them, it was a rare...","lead_paragraph":"IT wasn''t in prime time, and the
+        ratings weren''t even on the charts. But in the 24\/7 broadcasting arena of
+        political talk, where liberals are on the losing side at least 22\/7, they
+        must take whatever scraps they can get. For them, it was a rare red-letter
+        day when Al Franken, appearing on Book TV on C-Span 2, landed a rhetorical
+        uppercut to the jaw of Liberal Nemesis No. 1, Bill O''Reilly, and left him
+        even more senseless than usual. The setting was a panel at the annual booksellers''
+        convention in Los Angeles last month. Mr. Franken was on hand to hawk his
+        fall book, ''''Lies and the Lying Liars Who Tell Them: A Fair and Balanced
+        Look at the Right.'''' Mr. O''Reilly, plugging his forthcoming ''''Who''s
+        Looking Out for You?,'''' was not overjoyed to find his face among the lying
+        liars (George W. Bush, Dick Cheney, Ann Coulter) on Mr. Franken''s book jacket.
+        It was downhill from there. After Mr. Franken took the mike to delineate the
+        lies at issue, Mr. O''Reilly started calling his adversary an ''''idiot''''
+        and shouting ''''Shut up!'''' Such grace under fire was not so much Reaganesque
+        as Baxteresque, after Ted Baxter, the preening local anchor of the late, great
+        ''''Mary Tyler Moore Show.''''","abstract":"Frank Rich article notes rare
+        rhetorical success of liberal Al Franken against conservative Bill O''Reilly
+        during appearance on C-Span 2 program Book TV; seeks reasons from media experts
+        for general failure of liberal talk radio; notes that Franken is looking for
+        media backer to syndicate liberal talk show; cartoon (L)","print_page":"1","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Why Liberals Are No Fun"},"keywords":[{"name":"creative_works","value":"BOOK
+        TV (TV PROGRAM)"},{"name":"persons","value":"FRANKEN, AL"},{"name":"persons","value":"O''REILLY,
+        BILL"},{"name":"organizations","value":"C-SPAN"},{"name":"subject","value":"TELEVISION"},{"name":"subject","value":"RADIO"}],"pub_date":"2003-07-20T00:00:00Z","document_type":"article","news_desk":"Arts
+        and Leisure Desk","section_name":"Arts","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Frank","rank":1,"lastname":"RICH"}],"original":"By
+        FRANK RICH"},"type_of_material":"News","_id":"4fd22a0d8eb7c8105d7b44bc","word_count":1614,"slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2006\/09\/13\/movies\/13spok.html","snippet":"The
+        documentary \u201cAl Franken: God Spoke\u201d is perhaps best viewed as an
+        investigation of the phenomenon of ideological celebrity, with Mr. Franken
+        as a willing case study.","lead_paragraph":"The documentary \u201cAl Franken:
+        God Spoke\u201d is perhaps best viewed as an investigation of the phenomenon
+        of ideological celebrity, with Mr. Franken as a willing case study.","abstract":null,"print_page":"5","blog":[],"source":"The
+        New York Times","multimedia":[{"width":75,"url":"images\/2006\/09\/13\/arts\/13spok.75.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2006\/09\/13\/arts\/13spok.75.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"seo":"Al
+        Franken: God Spoke - Movies - Review","main":"Comedian Turned Activist, With
+        His Own Campaign","content_kicker":"Movie Review | ''Al Franken: God Spoke''","kicker":"Movie
+        Review | ''Al Franken: God Spoke''","print_headline":"Comedian Turned Activist,
+        With His Own Campaign"},"keywords":[{"rank":"1","is_major":"N","name":"subject","value":"Motion
+        Pictures"},{"rank":"2","is_major":"N","name":"persons","value":"Franken, Al"},{"rank":"3","is_major":"N","name":"subject","value":"Documentary
+        Films and Programs"},{"rank":"4","is_major":"N","name":"subject","value":"United
+        States Politics and Government"},{"rank":"5","is_major":"N","name":"subject","value":"Celebrities"},{"rank":"6","is_major":"N","name":"subject","value":"Comedy
+        and Humor"},{"rank":"7","is_major":"N","name":"organizations","value":"Air
+        America Radio"},{"rank":"8","is_major":"N","name":"persons","value":"Hegedus,
+        Chris"}],"pub_date":"2006-09-13T00:00:00Z","document_type":"article","news_desk":"Culture","section_name":"Movies","subsection_name":null,"byline":{"person":[{"firstname":"A.","middlename":"O.","lastname":"SCOTT","rank":1,"role":"reported","organization":""}],"original":"By
+        A. O. SCOTT"},"type_of_material":"Review","_id":"525e0b3f38f0d819897432de","word_count":"791","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2009\/06\/02\/us\/02minnesota.html","snippet":"A
+        lawyer for Norm Coleman, who is fighting a recount battle with Al Franken
+        for a Senate seat, faced sharp questioning in the state Supreme Court.","lead_paragraph":"A
+        lawyer for Norm Coleman, who is fighting a recount battle with Al Franken
+        for a Senate seat, faced sharp questioning in the state Supreme Court.","abstract":null,"print_page":"10","blog":[],"source":"The
+        New York Times","multimedia":[{"subtype":"thumbnail","url":"images\/2009\/06\/02\/us\/coleman75.jpg","height":75,"width":75,"legacy":{"thumbnailheight":"75","thumbnail":"images\/2009\/06\/02\/us\/coleman75.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Minnesota
+        Justices Are Skeptical in Senate Case","print_headline":"Minnesota Justices
+        Express Skepticism on Ex-Senator\u2019s Claim in Recount"},"keywords":[{"value":"Coleman,
+        Norm","is_major":"N","rank":"1","name":"persons"},{"value":"Franken, Al","is_major":"N","rank":"2","name":"persons"},{"value":"Election
+        Results","is_major":"N","rank":"3","name":"subject"},{"value":"Elections","is_major":"N","rank":"4","name":"subject"},{"value":"Minnesota","is_major":"N","rank":"5","name":"glocations"},{"value":"Senate","is_major":"N","rank":"6","name":"organizations"}],"pub_date":"2009-06-02T00:00:00Z","document_type":"article","news_desk":"National","section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"John","lastname":"SCHWARTZ"}],"original":"By
+        JOHN SCHWARTZ"},"type_of_material":"News","_id":"5452657238f0d81b603ec759","word_count":"809","slideshow_credits":null}]},"status":"OK","copyright":"Copyright
+        (c) 2013 The New York Times Company.  All Rights Reserved."}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 02:15:18 GMT
+- request:
+    method: get
+    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=174a1ee32de36322b246700bfa57630c:0:74036157&q=Amy%20Klobuchar
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-atl-04.mashery.com
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Thu, 17 Mar 2016 02:02:50 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '17919'
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.3.27
+      X-Cached:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"response":{"meta":{"hits":384,"time":49,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/video\/us\/politics\/100000002132197\/women-in-the-upper-chamber.html","snippet":"Senator
+        Amy Klobuchar of Minnesota discusses the record number of women in the United
+        States Senate.","lead_paragraph":"Senator Amy Klobuchar of Minnesota discusses
+        the record number of women in the United States Senate.","abstract":null,"print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2013\/03\/22\/us\/politics\/senate-women-image\/senate-women-image-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2013\/03\/22\/us\/politics\/senate-women-image\/senate-women-image-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2013\/03\/22\/us\/politics\/senate-women-image\/senate-women-image-articleLarge.jpg","height":337,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2013\/03\/22\/us\/politics\/senate-women-image\/senate-women-image-articleLarge.jpg","xlargeheight":"337"},"type":"image"},{"width":75,"url":"images\/2013\/03\/22\/us\/politics\/senate-women-image\/senate-women-image-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2013\/03\/22\/us\/politics\/senate-women-image\/senate-women-image-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Women
+        in the Upper Chamber"},"keywords":[{"rank":"1","is_major":"N","name":"organizations","value":"Senate"},{"rank":"2","is_major":"N","name":"subject","value":"Women
+        and Girls"},{"rank":"3","is_major":"N","name":"persons","value":"Klobuchar,
+        Amy"}],"pub_date":"2013-03-22T11:15:18Z","document_type":"multimedia","news_desk":"U.S.
+        \/ Politics","section_name":"U.S.","subsection_name":"Politics","byline":{"person":[{"organization":"","role":"reported","firstname":"Ben","rank":1,"lastname":"Werschkul"},{"organization":"","role":"reported","firstname":"Channon","rank":2,"lastname":"Hodge"},{"firstname":"Pedro","middlename":"Rafael","lastname":"Rosado","rank":3,"role":"reported","organization":""},{"organization":"","role":"reported","firstname":"Erica","rank":4,"lastname":"Berenstein"},{"organization":"","role":"reported","firstname":"Alyssa","rank":5,"lastname":"Kim"}],"original":"Ben
+        Werschkul, Channon Hodge, Pedro Rafael Rosado, Erica Berenstein and Alyssa
+        Kim"},"type_of_material":"Video","_id":"514c7596fdc5926e77001b06","word_count":"16","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2012\/10\/31\/opinion\/friedman-minnesota-mirror.html","snippet":"A
+        hometown visit to St. Louis Park, a Minneapolis suburb, is seeing a microcosm
+        of America.","lead_paragraph":"A hometown visit to St. Louis Park, a Minneapolis
+        suburb, is seeing a microcosm of America.","abstract":"Thomas L Friedman Op-Ed
+        column describes political landscape in his hometown of St Louis Park, Minn,
+        and what it may indicate about presidential election; cites fight in state
+        over soul of Republican Party, between Tea Party and libertarian insurgents
+        and business community; says moderate Democrats who are business-oriented,
+        like Sen Amy Klobuchar, are gaining support.","print_page":"23","blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2014\/11\/01\/opinion\/friedman-circular\/friedman-circular-thumbWide-v2.png","height":126,"subtype":"wide","legacy":{"wide":"images\/2014\/11\/01\/opinion\/friedman-circular\/friedman-circular-thumbWide-v2.png","wideheight":"126","widewidth":"190"},"type":"image"},{"width":75,"url":"images\/2010\/09\/16\/opinion\/Friedman_New\/Friedman_New-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2010\/09\/16\/opinion\/Friedman_New\/Friedman_New-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"seo":"The
+        Minnesota Mirror","main":"Minnesota Mirror","content_kicker":"Op-Ed Columnist","kicker":"Op-Ed
+        Columnist","print_headline":"Minnesota Mirror"},"keywords":[{"rank":"1","is_major":"Y","name":"glocations","value":"Minnesota"},{"rank":"2","is_major":"N","name":"subject","value":"United
+        States Politics and Government"},{"rank":"3","is_major":"Y","name":"subject","value":"Presidential
+        Election of 2012"},{"rank":"4","is_major":"N","name":"subject","value":"Immigration
+        and Emigration"},{"rank":"5","is_major":"Y","name":"persons","value":"Klobuchar,
+        Amy"}],"pub_date":"2012-10-31T00:00:00Z","document_type":"article","news_desk":"Editorial","section_name":"Opinion","subsection_name":null,"byline":{"contributor":"","person":[{"firstname":"Thomas","middlename":"L.","lastname":"FRIEDMAN","rank":1,"role":"reported","organization":""}],"original":"By
+        THOMAS L. FRIEDMAN"},"type_of_material":"Op-Ed","_id":"5090894395e998af7118a4a7","word_count":"880","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/news\/affordable-care-act\/2013\/10\/01\/medical-device-industry-fears-laws-tax-on-sales\/","snippet":"Even
+        though companies are likely to see sales growth under the Affordable Care
+        Act, they have unleashed a torrent of lobbying dollars and stepped up political
+        contributions.","lead_paragraph":null,"abstract":"Even though companies are
+        likely to see sales growth under the Affordable Care Act, they have unleashed
+        a torrent of lobbying dollars and stepped up political contributions.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Medical Device Industry
+        Fears Law''s Tax on Sales","kicker":"In Practice"},"keywords":[{"rank":"1","name":"persons","value":"Klobuchar,
+        Amy"},{"rank":"1","name":"organizations","value":"Advanced Medical Technology
+        Assn"},{"rank":"2","name":"organizations","value":"NuVasive Inc"},{"rank":"1","name":"subject","value":"Corporate
+        Taxes"},{"rank":"2","name":"subject","value":"Medical Devices"},{"rank":"3","name":"subject","value":"Patient
+        Protection and Affordable Care Act (2010)"}],"pub_date":"2013-10-01T10:04:29Z","document_type":"blogpost","news_desk":null,"section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Barry","rank":1,"lastname":"MEIER"}],"original":"By
+        BARRY MEIER"},"type_of_material":"Blog","_id":"524ad7fc38f0d8198973f8f5","word_count":"518","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2006\/09\/19\/us\/19Prace.html","snippet":"Amy
+        Klobuchar\/Mark Kennedy.","lead_paragraph":"Amy Klobuchar\/Mark Kennedy.","abstract":null,"print_page":"18","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Amy Klobuchar\/Mark Kennedy","content_kicker":"Race","kicker":"Race"},"keywords":[{"rank":"1","is_major":"N","name":"subject","value":"Politics
+        and Government"}],"pub_date":"2006-09-19T00:00:00Z","document_type":"article","news_desk":"National","section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"David","rank":1}],"original":"By
+        DAVID D. KIRKPATRICK"},"type_of_material":"News","_id":"54b1c89d38f0d87f8114741e","word_count":"139","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2014\/01\/11\/business\/the-next-privacy-battle-may-be-waged-inside-your-car.html","snippet":"As
+        cars increasingly come equipped with Internet connections, GPS and data recorders,
+        concerns about what is being tracked and who has access to it.","lead_paragraph":"As
+        cars increasingly come equipped with Internet connections, GPS and data recorders,
+        concerns about what is being tracked and who has access to it.","abstract":"Privacy
+        advocates are growing increasingly concerned as cars come equipped with Internet
+        connections, GPS and data recorders, questioning what is being tracked and
+        who has access to it; automakers say they are only responding to consumer
+        demand and that technology makes cars safer.","print_page":"1","blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2014\/01\/11\/business\/11cardata\/11cardata-thumbWide-v2.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2014\/01\/11\/business\/11cardata\/11cardata-thumbWide-v2.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2014\/01\/11\/business\/11cardata\/11cardata-articleLarge-v2.jpg","height":327,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2014\/01\/11\/business\/11cardata\/11cardata-articleLarge-v2.jpg","xlargeheight":"327"},"type":"image"},{"width":75,"url":"images\/2014\/01\/11\/business\/11cardata\/11cardata-thumbStandard-v2.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2014\/01\/11\/business\/11cardata\/11cardata-thumbStandard-v2.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"The
+        Next Data Privacy Battle May Be Waged Inside Your Car","print_headline":"The
+        Next Data Privacy Battle May Be Waged Inside Your Car"},"keywords":[{"rank":"5","is_major":"N","value":"Klobuchar,
+        Amy","name":"persons"},{"rank":"3","is_major":"Y","value":"Privacy","name":"subject"},{"rank":"6","is_major":"N","value":"Hoeven,
+        John","name":"persons"},{"rank":"1","is_major":"Y","value":"Automobiles","name":"subject"},{"rank":"2","is_major":"N","value":"Data-Mining
+        and Database Marketing","name":"subject"},{"rank":"4","is_major":"N","value":"United
+        States Politics and Government","name":"subject"}],"pub_date":"2014-01-11T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Business
+        Day","subsection_name":null,"byline":{"contributor":"","person":[{"organization":"","role":"reported","firstname":"Jaclyn","rank":1,"lastname":"TROP"}],"original":"By
+        JACLYN TROP"},"type_of_material":"News","_id":"52d07e7638f0d813df3a7995","word_count":"1159","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/aponline\/2015\/04\/02\/us\/ap-us-books-klobuchar.html","snippet":"Sen.
+        Amy Klobuchar of Minnesota is working on a memoir.","lead_paragraph":"Sen.
+        Amy Klobuchar of Minnesota is working on a memoir.","abstract":null,"print_page":null,"blog":[],"source":"AP","multimedia":[],"headline":{"main":"Sen.
+        Amy Klobuchar Writing Memoir, Scheduled for August","print_headline":"Sen.
+        Amy Klobuchar Writing Memoir, Scheduled for August"},"keywords":[],"pub_date":"2015-04-02T11:51:42Z","document_type":"article","news_desk":"None","section_name":"U.S.","subsection_name":null,"byline":{"person":[],"original":"By
+        THE ASSOCIATED PRESS","organization":"THE ASSOCIATED PRESS"},"type_of_material":"News","_id":"551d664338f0d87335c1a554","word_count":"114","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/politics\/first-draft\/2015\/03\/09\/klobuchar-hints-clinton-will-say-more-on-emails\/","snippet":"Democrats
+        are eagerly waiting for Hillary Rodham Clinton to break her silence over her
+        private email account, but they may not need to wait much longer.","lead_paragraph":null,"abstract":"Democrats
+        are eagerly waiting for Hillary Rodham Clinton to break her silence over her
+        private email account, but they may not need to wait much longer.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2015\/03\/09\/us\/09firstdraft-Senator-Amy-Klobuchar\/09firstdraft-Senator-Amy-Klobuchar-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/03\/09\/us\/09firstdraft-Senator-Amy-Klobuchar\/09firstdraft-Senator-Amy-Klobuchar-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/03\/09\/us\/09firstdraft-Senator-Amy-Klobuchar\/09firstdraft-Senator-Amy-Klobuchar-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/03\/09\/us\/09firstdraft-Senator-Amy-Klobuchar\/09firstdraft-Senator-Amy-Klobuchar-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2015\/03\/09\/us\/09firstdraft-Senator-Amy-Klobuchar\/09firstdraft-Senator-Amy-Klobuchar-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/03\/09\/us\/09firstdraft-Senator-Amy-Klobuchar\/09firstdraft-Senator-Amy-Klobuchar-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Klobuchar
+        Hints Clinton Will Say More on Emails","kicker":"First Draft"},"keywords":[{"rank":"1","name":"persons","value":"Clinton,
+        Hillary Rodham"},{"rank":"2","name":"persons","value":"Feinstein, Dianne"},{"rank":"3","name":"persons","value":"Klobuchar,
+        Amy"},{"rank":"1","name":"glocations","value":"Minnesota"},{"rank":"1","name":"organizations","value":"Democratic
+        Party"},{"rank":"2","name":"organizations","value":"State Department"},{"rank":"1","name":"subject","value":"Presidential
+        Election of 2016"},{"rank":"2","name":"subject","value":"United States Politics
+        and Government"}],"pub_date":"2015-03-09T12:37:03Z","document_type":"blogpost","news_desk":null,"section_name":"false","subsection_name":"false","byline":{"person":[{"organization":"","role":"reported","firstname":"Alan","rank":1,"lastname":"RAPPEPORT"}],"original":"By
+        ALAN RAPPEPORT"},"type_of_material":"Blog","_id":"55030aab38f0d835da194d5f","word_count":"191","slideshow_credits":null},{"web_url":"http:\/\/www.nytimes.com\/2009\/04\/09\/us\/politics\/09minnesota.html","snippet":"As
+        the only senator to inundate with advice, to seek help from, or to complain
+        about, Amy Klobuchar is feeling the strain.","lead_paragraph":"As the only
+        senator to inundate with advice, to seek help from, or to complain about,
+        Amy Klobuchar is feeling the strain.","abstract":null,"print_page":"20","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Sole Minnesota Senator
+        Has Problems Built for 2","sub":"A Disputed Election Doubles a Workload ;","print_headline":"Sole
+        Minnesota Senator Has Problems Built for 2"},"keywords":[{"value":"Coleman,
+        Norm","is_major":"N","rank":"1","name":"persons"},{"value":"Franken, Al","is_major":"N","rank":"2","name":"persons"},{"value":"Minnesota","is_major":"N","rank":"3","name":"glocations"},{"value":"Klobuchar,
+        Amy","is_major":"N","rank":"4","name":"persons"},{"value":"Elections","is_major":"N","rank":"5","name":"subject"},{"value":"Senate","is_major":"N","rank":"6","name":"organizations"},{"value":"United
+        States Politics and Government","is_major":"N","rank":"7","name":"subject"}],"pub_date":"2009-04-09T00:00:00Z","document_type":"article","news_desk":"National","section_name":"U.S.","subsection_name":"Politics","byline":{"person":[{"organization":"","role":"reported","rank":1,"firstname":"Monica","lastname":"DAVEY"}],"original":"By
+        MONICA DAVEY"},"type_of_material":"News","_id":"5469555e38f0d8317bec0eb3","word_count":"858","slideshow_credits":null},{"web_url":"http:\/\/green.blogs.nytimes.com\/2011\/07\/08\/compromise-relieves-ethanol-industry\/","snippet":"Even
+        with ethanol subsidies cut, a consensus has arisen in Washington that as long
+        as there is a renewable fuels standard that mandates the use of increasing
+        amounts of biofuels, ethanol can prosper.","lead_paragraph":"Any other year,
+        the ethanol industry would have declared a defeat, not a victory.","abstract":"Even
+        with ethanol subsidies cut, a consensus has arisen in Washington that as long
+        as there is a renewable fuels standard that mandates the use of increasing
+        amounts of biofuels, ethanol can prosper.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Ethanol Industry Welcomes
+        Compromise","kicker":"Green"},"keywords":[{"rank":"1","name":"type_of_material","value":"News"},{"rank":"10","name":"subject","value":"Federal
+        Budget (US)"},{"rank":"11","name":"subject","value":"United States Politics
+        and Government"},{"rank":"12","name":"organizations","value":"House of Representatives"},{"rank":"13","name":"organizations","value":"Senate"},{"rank":"2","name":"persons","value":"Feinstein,
+        Dianne"},{"rank":"3","name":"persons","value":"Klobuchar, Amy"},{"rank":"4","name":"persons","value":"Thune,
+        John R"},{"rank":"5","name":"subject","value":"Biofuels"},{"rank":"6","name":"subject","value":"Corn"},{"rank":"7","name":"subject","value":"Crop
+        Controls and Subsidies"},{"rank":"8","name":"subject","value":"Customs (Tariff)"},{"rank":"9","name":"subject","value":"Ethanol"}],"pub_date":"2011-07-08T08:16:44Z","document_type":"blogpost","news_desk":null,"section_name":"Science","subsection_name":"Environment","byline":{"person":[{"organization":"","role":"reported","firstname":"Clifford","rank":1,"lastname":"KRAUSS"}],"original":"By
+        CLIFFORD KRAUSS"},"type_of_material":"Blog","_id":"4fd3a00e8eb7c8105d8e4d7a","word_count":"375","slideshow_credits":null},{"web_url":"http:\/\/thecaucus.blogs.nytimes.com\/2007\/06\/05\/klobuchar-gets-dscc-leadership-spot\/","snippet":"The
+        recently elected Minnesota senator takes on policy\/outreach duties at the
+        campaign arm of the Senate Democrats.","lead_paragraph":"Just five months
+        into her first term, Senator Amy Klobuchar, Democrat of Minnesota, has been
+        given a leadership position within the Democratic Senatorial Campaign Committee.","abstract":"The
+        recently elected Minnesota senator takes on policy\/outreach duties at the
+        campaign arm of the Senate Democrats.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Klobuchar Gets D.S.C.C.
+        Leadership Spot","kicker":"The Caucus"},"keywords":[{"rank":"1","name":"type_of_material","value":"News"}],"pub_date":"2007-06-05T16:44:29Z","document_type":"blogpost","news_desk":null,"section_name":"U.S.","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Jacqueline","rank":1,"lastname":"PALANK"}],"original":"By
+        JACQUELINE PALANK"},"type_of_material":"Blog","_id":"4fd368758eb7c8105d8b996c","word_count":127,"slideshow_credits":null}]},"status":"OK","copyright":"Copyright
+        (c) 2013 The New York Times Company.  All Rights Reserved."}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 02:15:18 GMT
+recorded_with: VCR 3.0.1

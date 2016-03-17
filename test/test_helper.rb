@@ -17,7 +17,7 @@ class ActiveSupport::TestCase
     config.hook_into :webmock
   end
 
-  def generate_five_random_zipcodes
+  def generate_six_random_zipcodes
     zipcodes =
      [{postal_code: "17936",
      place_name: "Gordon",
@@ -57,7 +57,15 @@ class ActiveSupport::TestCase
      state_abbreviation: "CO",
      county: "Denver",
      latitude: "39.759",
-     longitude: "-104.9661"}]
+     longitude: "-104.9661"},
+
+     {postal_code: "56666",
+     place_name: "Ponemah",
+     state: "Minnesota",
+     state_abbreviation: "MN",
+     county: "Beltrami",
+     latitude: "48.0372",
+     longitude: "-94.917"}]
 
      zipcodes.each {|zip| Zipcode.create(zip)}
   end

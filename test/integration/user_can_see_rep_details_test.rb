@@ -3,7 +3,7 @@ require 'test_helper'
 class UserCanSeeRepDetailsTest < ActionDispatch::IntegrationTest
   test "user must be logged in to see list of reps" do
     VCR.use_cassette('legislators#search') do
-      generate_five_random_zipcodes
+      generate_six_random_zipcodes
       visit "/"
       refute page.has_content?("Search your zipcode")
 
