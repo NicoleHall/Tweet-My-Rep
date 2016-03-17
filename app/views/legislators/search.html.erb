@@ -1,34 +1,23 @@
 <%= render :partial => "layouts/navbar" %>
-<% if @legislators == [] %>
-<%= render :partial => "layouts/invalid_zip" %>
-<% else %>
 <div class="betterwell">
+  
+  <% if @legislators == [] %>
+    <%= render :partial => "layouts/search_partials/invalid_zip" %>
+  <% else %>
+    <%= render :partial => "layouts/search_partials/legislator_names" %>
+  <% end %>
+
+  <% @legislators.each do |legislator|%>
+    <% if legislator.twitter_id %>
+      <%= render partial: "layouts/search_partials/tweet_form", locals: {legislator: legislator} %>
+    <% else %>
+      <%= render partial: "layouts/search_partials/email", locals: {legislator: legislator} %>
+    <% end %>
+      <%= render :partial => "layouts/search_partials/article", locals: {legislator: legislator} %>
+  <% end %>
+
   <div class="center">
-    <h1>The legislators who represent you are: <br>
-      <%= @legislators.map(&:full_name).to_sentence %></h1>
-      <% end %>
-    </div>
-
-    <% @legislators.each do |legislator|%>
-      <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
-      <hr><%= f.label "Type Tweet Here" %>
-      <div class="count"><%= f.text_field(:message, :value => "@#{legislator.twitter_id}", :maxlength => 140) %>
-      <h6 class="char_count">remaining characters in tweet</h6>
-      <%= f.submit "Send Tweet" %><br><br>
-        <% end %>
-    </div>
-
-    <h4><%= legislator.full_name %> in the News</h4>
-
-    <%legislator.articles.each do |article| %>
-
-    <a target="_blank" href=<%= article["web_url"] %>> <%= article["snippet"] %></a><br><br>
-
-    <% end %>
-
-    <% end %>
-
-
-    <div class="center"><%= link_to "Find Legislators at Random" , random_zipcodes_path, class: "btn btn-success" unless @legislators == []%></div>
-
+    <%= link_to "Find Legislators at Random" , random_zipcodes_path, class: "btn btn-success" unless @legislators == []%>
   </div>
+
+</div>

@@ -271,56 +271,22 @@
   },
   "Unit Tests": {
     "coverage": {
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/legislators_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null
-      ],
-      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/services/sunlight_service.rb": [
-        1,
-        null,
-        1,
+      "/Users/FatMac/turing/module_three/projects/tweet_my_rep/app/models/legislator.rb": [
         1,
         null,
         1,
         null,
         1,
-        1,
-        null,
-        1,
+        2,
         null,
         null,
-        1,
-        null,
-        1,
         1,
         0,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1458076947
+    "timestamp": 1458172953
   }
 }

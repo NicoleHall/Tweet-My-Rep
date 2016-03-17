@@ -11,6 +11,16 @@ class SunlightService
     parse_legislators(response)
   end
 
+  def self.legislators_by_long_lat_from_zip(zip)
+    zipcode_record = Zipcode.find_by(postal_code: "#{zip}")
+
+    longitude = zipcode_record.longitude
+    latitude = zipcode_record.latitude
+
+    response = get("/legislators/locate?latitude=#{latitude}&longitude=#{longitude}&apikey=#{@@options[:apikey]}")
+    parse_legislators(response)
+  end
+
   private
 
   def self.parse_legislators(response)
@@ -19,6 +29,7 @@ class SunlightService
         first_name: legislator_hash.fetch("first_name"),
         last_name: legislator_hash.fetch("last_name"),
         twitter_id: legislator_hash.fetch("twitter_id"),
+        email: legislator_hash.fetch("oc_email")
       )
     end
   end

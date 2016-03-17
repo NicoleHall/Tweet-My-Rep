@@ -1,0 +1,7 @@
+<h4><%= legislator.full_name %> in the News</h4>
+
+<%legislator.articles.each do |article| %>
+
+  <a target="_blank" href=<%= article["web_url"] %>> <%= article["snippet"] %></a><br><br>
+
+<% end %>

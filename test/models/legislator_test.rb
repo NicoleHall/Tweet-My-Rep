@@ -23,4 +23,10 @@ class LegislatorTest < ActiveSupport::TestCase
 
     assert_equal 2, Legislator.count
   end
+
+  test "a legislator record can have an email" do
+     will = Legislator.create(twitter_id: "wvmitchell", first_name: "Will", last_name: "Mitchell", email: "wvmitchell@gmail.com")
+
+     assert_equal "wvmitchell@gmail.com", will.email
+  end
 end
