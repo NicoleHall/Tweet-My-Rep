@@ -81,4 +81,4 @@ test:
 production:
   <<: *default
   database: tweet_my_rep_production
-  url: <%= ENV["DATABASE_URL"] %>
+  url: <%= ENV["HEROKU_POSTGRESQL_BLACK_URL"] %>
