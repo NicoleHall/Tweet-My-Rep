@@ -1,7 +1,7 @@
 <%= render :partial => "layouts/navbar" %>
 <div class="betterwell">
-  
-  <% if @legislators == [] %>
+
+  <% if @legislators == []%>
     <%= render :partial => "layouts/search_partials/invalid_zip" %>
   <% else %>
     <%= render :partial => "layouts/search_partials/legislator_names" %>

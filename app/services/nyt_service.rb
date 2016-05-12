@@ -11,6 +11,7 @@ class NytService
   def search_articles(legislator)
     response = self.class.get("/svc/search/v2/articlesearch.json",
                query: @options.merge(q: legislator.full_name) )
+      
     parse_articles(response)
   end
 
