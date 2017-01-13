@@ -6,8 +6,8 @@ class Legislator < ActiveRecord::Base
     "#{first_name} #{last_name}"
   end
 
-  def articles
-    NytService.new.search_articles(self)
-  end
+  # def articles
+  #   NytService.new.search_articles(self)
+  # end
 
 end
